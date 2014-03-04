@@ -52,8 +52,8 @@ div.maincontainer{
 
 		if(isset($_SESSION['successmsg'])){
 			
-			echo $_SESSION['sucessmsg'];
-			unset($_SESSION['sucessmsg']);
+			echo $_SESSION['successmsg'];
+			unset($_SESSION['successmsg']);
 		}
 	?>
 	</body>
