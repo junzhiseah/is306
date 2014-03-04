@@ -15,7 +15,7 @@ div.maincontainer{
 	margin-left: 32%;
 	margin-right:43.6%;
 	margin-top: 6%;
-	height:78%;
+	height:77%;
 	background-color: white;
 	overflow:auto;
 
