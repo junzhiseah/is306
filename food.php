@@ -235,34 +235,34 @@
 
 	<table border = "1">
 		<tr>
-			<td align = "center"><a href = "http://localhost/idp/featured.php"><img src="img/Featured.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "http://localhost/idp/featured.php"><img src="img/Featured1.jpg" height = "30px" width = "66px"></a></td>
 			<td align = "center"><a href = "http://localhost/idp/entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/food.php"><img src="img/Food1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "http://localhost/idp/food.php"><img src="img/Food.jpg" height = "30px" width = "66px"></a></td>
 			<td align = "center"><a href = "http://localhost/idp/travel.php"><img src="img/Travel1.jpg" height = "30px" width = "66px"></a></td>
 
 		</tr>
 	</table>
 	<table border = "1">
 		<tr>
-			<td align = "center" ><img src="img/IceArt.jpg" height = "150px" width = "150px"></td>
-			<td align = "center"><b>2 Degree Ice Art</b><br>
-				<strike>$30</strike> <a style="color:red">$15</a> / Tix<br>
+			<td align = "center" ><img src="img/CrystalJade.jpg" height = "150px" width = "150px"></td>
+			<td align = "center"><b>Crystal Jade Char Siew Bun</b><br>
+				<strike>$1.80</strike> <a style="color:red">$1.20</a> / Bun<br>
 				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
 			</td>
 		</tr>
 		<tr>
-			<td align = "center" ><img src="img/LionKing.jpg" height = "150px" width = "150px"></td>
-			<td align = "center"><b>Lion King Musical</b><br>
-				<strike>$75</strike> <a style="color:red">$25</a> / Tix<br>
+			<td align = "center" ><img src="img/SakaeSushi.jpg" height = "150px" width = "150px"></td>
+			<td align = "center"><b>Sakae Sushi Takeaway</b><br>
+				<strike>$3.50</strike> <a style="color:red">$2.10</a> / Box<br>
 				<i>Expiry: 28 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
 			</td>
 		</tr>
 		<tr>
-			<td align = "center" ><img src="img/Korea.jpg" height = "150px" width = "150px"></td>
-			<td align = "center"><b>One way Travel Tix to Korea</b><br>
-				<strike>$478</strike> <a style="color:red">$128</a> / Tix<br>
+			<td align = "center" ><img src="img/BreadTalk.jpg" height = "150px" width = "150px"></td>
+			<td align = "center"><b>Bread Talk Chicken Floss Bread</b><br>
+				<strike>$1.50</strike> <a style="color:red">$0.90</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
 			</td>

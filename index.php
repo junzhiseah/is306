@@ -97,14 +97,14 @@
 
 
 	<div class="categories1">
-	<a href = "http://www.soccernet.com"><img src="img/thumbsupcat.png" class="category"></a>
-	<a href = ""><img src="img/entertainmentcat.jpg" class="category"></a>
+	<a href = "http://localhost/idp/featured.php"><img src="img/thumbsupcat.png" class="category"></a>
+	<a href = "http://localhost/idp/entertainment.php"><img src="img/entertainmentcat.jpg" class="category"></a>
 	</div>
 
 
 	<div class="categories2">
-	<img src="img/foodcat.png" class="category">
-	<img src="img/travelcat.png" class="category">
+	<a href = "http://localhost/idp/food.php"><img src="img/foodcat.png" class="category"></a>
+	<a href = "http://localhost/idp/travel.php"><img src="img/travelcat.png" class="category"></a>
 	</div>
 
 

@@ -235,26 +235,26 @@
 
 	<table border = "1">
 		<tr>
-			<td align = "center"><a href = "http://localhost/idp/featured.php"><img src="img/Featured.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "http://localhost/idp/featured.php"><img src="img/Featured1.jpg" height = "30px" width = "66px"></a></td>
 			<td align = "center"><a href = "http://localhost/idp/entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
 			<td align = "center"><a href = "http://localhost/idp/food.php"><img src="img/Food1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/travel.php"><img src="img/Travel1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "http://localhost/idp/travel.php"><img src="img/Travel.jpg" height = "30px" width = "66px"></a></td>
 
 		</tr>
 	</table>
 	<table border = "1">
 		<tr>
-			<td align = "center" ><img src="img/IceArt.jpg" height = "150px" width = "150px"></td>
-			<td align = "center"><b>2 Degree Ice Art</b><br>
-				<strike>$30</strike> <a style="color:red">$15</a> / Tix<br>
+			<td align = "center" ><img src="img/Japan.jpg" height = "150px" width = "150px"></td>
+			<td align = "center"><b>Two way Travel Tix to Japan</b><br>
+				<strike>$128</strike> <a style="color:red">$88</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
 			</td>
 		</tr>
 		<tr>
-			<td align = "center" ><img src="img/LionKing.jpg" height = "150px" width = "150px"></td>
-			<td align = "center"><b>Lion King Musical</b><br>
-				<strike>$75</strike> <a style="color:red">$25</a> / Tix<br>
+			<td align = "center" ><img src="img/France.jpg" height = "150px" width = "150px"></td>
+			<td align = "center"><b>Trip to France</b><br>
+				<strike>$300</strike> <a style="color:red">$150</a> / Trip<br>
 				<i>Expiry: 28 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
 			</td>
