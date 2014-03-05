@@ -63,7 +63,7 @@
 
 	<div class="navbar">
 		<nav>
-				<img src="img/Savings-02-48.png" class="homepageicon"/>
+				<a href=""><img src="img/Savings-02-48.png" class="homepageicon"/></a>
 				
 				<a href="#"><img src="img/Table-of-Contents-48.png" class="menu"/>
 					
