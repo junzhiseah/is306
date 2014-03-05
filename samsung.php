@@ -1,68 +1,82 @@
 <style type="text/css">
 	body{
 		background-image: url('img/S4.png');
-		/*background-size: 100%;*/
-
 		background-repeat: no-repeat;
-		
 	}
 
 
-div.maincontainer{
-	border:0px solid black;
-	/*margin-left: 30%;
-	margin-right: 46.9%;*/
-	margin-left: 32%;
-	margin-right:43.6%;
-	margin-top: 6%;
-	height:77%;
-	background-color: white;
-	overflow:auto;
+	div#iframe-container{
+		border:0px solid black;
+		margin-left: 32%;
+		margin-right:43.6%;
+		border:0px solid black;
+		height:70%;
+		background-color: white;
+	}
 
-}
-div.categories{
-	display: inline;
-}
 
-div.categories2{
-	display: inline;
-}
+	iframe{
+		height:100%;
+		width:100%;
+	}
 
-img.category{
-	width:143px;
-	height:143px;
-}
+	div.navbar{
+		height:8%;
+		margin-left: 32%;
+		margin-right: 43.4%;
+		margin-top: 6.2%;
+		background-color:#3E4651;
+	}
+
+	div.navbar img.homepageicon{
+		margin-left: 0px;
+		width:60px;
+		height:53px;
+	}	
+
+	div.navbar img.menu{
+		margin-left:57%;
+		width:40px;
+		height:40px;
+		margin-bottom:1.5%; 
+	}
+
+
+
+
+	nav a img ul {
+		display: none;
+	}
+
+	nav a img:hover > ul li {
+		display: block;
+	}
+
+
 
 
 </style>
 
-<div class="maincontainer">
-	test
 
-	<br/>
+
+
 
 	<div class="navbar">
-
+		<nav>
+				<img src="img/Savings-02-48.png" class="homepageicon"/>
+				
+				<a href="#"><img src="img/Table-of-Contents-48.png" class="menu"/>
+					
+					
+				</a>	
+		</nav>		
 	</div>	
 
-
-<!-- 	<div class="categories1">
-	<img src="img/Aeroplane.jpg" class="category">
-	<img src="img/Aeroplane.jpg" class="category">
-	</div>
-
-
-	<div class="categories2">
-	<img src="img/Aeroplane.jpg" class="category">
-	<img src="img/Aeroplane.jpg" class="category">
-	</div> -->
 	<div id="iframe-container">
-		<div id="iframe-inner">
+
 			<iframe src="index.php">
-		</div>
+		
 	</div>
 
-	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-	testing
+	
 
-</div>

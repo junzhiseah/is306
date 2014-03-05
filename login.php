@@ -7,16 +7,6 @@
 	
 }
 
-div.maincontainer{
-	border:0px solid black;
-	margin-left: 30%;
-	margin-right: 46.9%;
-	margin-top: 6%;
-	height:77%;
-	background-color: white;
-	overflow:auto;
-
-}
 
 </style>
 
