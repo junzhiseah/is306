@@ -46,8 +46,8 @@ img.category{
 	</div>	
 
 
-	<div class="categories1">
-	<a href = "http://www.soccernet.com"><img src="img/Aeroplane.jpg" class="category"></a>
+<!-- 	<div class="categories1">
+	<img src="img/Aeroplane.jpg" class="category">
 	<img src="img/Aeroplane.jpg" class="category">
 	</div>
 
@@ -55,8 +55,12 @@ img.category{
 	<div class="categories2">
 	<img src="img/Aeroplane.jpg" class="category">
 	<img src="img/Aeroplane.jpg" class="category">
+	</div> -->
+	<div id="iframe-container">
+		<div id="iframe-inner">
+			<iframe src="index.php">
+		</div>
 	</div>
-
 
 	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 	testing
