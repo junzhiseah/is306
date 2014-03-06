@@ -1,11 +1,11 @@
 <?php
 	
+	$comment = $_GET['comment'];
 	$comments = $_GET['comments'];
-	session_start();
 
-	if ($comments != "") {
-		
-		$_SESSION['comments'] = $comments;
+	if ($comment != "") {
+		array_push($comments, $comment);
+
 		header("location:accountinfo.php");
 	} else {
 		$_SESSION['errormsg'] = "No comment was entered";

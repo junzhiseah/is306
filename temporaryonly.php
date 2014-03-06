@@ -39,35 +39,30 @@ div.maincontainer{
 
 	 </table>
 	 
-	<strong><h1>Deals</h1></strong>
-	<?php
-		$images = array(
-			0 => 'LionKing.jpg',
-			1 => 'BreadTalk.jpg',
-			2 => 'Food.jpg',
-		);
-		$image = $images[ rand(0,(count($images)-1)) ];
-		$output = "<img src=\"img/".$images[1]."\" alt=\"\" border=\"0\" />";
-    	print ($output); 
-		
-	?>
+	Deals <br><br>
 
-	<strong><h1>Comments</h1></strong> <br>
+	Comments <br>
 	</table>
 	<?php
-		$comments = array("i love it","It's awesome!");
-		$clength=count($comments);
-		for($x=0;$x<$clength;$x++){
-		   echo $comments[$x];
-		   echo "<br>";
+		session_start();
+		if(isset($_SESSION['comments'])){
+
+			echo $_SESSION['comments'];
+			//echo $_SESSION['myusername'];
+			unset($_SESSION['comments']);
 		}
 	?>
 	<br>
 	<form method="get" action="processcomment.php">
-		<input type="text" name="comment" id="comment"><br>
-		
+		<input type="text" name="comments" id="comments"><br>
+		<?php
+			if(isset($_SESSION['errormsg'])){
+
+				echo $_SESSION['errormsg'];
+				unset($_SESSION['errormsg']);
+			}
+		?>
 		<br>
 		<input type="submit" name="addcomment" value="Add Comment" />
-
 	</form>
 </div>
