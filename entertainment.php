@@ -244,9 +244,9 @@
 	</table>
 	<table border = "1">
 		<tr>
-			<td align = "center" ><img src="img/ChineseOrchestra.jpg" height = "150px" width = "150px"></td>
-			<td align = "center"><b>Chinese Orchestra Concert</b><br>
-				<strike>$88</strike> <a style="color:red">$42</a> / Tix<br>
+			<td align = "center" ><img src="img/IceArt.jpg" height = "150px" width = "150px"></td>
+			<td align = "center"><b>2 Degree Ice Art</b><br>
+				<strike>$30</strike> <a style="color:red">$15</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
 			</td>

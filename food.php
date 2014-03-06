@@ -262,7 +262,7 @@
 		<tr>
 			<td align = "center" ><img src="img/BreadTalk.jpg" height = "150px" width = "150px"></td>
 			<td align = "center"><b>Bread Talk Chicken Floss Bread</b><br>
-				<strike>$1.50</strike> <a style="color:red">$0.90</a> / Tix<br>
+				<strike>$1.50</strike> <a style="color:red">$0.90</a> / Bread<br>
 				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
 			</td>
