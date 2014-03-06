@@ -1,3 +1,17 @@
+<?php
+session_start();
+;
+	if(!isset($_SESSION['myusername'])){
+		//header("location:login.php");
+		echo 'Hi';
+	}else{	
+		$name = $_SESSION['myusername'];	
+
+		echo 'Welcome ';
+		echo $name;
+	}
+?>
+
 <style type="text/css">
 	
 	/*copy paste style type=text/css tag together with this body tag into the page you develop.
@@ -218,6 +232,8 @@
 
 </style>
 
+
+
 <div class="searchengine">
 		<input type="text"/>
 		<input type="submit" value="SEARCH"/>
@@ -225,9 +241,8 @@
 
 
 
-
 	
-
+	
 
 	<div class="navbar">
 
@@ -244,7 +259,7 @@
 	</table>
 	<table border = "1">
 		<tr>
-			<td align = "center" ><img src="img/CrystalJade.jpg" height = "150px" width = "150px"></td>
+			<td align = "center" ><a href = "http://localhost/idp/login.php"><img src="img/CrystalJade.jpg" height = "150px" width = "150px"></a></td>
 			<td align = "center"><b>Crystal Jade Char Siew Bun</b><br>
 				<strike>$1.80</strike> <a style="color:red">$1.20</a> / Bun<br>
 				<i>Expiry: 27 Mar 2014</i><br>

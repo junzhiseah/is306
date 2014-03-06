@@ -87,7 +87,18 @@
 
 </style>
 
+<?php
+session_start();
+	if(!isset($_SESSION['myusername'])){
+		//header("location:login.php");
+		echo 'Hi';
+	}else{	
+		$name = $_SESSION['myusername'];	
 
+		echo 'Welcome ';
+		echo $name;
+	}
+?>
 	
 	<div class="searchengine">
 		<input type="text"/>
