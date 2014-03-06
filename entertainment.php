@@ -252,11 +252,11 @@
 			</td>
 		</tr>
 		<tr>
-			<td align = "center" ><img src="img/LionKing.jpg" height = "150px" width = "150px"></td>
+			<td align = "center" ><a href = "http://localhost/idp/lionking.php"><img src="img/LionKing.jpg" height = "150px" width = "150px"></a></td>
 			<td align = "center"><b>Lion King Musical</b><br>
 				<strike>$75</strike> <a style="color:red">$25</a> / Tix<br>
 				<i>Expiry: 28 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
+				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "http://localhost/idp/lionking.php"><input type = "dealinfo" value = "Deal Info"></a>
 			</td>
 		</tr>
 		<tr>
