@@ -1,0 +1,114 @@
+
+
+.wrap {
+width: 1028px;
+}
+
+#grey .place {
+margin-bottom: 40px;
+}
+
+grey .place .box span {
+margin-top: 5px;
+}
+
+#grey .place .box {
+height: 69px;
+}
+
+#grey .place .infor .person-text .label-host {
+width: 94px;
+}
+
+.navbar .brand img {
+height: 39px;
+padding: 0px 0;
+}
+
+
+
+#blue {
+background: #000000;
+}
+
+#blue h1 {
+text-shadow: 3px 3px #000000;
+}
+
+
+#blue #search-field #search-label {
+text-shadow: 2px 2px #000000;
+}
+
+.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+width: 1000px;
+}
+
+.navbar .brand {
+font-size: 38px;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+font-size: 15px;
+}
+
+.navbar .nav > li > a {
+color: black;
+padding-top: 18px;
+text-shadow: none;
+}
+
+.crow{
+	margin-left: 0px;
+}
+
+.rinput{
+	margin-bottom: 10px;
+}
+
+.navbar {
+font-size: 13px;
+}
+
+.label-contact{
+	background-color: #CCC;
+text-align: center;
+padding: 6px;
+font-size: 12px;
+}
+
+#venue #description .workspace .workspace-img {
+float: left;
+width: 150px;
+height: 94px;
+}
+
+.input-prepend .add-on {
+height: 20px;
+}
+
+.checkbox.inline.no_indent,
+.checkbox.inline.no_indent+.checkbox.inline.no_indent {
+  margin-left: 0;
+  margin-right: 10px;
+  width: 164px;
+}
+.checkbox.inline.no_indent:last-child {
+  margin-right: 0px;
+}
+
+.btn-block+.btn-block {
+margin-top: 0px;
+}
+
+.navbar .nav > li > a {
+color: black;
+padding-top: 18px;
+text-shadow: none;
+padding-left: 1px;
+}
+
+#grey .place .box {
+height: 86px;
+width: 100px;
+}

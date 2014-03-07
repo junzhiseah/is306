@@ -1,3 +1,14 @@
+
+          <link href="css/bootstrap.min.css">
+          <link href="css/bootstrap-theme.min.css">
+          <link href="css/bootstrap-theme.css">
+          <link href="css/bootstrap.css">
+          <link href="css/bootstrap-responsive.css">
+          <link href="css/bootstrap-responsive.min.css">
+          <link href="css/bootstrap-custom.css">
+          <link href="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js">
+
+
 <style type="text/css">
 	body{
 		background-image: url('img/S4.png');
@@ -53,6 +64,50 @@
 	}
 
 
+	ul.nav.navbar-nav.navbar-right{
+	    margin-top: auto;
+	    padding-right: 10px;
+	    font-size: 10pt !important;
+	}
+
+	ul.nav.navbar-right li.dropdown{
+	    display:inline-block !important;
+	   
+	   /* margin-left:1000px;*/
+	}
+
+
+	li.dropdown a.dropdown-toggle{
+	    height:59px;
+	    background-color:none;   
+	    padding-top:5px !important; 
+	    padding-left:5px !important;
+	    float:right;
+	}
+
+
+
+	li.dropdown a.dropdown-toggle:hover{
+	    height:59px;
+	    background-color:#B8DBFF;
+
+	}
+
+
+	li.dropdown a.dropdown-toggle:visited{
+	    height:59px;
+	    background-color:none;
+
+	}
+
+	.dropdown-menu{
+	    /*background-image: url('../img/white.jpg');*/
+	    background-color:#B8DBFF !important;
+	    float:right;
+	}
+
+
+
 
 
 </style>
@@ -65,10 +120,25 @@
 		<nav>
 				<a href=""><img src="img/Savings-02-48.png" class="homepageicon"/></a>
 				
-				<a href="#"><img src="img/Table-of-Contents-48.png" class="menu"/>
-					
-					
+
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/Table-of-Contents-48.png" class="menu"/>
+						
 				</a>	
+
+
+				<ul class="dropdown-menu">
+                  <li><a href="#">My Profile</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#" >Log Out</a></li>
+                </ul>
+              </li>
+             </ul>
+               	
 		</nav>		
 	</div>	
 
