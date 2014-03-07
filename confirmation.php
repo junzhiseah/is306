@@ -103,40 +103,44 @@
 	?>
 
 <body>
-	<form name="form1" method="GET" action="confirmpurchase.php">
+
+	<form name="form1" method="GET" action="payment.php">
 
 		<strong><h1>CONFIRMATION</h1></strong>
 		<table>
 			<tr><td>PRODUCT NAME</td>
-			<td><input name="productname" type="text" id="productname"></td>
+			<td></td><td><input name="productname" type="" id="productname" readonly="readonly" value= "<?php echo htmlentities($_GET["productname"]); ?>" /></td>
 			</tr>
 
 			<tr><td>QUANTITY</td> 
-			<td><input name="quantity" type="text" id="quantity"></td>
+			<td></td><td><input name="quantity" type="" id="quantity" readonly="readonly" value="<?php echo htmlentities($_GET["quantity"]); ?>" /></td>
 			</tr>
 
 			<tr><td>AMOUNT</td> 
-			<td><input name="amount" type="text" id="amount"></td>
+			<td></td><td><input name="amount" type="" id="amount" readonly="readonly" value="<?php echo htmlentities($_GET["amount"]); ?>" /></td>
 			</tr>
 
 			<tr><td>CARD NO</td> 
-			<td><input name="cardno" type="text" id="cardno"></td>
+			<td></td><td><input name="cardno" type="" id="cardno" readonly="readonly" value="<?php echo htmlentities($_GET["cardno"]); ?>" /></td>
 			</tr>
 
 			<tr><td>CVV</td> 
-			<td><input name="cvv" type="text" id="cvv"></td>
+			<td></td><td><input name="cvv" type="" id="cvv" readonly="readonly" value="<?php echo htmlentities($_GET["cvv"]); ?>" /></td>
 			</tr>
 			<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
 			<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
 
-			<tr><td><center><input type="submit" name="confirmPurchase" value="Confirm Purchase"></center></td>
-			
-			<form method="GET" action="purchase.php">
-			<td><center><input type="submit" name="Purchase" value="purchase"></center></td>
-			</form>
-			
-			</tr>	
-		</table>
-	</form>
+			<tr><td><center><input type="submit" name="editPurchase" value="Edit Purchase"></center></td>
+		</form>
 
+		<form method="GET" action="paymentstatus.php">
+			<td><center><input type="submit" name="confirmPurchase" value="Confirm Purchase"></center></td></tr>
+		</form>
+
+	</table>
+
+	
+		
+		
+		
 </body>

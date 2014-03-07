@@ -107,24 +107,24 @@
 		<strong><h1>PAYMENT</h1></strong><br>
 		<table>
 			<tr><td>PRODUCT NAME</td>
-			<td><input name="productname" type="text" id="productname"></td>
-			</tr></br>
+			<td><input name="productname" type="text" id="productname" value="THE LION LING MUSICAL"></td>
+			</tr>
 
 			<tr><td>QUANTITY</td> 
-			<td><input name="quantity" type="text" id="quantity"></td>
-			</tr></br>
+			<td><input name="quantity" type="text" id="quantity" value=""></td>
+			</tr>
 
 			<tr><td>AMOUNT</td> 
-			<td><input name="amount" type="text" id="amount"></td>
-			</tr></br>
+			<td><input name="amount" type="text" id="amount" value="$50"></td>
+			</tr>
 
 			<tr><td>CARD NO</td> 
-			<td><input name="cardno" type="text" id="cardno"></td>
-			</tr></br>
+			<td><input name="cardno" type="text" id="cardno" value=""></td>
+			</tr>
 
 			<tr><td>CVV</td> 
-			<td><input name="cvv" type="text" id="cvv"></td>
-			</tr></br>
+			<td><input name="cvv" type="text" id="cvv" value=""></td>
+			</tr>
 
 			<tr><td><center><input type="submit" name="buy" value="Buy"></center></td></tr>
 		</table>
