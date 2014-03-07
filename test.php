@@ -157,51 +157,6 @@
 		top:1px;
 	}
 
-	input[type=category] {
-		-moz-box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		-webkit-box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
-		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
-		background-color:#00b5b5;
-		-webkit-border-top-left-radius:3px;
-		-moz-border-radius-topleft:3px;
-		border-top-left-radius:3px;
-		-webkit-border-top-right-radius:3px;
-		-moz-border-radius-topright:3px;
-		border-top-right-radius:3px;
-		-webkit-border-bottom-right-radius:3px;
-		-moz-border-radius-bottomright:3px;
-		border-bottom-right-radius:3px;
-		-webkit-border-bottom-left-radius:3px;
-		-moz-border-radius-bottomleft:3px;
-		border-bottom-left-radius:3px;
-		text-indent:0;
-		border:0px solid #00b5b5;
-		display:inline-block;
-		color:#ffffff;
-		font-family:Trebuchet MS;
-		font-size:9px;
-		font-weight:bold;
-		font-style:normal;
-		height:23px;
-		line-height:10px;
-		width: 66px;
-		text-decoration:none;
-		text-align:center;
-		text-shadow:1px 1px 0px #00b5b5;
-	}
-	input[type=category]:hover {
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
-		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
-		background-color:#00b5b5;
-	}input[type=category]:active {
-		position:relative;
-		top:1px;
-	}
-
 	div.categories{
 		display: inline;
 	}
@@ -216,56 +171,28 @@
 	}
 
 
+
+
+
+
 </style>
-
-<div class="searchengine">
-		<input type="text"/>
-		<input type="submit" value="SEARCH"/>
-</div>	
-
-
 
 
 	
-
-
-	<div class="navbar">
-
+	<div class="searchengine">
+		<input type="text"/>
+		<input type="submit" value="SEARCH"/>
 	</div>	
 
+	BOOKMARKS
 	<table border = "1">
 		<tr>
-			<td align = "center"><a href = "http://localhost/idp/featured.php"><img src="img/Featured1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/entertainment.php"><img src="img/Entertainment.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/food.php"><img src="img/Food1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/travel.php"><img src="img/Travel1.jpg" height = "30px" width = "66px"></a></td>
-
-		</tr>
-	</table>
-	<table border = "1">
-		<tr>
-			<td align = "center" ><img src="img/IceArt.jpg" height = "150px" width = "150px"></td>
-			<td align = "center"><b>2 Degree Ice Art</b><br>
-				<strike>$30</strike> <a style="color:red">$15</a> / Tix<br>
-				<i>Expiry: 27 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
-			</td>
-		</tr>
-		<tr>
-			<td align = "center" ><a href = "http://localhost/idp/lionking.php"><img src="img/LionKing.jpg" height = "150px" width = "150px"></a></td>
+			<td align = "center" ><img src="img/LionKing.jpg" height = "150px" width = "150px"></td>
 			<td align = "center"><b>Lion King Musical</b><br>
 				<strike>$75</strike> <a style="color:red">$25</a> / Tix<br>
 				<i>Expiry: 28 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "http://localhost/idp/lionking.php"><input type = "dealinfo" value = "Deal Info"></a>
-			</td>
-		</tr>
-		<tr>
-			<td align = "center" ><img src="img/AhBoysToMen.jpg" height = "150px" width = "150px"></td>
-			<td align = "center"><b>Ah Boys to Men the Musical</b><br>
-				<strike>$95</strike> <a style="color:red">$50</a> / Tix<br>
-				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
 			</td>
+			
 		</tr>
-
 	</table>

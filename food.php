@@ -267,7 +267,7 @@ session_start();
 			</td>
 		</tr>
 		<tr>
-			<td align = "center" ><img src="img/SakaeSushi.jpg" height = "150px" width = "150px"></td>
+			<td align = "center" ><a href = "http://localhost/idp/test.php"><img src="img/SakaeSushi.jpg" height = "150px" width = "150px"></a></td>
 			<td align = "center"><b>Sakae Sushi Takeaway</b><br>
 				<strike>$3.50</strike> <a style="color:red">$2.10</a> / Box<br>
 				<i>Expiry: 28 Mar 2014</i><br>
@@ -277,7 +277,7 @@ session_start();
 		<tr>
 			<td align = "center" ><img src="img/BreadTalk.jpg" height = "150px" width = "150px"></td>
 			<td align = "center"><b>Bread Talk Chicken Floss Bread</b><br>
-				<strike>$1.50</strike> <a style="color:red">$0.90</a> / Tix<br>
+				<strike>$1.50</strike> <a style="color:red">$0.90</a> / Bread<br>
 				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
 			</td>
