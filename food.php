@@ -1,10 +1,7 @@
 <?php
 session_start();
 ;
-	if(!isset($_SESSION['myusername'])){
-		//header("location:login.php");
-		echo 'Hi';
-	}else{	
+	if(isset($_SESSION['myusername'])){
 		$name = $_SESSION['myusername'];	
 
 		echo 'Welcome ';

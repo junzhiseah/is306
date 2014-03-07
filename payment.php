@@ -80,40 +80,54 @@
 		height:43%;
 	}
 
-
-
-
-
-
 </style>
 
-<?php
-session_start();
-	if(isset($_SESSION['myusername'])){
-		$name = $_SESSION['myusername'];	
+<div class="searchengine">
+		<input type="text"/>
+		<input type="submit" value="SEARCH"/>
+</div>	
 
-		echo 'Welcome ';
-		echo $name;
+<?php
+	session_start();
+	if(!isset($_SESSION['myusername'])){
+		header("location:login.php");
+	}else{	
+		$name = $_SESSION['myusername'];	
 	}
 ?>
 	
-	<div class="searchengine">
-		<input type="text"/>
-		<input type="submit" value="SEARCH"/>
-	</div>	
+	Welcome
+	<?php
+		echo $name
+	?>
 
+<body>
+	<form name="form1" method="GET" action="confirmation.php">
 
+		<strong><h1>PAYMENT</h1></strong><br>
+		<table>
+			<tr><td>PRODUCT NAME</td>
+			<td><input name="productname" type="text" id="productname"></td>
+			</tr></br>
 
-	<div class="categories1">
-	<a href = "http://localhost/idp/featured.php"><img src="img/thumbsupcat.png" class="category"></a>
-	<a href = "http://localhost/idp/entertainment.php"><img src="img/entertainmentcat.jpg" class="category"></a>
-	</div>
+			<tr><td>QUANTITY</td> 
+			<td><input name="quantity" type="text" id="quantity"></td>
+			</tr></br>
 
+			<tr><td>AMOUNT</td> 
+			<td><input name="amount" type="text" id="amount"></td>
+			</tr></br>
 
-	<div class="categories2">
-	<a href = "http://localhost/idp/food.php"><img src="img/foodcat.png" class="category"></a>
-	<a href = "http://localhost/idp/travel.php"><img src="img/travelcat.png" class="category"></a>
-	</div>
+			<tr><td>CARD NO</td> 
+			<td><input name="cardno" type="text" id="cardno"></td>
+			</tr></br>
 
+			<tr><td>CVV</td> 
+			<td><input name="cvv" type="text" id="cvv"></td>
+			</tr></br>
 
+			<tr><td><center><input type="submit" name="buy" value="Buy"></center></td></tr>
+		</table>
+	</form>
 
+</body>

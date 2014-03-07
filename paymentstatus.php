@@ -81,39 +81,36 @@
 	}
 
 
-
-
-
-
 </style>
 
-<?php
-session_start();
-	if(isset($_SESSION['myusername'])){
-		$name = $_SESSION['myusername'];	
+<div class="searchengine">
+	<input type="text"/>
+	<input type="submit" value="SEARCH"/>
+</div>
 
-		echo 'Welcome ';
-		echo $name;
+<?php
+	session_start();
+	if(!isset($_SESSION['myusername'])){
+		header("location:login.php");
+	}else{	
+		$name = $_SESSION['myusername'];	
 	}
 ?>
 	
-	<div class="searchengine">
-		<input type="text"/>
-		<input type="submit" value="SEARCH"/>
-	</div>	
+	Welcome
+	<?php
+		echo $name
+	?>
 
+<body>
+	<form name="form1" method="GET" action="">
 
+		<strong><h1>Payment Success!</h1></strong>
+		<table>
+			<tr><td>Please go to "My Purchases" & Redeem your purchase</td></tr>
+			<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+			<tr><td><center><input type="submit" name="viewPurchase" value="View my Purchase"></center></td></td>			
+		</table>
+	</form>
 
-	<div class="categories1">
-	<a href = "http://localhost/idp/featured.php"><img src="img/thumbsupcat.png" class="category"></a>
-	<a href = "http://localhost/idp/entertainment.php"><img src="img/entertainmentcat.jpg" class="category"></a>
-	</div>
-
-
-	<div class="categories2">
-	<a href = "http://localhost/idp/food.php"><img src="img/foodcat.png" class="category"></a>
-	<a href = "http://localhost/idp/travel.php"><img src="img/travelcat.png" class="category"></a>
-	</div>
-
-
-
+</body>

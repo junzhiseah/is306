@@ -81,39 +81,62 @@
 	}
 
 
-
-
-
-
 </style>
 
-<?php
-session_start();
-	if(isset($_SESSION['myusername'])){
-		$name = $_SESSION['myusername'];	
+<div class="searchengine">
+	<input type="text"/>
+	<input type="submit" value="SEARCH"/>
+</div>
 
-		echo 'Welcome ';
-		echo $name;
+<?php
+	session_start();
+	if(!isset($_SESSION['myusername'])){
+		header("location:login.php");
+	}else{	
+		$name = $_SESSION['myusername'];	
 	}
 ?>
 	
-	<div class="searchengine">
-		<input type="text"/>
-		<input type="submit" value="SEARCH"/>
-	</div>	
+	Welcome
+	<?php
+		echo $name
+	?>
 
+<body>
+	<form name="form1" method="GET" action="confirmpurchase.php">
 
+		<strong><h1>CONFIRMATION</h1></strong>
+		<table>
+			<tr><td>PRODUCT NAME</td>
+			<td><input name="productname" type="text" id="productname"></td>
+			</tr>
 
-	<div class="categories1">
-	<a href = "http://localhost/idp/featured.php"><img src="img/thumbsupcat.png" class="category"></a>
-	<a href = "http://localhost/idp/entertainment.php"><img src="img/entertainmentcat.jpg" class="category"></a>
-	</div>
+			<tr><td>QUANTITY</td> 
+			<td><input name="quantity" type="text" id="quantity"></td>
+			</tr>
 
+			<tr><td>AMOUNT</td> 
+			<td><input name="amount" type="text" id="amount"></td>
+			</tr>
 
-	<div class="categories2">
-	<a href = "http://localhost/idp/food.php"><img src="img/foodcat.png" class="category"></a>
-	<a href = "http://localhost/idp/travel.php"><img src="img/travelcat.png" class="category"></a>
-	</div>
+			<tr><td>CARD NO</td> 
+			<td><input name="cardno" type="text" id="cardno"></td>
+			</tr>
 
+			<tr><td>CVV</td> 
+			<td><input name="cvv" type="text" id="cvv"></td>
+			</tr>
+			<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+			<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
 
+			<tr><td><center><input type="submit" name="confirmPurchase" value="Confirm Purchase"></center></td>
+			
+			<form method="GET" action="purchase.php">
+			<td><center><input type="submit" name="Purchase" value="purchase"></center></td>
+			</form>
+			
+			</tr>	
+		</table>
+	</form>
 
+</body>
