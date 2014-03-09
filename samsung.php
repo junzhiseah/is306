@@ -50,8 +50,8 @@
 		margin-left:10px;
 		width:40px;
 		height:40px;
-		margin-bottom:20px; 
-		margin-top: -10px;
+		margin-bottom:-2px; 
+		margin-top: -9px;
 	}
 
 
@@ -76,6 +76,7 @@
 	list-style: none;
 	position: relative;
 	display: inline-table;
+	top:-23px;
 	}
 	
 	nav ul:after {
@@ -109,7 +110,8 @@
 		padding:0px;
 		color: #757575; text-decoration: none;
 		border:0px solid black;
-		margin-top: -10px;
+		margin-top: 11px;
+
 		/*height:40px;*/
 
 	/*	margin-left: 120px;*/
@@ -119,6 +121,8 @@
 	nav ul ul {
 	background: #5f6975; border-radius: 0px; padding: 0;
 	position: absolute; top: 100%;
+	right:auto;
+	left:100px;
 	}
 
 	nav ul ul li {
