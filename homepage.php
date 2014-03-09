@@ -103,6 +103,6 @@
 		echo $name
 	?>
 
-	<form method="get" action="login.php">
+	<form method="get" action="validatelogout.php">
 			<input type="submit" name="logout" value="Logout" />
 	</form>
