@@ -1,4 +1,11 @@
+<?php
+session_start();
+$itemId = $_GET['itemid'];
+$itemArr = $_SESSION['itemArr'];
 
+$item = $itemArr[intval($itemId)];
+
+?>
           <link href="css/bootstrap.min.css">
           <link href="css/bootstrap-theme.min.css">
           <link href="css/bootstrap-theme.css">
@@ -286,7 +293,7 @@
 	<table border = "1">
 		<tr>
 			<td width = "400px">
-				<img src="img/LionKing.jpg" height = "280px" width = "280px">
+				<img src="<?php echo $item['image']; ?>" height = "280px" width = "280px">
 			</td>
 		</tr>
 	</table>
@@ -296,7 +303,7 @@
 				<b>Title:</b>
 			</td>
 			<td width = "300px">
-				<b>The Lion King Musical</b>
+				<b><?php echo $item['title']; ?></b>
 			</td>
 		</tr>
 		<tr>
@@ -304,7 +311,7 @@
 				<b>Description:</b>
 			</td>
 			<td width = "300px">
-				<b>Lion King Musical Tickets for Sale!</b>
+				<b><?php echo $item['description']; ?></b>
 			</td>
 		</tr>
 		<tr>
@@ -312,7 +319,7 @@
 				<b>Date:</b>
 			</td>
 			<td width = "300px">
-				<b>30 Mar 2014</b>
+				<b><?php echo $item['date']; ?></b>
 			</td>
 		</tr>
 		<tr>
@@ -320,7 +327,7 @@
 				<b>Time:</b>
 			</td>
 			<td width = "300px">
-				<b>1800hr - 2100hr</b>
+				<b><?php echo $item['start']; ?>hr - <?php echo $item['end']; ?>hr</b>
 			</td>
 		</tr>
 		<tr>
@@ -328,7 +335,7 @@
 				<b>Venue:</b>
 			</td>
 			<td width = "300px">
-				<b>2 Stadium Walk, 397691 Singapore Indoor Stadium</b>
+				<b><?php echo $item['venue']; ?>/b>
 			</td>
 		</tr>
 	</table>
@@ -338,6 +345,7 @@
 		</tr>
 		<tr>
 			<td width = "300px">
+
 				<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 				<style>
 					#map-canvas {
@@ -356,7 +364,8 @@
 									}
 				</style>
 					<?php
-						$jsonurl = "http://maps.googleapis.com/maps/api/geocode/json?address=640760&components=country:SG&sensor=false";
+
+						$jsonurl = "http://maps.googleapis.com/maps/api/geocode/json?address=596569&components=country:SG&sensor=false";
 						$json = file_get_contents($jsonurl);
 						$json_output = json_decode($json, true);
 
@@ -422,7 +431,7 @@
 				<b>Expiry Date:</b>
 			</td>
 			<td width = "300px">
-				<b>28 Mar 2014</b>
+				<b><?php echo $item['expiry']; ?></b>
 			</td>
 		</tr>
 	</table>
@@ -433,7 +442,7 @@
 				<b>Merchant:</b>
 			</td>
 			<td width = "280px" align = "center">
-				<b><a href="">lionking</a></b>
+				<b><a href=""><?php echo $item['merchant']; ?></a></b>
 			</td>
 			<td width = "20px" align = "right">
 				<nav>
@@ -446,7 +455,7 @@
 						<ul class="dropdown-menu" style="right: 0; left: auto;">
 		                  <li><center>Call lionking?</center></li>
 
-		                  	<li><a><input type = "call" value = "+65232323" height = "20px" width = "60px" readonly></a></li>
+		                  	<li><a><input type = "call" value = "<?php echo $item['merchantphone']; ?>" height = "20px" width = "60px" readonly></a></li>
 		                  	<li><a><input type = "cancel" value = "Cancel" height = "20px" width = "60px" readonly></a></li>
 		                  </li>
 		                </ul>
@@ -466,7 +475,7 @@
 				<b>Price:</b>
 			</td>
 			<td width = "300px">
-				<b><strike>$30</strike> <a style="color:red">$15</a> / Tix</b>
+				<b><strike>$<?php echo $item['usualprice']; ?></strike> <a style="color:red">$<?php echo $item['currentprice']; ?></a> / <?php echo $item['quantifier']; ?></b>
 			</td>
 		</tr>
 	</table>

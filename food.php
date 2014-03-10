@@ -247,36 +247,36 @@ session_start();
 
 	<table border = "1">
 		<tr>
-			<td align = "center"><a href = "http://localhost/idp/featured.php"><img src="img/Featured1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/food.php"><img src="img/Food.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/travel.php"><img src="img/Travel1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "idp/featured.php"><img src="img/Featured1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "idp/entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "idp/food.php"><img src="img/Food.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "idp/travel.php"><img src="img/Travel1.jpg" height = "30px" width = "66px"></a></td>
 
 		</tr>
 	</table>
 	<table border = "1">
 		<tr>
-			<td align = "center" ><a href = "http://localhost/idp/login.php"><img src="img/CrystalJade.jpg" height = "150px" width = "150px"></a></td>
+			<td align = "center" ><a href = "dealinfo.php?itemid=3"><img src="img/CrystalJade.jpg" height = "150px" width = "150px"></a></td>
 			<td align = "center"><b>Crystal Jade Char Siew Bun</b><br>
 				<strike>$1.80</strike> <a style="color:red">$1.20</a> / Bun<br>
 				<i>Expiry: 27 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
+				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=3"><input type = "dealinfo" value = "Deal Info"></a>
 			</td>
 		</tr>
 		<tr>
-			<td align = "center" ><a href = "http://localhost/idp/test.php"><img src="img/SakaeSushi.jpg" height = "150px" width = "150px"></a></td>
+			<td align = "center" ><a href = "dealinfo.php?itemid=4"><img src="img/SakaeSushi.jpg" height = "150px" width = "150px"></a></td>
 			<td align = "center"><b>Sakae Sushi Takeaway</b><br>
 				<strike>$3.50</strike> <a style="color:red">$2.10</a> / Box<br>
 				<i>Expiry: 28 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
+				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=4"><input type = "dealinfo" value = "Deal Info"></a>
 			</td>
 		</tr>
 		<tr>
-			<td align = "center" ><img src="img/BreadTalk.jpg" height = "150px" width = "150px"></td>
+			<td align = "center" ><a href = "dealinfo.php?itemid=5"><img src="img/BreadTalk.jpg" height = "150px" width = "150px"></a></td>
 			<td align = "center"><b>Bread Talk Chicken Floss Bread</b><br>
 				<strike>$1.50</strike> <a style="color:red">$0.90</a> / Bread<br>
 				<i>Expiry: 27 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
+				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=5"><input type = "dealinfo" value = "Deal Info"></a>
 			</td>
 		</tr>
 

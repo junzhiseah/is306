@@ -235,36 +235,40 @@
 
 	<table border = "1">
 		<tr>
-			<td align = "center"><a href = "http://localhost/idp/featured.php"><img src="img/Featured1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/entertainment.php"><img src="img/Entertainment.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/food.php"><img src="img/Food1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/travel.php"><img src="img/Travel1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "idp/featured.php"><img src="img/Featured1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "idp/entertainment.php"><img src="img/Entertainment.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "idp/food.php"><img src="img/Food1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "idp/travel.php"><img src="img/Travel1.jpg" height = "30px" width = "66px"></a></td>
 
 		</tr>
 	</table>
 	<table border = "1">
 		<tr>
-			<td align = "center" ><img src="img/IceArt.jpg" height = "150px" width = "150px"></td>
+			<td align = "center" ><a href = "dealinfo.php?itemid=0"><img src="img/IceArt.jpg" height = "150px" width = "150px"></a></td>
 			<td align = "center"><b>2 Degree Ice Art</b><br>
 				<strike>$30</strike> <a style="color:red">$15</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
+				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=0"><input type = "dealinfo" value = "Deal Info"></a>
 			</td>
 		</tr>
 		<tr>
-			<td align = "center" ><a href = "http://localhost/idp/lionking.php"><img src="img/LionKing.jpg" height = "150px" width = "150px"></a></td>
+			<td align = "center" ><a href = "dealinfo.php?itemid=1"><img src="img/LionKing.jpg" height = "150px" width = "150px"></a></td>
 			<td align = "center"><b>Lion King Musical</b><br>
 				<strike>$75</strike> <a style="color:red">$25</a> / Tix<br>
 				<i>Expiry: 28 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "http://localhost/idp/lionking.php"><input type = "dealinfo" value = "Deal Info"></a>
+				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=1"><input type = "dealinfo" value = "Deal Info"></a>
 			</td>
 		</tr>
 		<tr>
-			<td align = "center" ><img src="img/AhBoysToMen.jpg" height = "150px" width = "150px"></td>
+			<td align = "center" ><a href = "dealinfo.php?itemid=2"><img src="img/AhBoysToMen.jpg" height = "150px" width = "150px"></a></td>
 			<td align = "center"><b>Ah Boys to Men the Musical</b><br>
 				<strike>$95</strike> <a style="color:red">$50</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
+<<<<<<< Updated upstream
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "http://localhost/idp/merchantinfolionking.php"><input type = "dealinfo" value = "Deal Info"></a>
+=======
+				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=2"><input type = "dealinfo" value = "Deal Info"></a>
+>>>>>>> Stashed changes
 			</td>
 		</tr>
 

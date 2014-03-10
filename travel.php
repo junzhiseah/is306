@@ -235,36 +235,36 @@
 
 	<table border = "1">
 		<tr>
-			<td align = "center"><a href = "http://localhost/idp/featured.php"><img src="img/Featured1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/food.php"><img src="img/Food1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "http://localhost/idp/travel.php"><img src="img/Travel.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "idp/featured.php"><img src="img/Featured1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "idp/entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "idp/food.php"><img src="img/Food1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "idp/travel.php"><img src="img/Travel.jpg" height = "30px" width = "66px"></a></td>
 
 		</tr>
 	</table>
 	<table border = "1">
 		<tr>
-			<td align = "center" ><img src="img/Japan.jpg" height = "150px" width = "150px"></td>
+			<td align = "center" ><a href = "dealinfo.php?itemid=6"><img src="img/Japan.jpg" height = "150px" width = "150px"></a></td>
 			<td align = "center"><b>Two way Travel Tix to Japan</b><br>
 				<strike>$128</strike> <a style="color:red">$88</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
+				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=6"><input type = "dealinfo" value = "Deal Info"></a>
 			</td>
 		</tr>
 		<tr>
-			<td align = "center" ><img src="img/France.jpg" height = "150px" width = "150px"></td>
+			<td align = "center" ><a href = "dealinfo.php?itemid=7"><img src="img/France.jpg" height = "150px" width = "150px"></a></td>
 			<td align = "center"><b>Trip to France</b><br>
 				<strike>$300</strike> <a style="color:red">$150</a> / Trip<br>
 				<i>Expiry: 28 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
+				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=7"><input type = "dealinfo" value = "Deal Info"></a>
 			</td>
 		</tr>
 		<tr>
-			<td align = "center" ><img src="img/Korea.jpg" height = "150px" width = "150px"></td>
+			<td align = "center" ><a href = "dealinfo.php?itemid=8"><img src="img/Korea.jpg" height = "150px" width = "150px"></a></td>
 			<td align = "center"><b>One way Travel Tix to Korea</b><br>
 				<strike>$478</strike> <a style="color:red">$128</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
+				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=8"><input type = "dealinfo" value = "Deal Info"></a>
 			</td>
 		</tr>
 
