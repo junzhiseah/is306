@@ -23,6 +23,7 @@
 
 	 </table>
 	 
+	 
 	<strong><h1>Deals</h1></strong>
 	<?php
 		$images = array(
