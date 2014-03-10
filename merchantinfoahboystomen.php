@@ -55,19 +55,23 @@
 	<strong><h1>Comments</h1></strong> 
 	</table>
 	<?php 
+		$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
 		$comments = array("I can totally relate to them! ","Army boys are so cool!");
 
 		if (isset($_GET['comment'])) {
 			$input = $_GET['comment'];
 			//echo $input;
+			$dateTime = new DateTime();
+			$strDateTime = $dateTime->format('d-m-Y H:i:s');
 			array_push($comments, $input);
+			array_push($time, $strDateTime);
 		}
 		
 		$clength=count($comments);
 		for($x=0;$x<$clength;$x++){
 		   echo $comments[$x];
 		   echo "<br>";
-		   echo "28-03-2014 0$x:05AM";
+		   echo $time[$x];
 		   echo "<br>";
 		   echo "<br>";
 
