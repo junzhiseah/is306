@@ -264,7 +264,7 @@
 			<td align = "center"><b>Ah Boys to Men the Musical</b><br>
 				<strike>$95</strike> <a style="color:red">$50</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">
+				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "http://localhost/idp/merchantinfolionking.php"><input type = "dealinfo" value = "Deal Info"></a>
 			</td>
 		</tr>
 

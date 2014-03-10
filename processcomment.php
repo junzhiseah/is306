@@ -6,10 +6,10 @@
 	if ($comment != "") {
 		array_push($comments, $comment);
 
-		header("location:accountinfo.php");
+		header("location:merchantinfolionking.php");
 	} else {
 		$_SESSION['errormsg'] = "No comment was entered";
-		header("location:accountinfo.php");
+		header("location:merchantinfolionking.php");
 	}
 
 ?>
