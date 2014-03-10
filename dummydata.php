@@ -205,10 +205,8 @@ Suntec City Mall, S(038986) ',
 			'quantifier' => 'Tix',
 			'useritemliked' => 'No',
 			'usermerchantliked' => 'No',
-			'userbookmarked' => 'No',
+			'userbookmarked' => 'Yes',
 			'expiry' => '27 Mar 2014',
 		)
 	);
-
-	$itemArr['0']['name'] 
 ?>

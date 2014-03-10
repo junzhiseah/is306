@@ -105,14 +105,14 @@ session_start();
 
 
 	<div class="categories1">
-	<a href = "http://localhost/idp/featured.php"><img src="img/thumbsupcat.png" class="category"></a>
-	<a href = "http://localhost/idp/entertainment.php"><img src="img/entertainmentcat.jpg" class="category"></a>
+	<a href = "featured.php"><img src="img/thumbsupcat.png" class="category"></a>
+	<a href = "entertainment.php"><img src="img/entertainmentcat.jpg" class="category"></a>
 	</div>
 
 
 	<div class="categories2">
-	<a href = "http://localhost/idp/food.php"><img src="img/foodcat.png" class="category"></a>
-	<a href = "http://localhost/idp/travel.php"><img src="img/travelcat.png" class="category"></a>
+	<a href = "food.php"><img src="img/foodcat.png" class="category"></a>
+	<a href = "travel.php"><img src="img/travelcat.png" class="category"></a>
 	</div>
 
 
