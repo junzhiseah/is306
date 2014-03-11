@@ -252,57 +252,9 @@ session_start();
              	</ul>
                	
 		</nav>		
-	</div>	
+	</div>
 
-
- 
-
-
-<?php 
-
-	if(isset($_SESSION['myusername'])){
-			$name = $_SESSION['myusername'];	
-
-			echo 'Welcome ';
-			echo $name;
-	}
-
-	$purchaseItems = $_SESSION['userArr'];
-	$itemArr = $_SESSION['itemArr'];
-
-	
-	if (sizeof($purchaseItems) > 0) {
-		echo '<table border = "1">';
-		$dateTime = new DateTime();
-		for ($i=0; $i < sizeof($purchaseItems); $i++) { 
-			$lineItem = $purchaseItems[$i];
-			$itemId = $lineItem['itemid'];
-			$quantity = $lineItem['quantity'];
-
-			$item = $itemArr[$itemId];
-
-			$expiry = $item['expiry'];
-			$expiryDate = DateTime::createFromFormat('d M Y', $expiry);
-			$quantitySold = $item['quantitysold'];
-			$quantityAvail = $item['quantityavail'];
-
-			echo '<tr>';
-			echo '<td align = "center" ><img src="'.$item['image'].'" height = "150px" width = "150px"></td>';
-			echo '<td align = "center"><b>'.$item['title'].'</b><br>';
-			echo '<strike>$'.$item['usualprice'].'</strike> <a style="color:red"> $'.$item['currentprice'].'</a> /'.$item['quantifier'].'<br>';
-			echo '<i>'.$item['expiry'].'</i><br>';
-			echo $quantity.' '.$item['quantifier'].'(s) purchased';
-
-			echo '<form action="qrcode.php" method="GET">';
-			echo '<input type="hidden" name="itemid" value="'.$itemId.'" />';
-			echo '<input type="submit" value="Redeem" />';
-			echo '</form>';
-
-			echo '</td>';
-			echo '</tr>';
-		}
-		echo '</table>';
-	} else {
-		echo 'You have no <b>PURCHASES</b> folder at the moment.';
-	}
-?>
+	<b>Please flash this QR code to the merchant to redeem.</b>
+	<img src="img/qrcode.png" height="300px" width="300px"  />
+	<form action="purchases.php" method="GET">
+	<input type="submit" value="Return to My Purchase" align="center">
