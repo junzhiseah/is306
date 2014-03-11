@@ -379,7 +379,7 @@ if (isset($_GET['bookmark'])) {
 							 <li><a href="">Home</a></li>	
 		                 	 <li><a href="richardprofile.php">My Profile</a></li>
 		                  	<li><a href="bookmark.php">Bookmarks</a></li>
-		                  	<li><a href="#">My Purchases</a></li>
+		                  	<li><a href="payment.php">My Purchases</a></li>
 		                 	 <li><a href="#" >My Deals</a></li>
 		                  	<li><a href="#" >Logout</a></li>
 		                </ul>	
