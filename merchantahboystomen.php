@@ -218,7 +218,24 @@
 								<td>Email:</td><td>ahboystomen@gmail.com</td>
 							</tr>
 							<tr>
-								<td>Likes:</td><td>134 <img src="img/like.PNG" height = "15px" width = "15px"></td>
+								<td>Likes:</td>
+								<td>
+									<html>
+										<body>
+										
+										<script> 
+										var clicks = 0;
+
+										function showClicks(){
+											clicks++;
+											var doc = document.getElementById("test").innerHTML=clicks;
+										}
+										</script>
+										<img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();">
+										<span id="test"></span>
+										</body>
+										</html>
+									</td>
 							</tr>
 							<tr>
 								<td>Contact:</td>
