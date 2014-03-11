@@ -333,7 +333,7 @@ $itemArr = array(
 		), 
 		4 => array (
 			'id' => '4',
-			'image' => 'img/SakaeSushi.jpg.jpg',
+			'image' => 'img/SakaeSushi.jpg',
 			'title' => 'Sakae Sushi Takeaway',
 			'description' => 'Delicious Sakae Sushi Takeaway for Sale!',
 			'date' => '28 Mar 2014',

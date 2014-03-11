@@ -93,7 +93,7 @@
 			'expiry' => '27 Mar 2014',
 		), 
 		4 => array (
-			'image' => 'img/SakaeSushi.jpg.jpg',
+			'image' => 'img/SakaeSushi.jpg',
 			'title' => 'Sakae Sushi Takeaway',
 			'description' => 'Delicious Sakae Sushi Takeaway for Sale!',
 			'date' => '28 Mar 2014',

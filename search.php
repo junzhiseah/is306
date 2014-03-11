@@ -217,7 +217,7 @@ $itemArr =$_SESSION['itemArr'];
 			echo '<td align = "center"><b>'.$item['title'].'</b><br>';
 			echo '<strike>$'.$item['usualprice'].'</strike> <a style="color:red"> $'.$item['currentprice'].'</a> /'.$item['quantifier'].'<br>';
 			echo '<i>'.$item['expiry'].'</i><br>';
-			echo '<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">';
+			echo '<a href = "payment.php?itemid='.$item['id'].'"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>   <a href = "dealinfo.php?itemid='.$item['id'].'"><input type = "dealinfo" value = "Deal Info"></a>';
 			
 			// if ($dateTime > $expiryDate || $quantitySold == $quantityAvail) {
 			// 	echo '<br><a style="color:red"><b> EXPIRED </b><a>';
