@@ -195,8 +195,8 @@ $itemArr =$_SESSION['itemArr'];
 		$merchant = $value['merchant'];
 		$venue = $value['venue'];
 
-		if (strpos($title, $search) !== FALSE || strpos($description, $search) !== FALSE
-				|| strpos($merchant, $search) !== FALSE || strpos($venue, $search) !== FALSE) {
+		if (stristr($title, $search) !== FALSE || stristr($description, $search) !== FALSE
+				|| stristr($merchant, $search) !== FALSE || stristr($venue, $search) !== FALSE) {
 			array_push($results, $value);
 		}
 	}
