@@ -11,13 +11,24 @@
 	<table border = "1">
 				<tr>
 					<td>
-						
-						Name: lionking <br/>
-						Email: lionking@gmail.com <br/>
-						Likes: 160 <img src="img/like.PNG" height = "15px" width = "15px"> <img src="img/call.PNG" height = "15px" width = "15px"> <br/>
-					<td/>
+						<table border = "1">
+							<tr>
+								<td>Name:</td><td>lionking</td>
+							</tr>
+							<tr>
+								<td>Email:</td><td>lionking@gmail.com</td>
+							</tr>
+							<tr>
+								<td>Likes:</td><td>160 <img src="img/like.PNG" height = "15px" width = "15px"></td>
+							</tr>
+							<tr>
+								<td>Contact:</td>
+								<td><img src="img/call.PNG" height = "15px" width = "15px"></td>
+							</tr>
+						</table>
+					</td>
 					<td>
-						<img src="img/LionKing.jpg" height = "100px" width = "100px">
+						<img src="img/LionKingMerchant.jpg" height = "120px" width = "75px">
 					</td>
 			 	
 			 	</tr>

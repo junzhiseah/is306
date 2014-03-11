@@ -6,19 +6,32 @@
 </style>
 
 	<strong><h1>Account Information</h1></strong>
-	<table border = "1">
+
+	  <table border = "1">
 				<tr>
 					<td>
-						
-						Name:  France <br/>
-						Email: france@gmail.com <br/>
-						Likes: 103 <img src="img/like.PNG" height = "15px" width = "15px"> <img src="img/call.PNG" height = "15px" width = "15px"> <br/>
-					<td/>
+						<table border = "1">
+							<tr>
+								<td>Name:</td><td>france</td>
+							</tr>
+							<tr>
+								<td>Email:</td><td>france@gmail.com .com</td>
+							</tr>
+							<tr>
+								<td>Likes:</td><td>103 <img src="img/like.PNG" height = "15px" width = "15px"></td>
+							</tr>
+							<tr>
+								<td>Contact:</td>
+								<td><img src="img/call.PNG" height = "15px" width = "15px"></td>
+							</tr>
+						</table>
+					</td>
 					<td>
-						<img src="img/France.jpg" height = "100px" width = "100px">
+						<img src="img/FranceMerchant.jpg" height = "120px" width = "75px">
 					</td>
 			 	
 			 	</tr>
+			 	
 			 	
 
 	 </table>

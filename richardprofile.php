@@ -5,33 +5,22 @@
 	}
 </style>
 
-	<strong><h1>Account Information</h1></strong>
 
-	 <table border = "1">
+
+	<strong><h1>Account Information</h1></strong>
+	<table border = "1">
 				<tr>
 					<td>
-						<table border = "1">
-							<tr>
-								<td>Name:</td><td>breadtalk</td>
-							</tr>
-							<tr>
-								<td>Email:</td><td>breadtalk@gmail.com .com</td>
-							</tr>
-							<tr>
-								<td>Likes:</td><td>298 <img src="img/like.PNG" height = "15px" width = "15px"></td>
-							</tr>
-							<tr>
-								<td>Contact:</td>
-								<td><img src="img/call.PNG" height = "15px" width = "15px"></td>
-							</tr>
-						</table>
-					</td>
+						
+						Name: richard <br/>
+						Email: richard@gmail.com <br/>
+						Likes: 100 <img src="img/like.PNG" height = "15px" width = "15px"> <img src="img/call.PNG" height = "15px" width = "15px"> <br/>
+					<td/>
 					<td>
-						<img src="img/BreadTalkMerchant.jpg" height = "120px" width = "75px">
+						<img src="img/richard.jpg" height = "100px" width = "100px">
 					</td>
 			 	
 			 	</tr>
-			 	
 			 	
 
 	 </table>
@@ -39,8 +28,8 @@
 	<strong><h1>Deals</h1></strong>
 	<?php
 		$images = array(
-			0 => 'BreadTalk.jpg',
-			1 => 'SakaeSushi.jpg',
+			0 => 'AhBoysToMen.jpg',
+			1 => 'BreadTalk.jpg',
 			2 => 'Food.jpg',
 		);
 		$image = $images[ rand(0,(count($images)-1)) ];
@@ -55,8 +44,8 @@
     		</tr>
     		<tr>
     			<td>
-	    			Price: <strike>$1.50</strike><font color = "red"> $0.90 </font> / Tix <br/>
-					Expiry: 27 Mar 2014<br/>
+	    			Price: <strike>$95</strike><font color = "red"> $50 </font> / Tix <br/>
+					Expiry: 29 Mar 2014<br/>
 				</td>
 			</tr>
 		</table>
@@ -67,7 +56,7 @@
 	</table>
 	<?php 
 		$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
-		$comments = array("Awesome breads! ","I bought 5 and am going back for more!");
+		$comments = array("I can totally relate to them! ","Army boys are so cool!");
 
 		if (isset($_GET['comment'])) {
 			$input = $_GET['comment'];
@@ -87,10 +76,11 @@
 		   echo "<br>";
 
 		}
+		
 	?>
 	
 	New Comment
-	<form method="get" action="merchantbreadtalk.php">
+	<form method="get" action="merchantahboystomen.php">
 		<input type="text" name="comment" id="comment"><br>
 		
 		<br>

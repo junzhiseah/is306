@@ -6,23 +6,37 @@
 </style>
 
 	<strong><h1>Account Information</h1></strong>
+
+
 	<table border = "1">
 				<tr>
 					<td>
-						
-						Name:  Japan <br/>
-						Email: japan@gmail.com <br/>
-						Likes: 75 <img src="img/like.PNG" height = "15px" width = "15px"> <img src="img/call.PNG" height = "15px" width = "15px"> <br/>
-					<td/>
+						<table border = "1">
+							<tr>
+								<td>Name:</td><td>japan</td>
+							</tr>
+							<tr>
+								<td>Email:</td><td>japan@gmail.com .com</td>
+							</tr>
+							<tr>
+								<td>Likes:</td><td>75<img src="img/like.PNG" height = "15px" width = "15px"></td>
+							</tr>
+							<tr>
+								<td>Contact:</td>
+								<td><img src="img/call.PNG" height = "15px" width = "15px"></td>
+							</tr>
+						</table>
+					</td>
 					<td>
-						<img src="img/Japan.jpg" height = "100px" width = "100px">
+						<img src="img/JapanMerchant.jpg" height = "120px" width = "75px">
 					</td>
 			 	
 			 	</tr>
 			 	
 			 	
 
-	 </table>
+	</table>
+	 
 	 
 	<strong><h1>Deals</h1></strong>
 	<?php
