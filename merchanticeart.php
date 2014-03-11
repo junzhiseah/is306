@@ -250,7 +250,7 @@
 											<ul class="dropdown-menu" style="right: 0; left: auto;">
 							                  <li><center>Call iceart?</center></li>
 
-							                  	<li><a><input type = "call" value = "90000002" height = "20px" width = "60px" readonly></a></li>
+							                  	<li><a><input type = "call" value = "87261521" height = "20px" width = "60px" readonly></a></li>
 							                  	<li><a><input type = "cancel" value = "Cancel" height = "20px" width = "60px" readonly></a></li>
 							                  </li>
 							                </ul>
@@ -280,7 +280,7 @@
 
 			<?php
 				$images = array(
-					0 => 'IceArtMerchant.jpg',
+					0 => 'IceArt.jpg',
 					1 => 'BreadTalk.jpg',
 					2 => 'Food.jpg',
 				);

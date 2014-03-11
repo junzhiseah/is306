@@ -224,10 +224,10 @@
 										<body>
 										
 										<script> 
-										var clicks = 0;
+										var clicks = 87;
 
 										function showClicks(){
-											clicks++;
+											clicks = 88;
 											var doc = document.getElementById("test").innerHTML=clicks;
 										}
 										</script>
@@ -250,7 +250,7 @@
 											<ul class="dropdown-menu" style="right: 0; left: auto;">
 							                  <li><center>Call ahboystomen?</center></li>
 
-							                  	<li><a><input type = "call" value = "90000002" height = "20px" width = "60px" readonly></a></li>
+							                  	<li><a><input type = "call" value = "92090827" height = "20px" width = "60px" readonly></a></li>
 							                  	<li><a><input type = "cancel" value = "Cancel" height = "20px" width = "60px" readonly></a></li>
 							                  </li>
 							                </ul>
