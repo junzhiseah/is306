@@ -237,10 +237,10 @@
 
 	<table border = "1">
 		<tr>
-			<td align = "center"><a href = "idp/featured.php"><img src="img/Featured.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "idp/entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "idp/food.php"><img src="img/Food1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "idp/travel.php"><img src="img/Travel1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "featured.php"><img src="img/Featured.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "food.php"><img src="img/Food1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "travel.php"><img src="img/Travel1.jpg" height = "30px" width = "66px"></a></td>
 
 		</tr>
 	</table>
@@ -258,7 +258,7 @@
 			<td align = "center"><b>Lion King Musical</b><br>
 				<strike>$75</strike> <a style="color:red">$25</a> / Tix<br>
 				<i>Expiry: 28 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "http://localhost/idp/lionking.php?itemid=1"><input type = "dealinfo" value = "Deal Info"></a>
+				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=1"><input type = "dealinfo" value = "Deal Info"></a>
 			</td>
 		</tr>
 		<tr>

@@ -235,10 +235,10 @@
 
 	<table border = "1">
 		<tr>
-			<td align = "center"><a href = "idp/featured.php"><img src="img/Featured1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "idp/entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "idp/food.php"><img src="img/Food1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "idp/travel.php"><img src="img/Travel.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "featured.php"><img src="img/Featured1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "food.php"><img src="img/Food1.jpg" height = "30px" width = "66px"></a></td>
+			<td align = "center"><a href = "travel.php"><img src="img/Travel.jpg" height = "30px" width = "66px"></a></td>
 
 		</tr>
 	</table>
