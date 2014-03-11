@@ -273,6 +273,11 @@ if(isset($_SESSION['myusername'])){
 		echo 'Welcome ';
 		echo $name;
 	}
+
+	$itemid = $_GET['itemid'];
+	$itemArr = $_SESSION['itemArr'];
+
+	$item = $itemArr[intval($itemid)];
 ?>
 
 
@@ -286,20 +291,22 @@ if(isset($_SESSION['myusername'])){
 	?>
 
 <body>
-	<form name="form1" method="GET" action="confirmation.php">
+	<form name="form1" method="GET" action="confirmation.php?$itemid=<?php echo $item['id']; ?>">
 
 		<strong><h1>PAYMENT</h1></strong><br>
 		<table>
 			<tr><td>PRODUCT NAME</td>
-			<td><input name="productname" type="text" id="productname" value="THE LION LING MUSICAL"></td>
+			<td><input name="productname" type="text" id="productname" value="<?php echo $item['title']; ?>"></td>
 			</tr>
+
+			<input type = "hidden" name = "itemid" value = "<?php echo $item['id']; ?>">
 
 			<tr><td>QUANTITY</td> 
 			<td><input name="quantity" type="text" id="quantity" value=""></td>
 			</tr>
 
-			<tr><td>AMOUNT</td> 
-			<td><input name="amount" type="text" id="amount" value="$50"></td>
+			<tr><td>PRICE</td> 
+			<td>$<input name="price" type="text" id="price" value="<?php echo $item['currentprice']; ?>"></td>
 			</tr>
 
 			<tr><td>CARD NO</td> 

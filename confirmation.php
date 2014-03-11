@@ -282,13 +282,23 @@ if(isset($_SESSION['myusername'])){
 	if(!isset($_SESSION['myusername'])){
 		header("location:login.php");
 	}
+
+	$itemid = $_GET['itemid'];
+	$itemArr = $_SESSION['itemArr'];
+
+	$item = $itemArr[intval($itemid)];
 ?>
 	
-	
+
+	Welcome
+	<?php
+		echo $name;
+	?>
+
 
 <body>
 
-	<form name="form1" method="GET" action="payment.php">
+	<form name="form1" method="GET" action="payment.php?itemid='<?php echo $item['id']; ?>'">
 
 		<strong><h1>CONFIRMATION</h1></strong>
 		<table>
@@ -300,8 +310,20 @@ if(isset($_SESSION['myusername'])){
 			<td></td><td><input name="quantity" type="" id="quantity" readonly="readonly" value="<?php echo htmlentities($_GET["quantity"]); ?>" /></td>
 			</tr>
 
-			<tr><td>AMOUNT</td> 
-			<td></td><td><input name="amount" type="" id="amount" readonly="readonly" value="<?php echo htmlentities($_GET["amount"]); ?>" /></td>
+			<?php
+				$quantity = (integer)htmlentities($_GET["quantity"]);
+				$price = (integer)htmlentities($_GET["price"]);
+				$totalamount = $quantity * $price;
+
+				echo $quantity;
+				echo $price;
+			?>
+			<tr><td>PRICE</td> 
+			<td></td><td>$<input name="price" type="" id="price" readonly="readonly" value="<?php echo htmlentities($_GET["price"]); ?>" /></td>
+			</tr>
+
+			<tr><td>TOTAL AMOUNT</td> 
+			<td></td><td>$<input name="totalamount" type="" id="totalamount" readonly="readonly" value="<?php echo $totalamount ?>" /></td>
 			</tr>
 
 			<tr><td>CARD NO</td> 
@@ -315,6 +337,7 @@ if(isset($_SESSION['myusername'])){
 			<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
 
 			<tr><td><center><input type="submit" name="editPurchase" value="Edit Purchase"></center></td>
+			<input type = "hidden" name = "itemid" value = "<?php echo $item['id']; ?>">
 		</form>
 
 		<form method="GET" action="paymentstatus.php">
