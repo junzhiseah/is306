@@ -208,7 +208,14 @@
 
 
 <!--==================================== Nav Bar Code ======================================================-->
-
+<?php
+	session_start();
+	if(!isset($_SESSION['myusername'])){
+		header("location:login.php");
+	}else{	
+		$name = $_SESSION['myusername'];	
+	}
+?>
 
 
 <div class="navbar">
@@ -223,6 +230,8 @@
 					<a href="#" data-toggle="dropdown"><img src="img/Table-of-Contents-48.png" class="menu"/></a>	
 
 					<?php if(!isset($_SESSION['myusername'])){ ?>
+
+
 							<ul class="dropdown-menu">
 								  <li><a href="">Home</a></li>	
 								   <li><a href="login.php">Login</a></li>	
@@ -232,6 +241,7 @@
 
 					<?php } else{ ?>
 						<ul class="dropdown-menu">
+
 							 <li><a href="">Home</a></li>	
 		                 	 <li><a href="richardprofile.php">My Profile</a></li>
 		                  	<li><a href="#">Bookmarks</a></li>
@@ -260,14 +270,7 @@
 
 
 
-<?php
-	session_start();
-	if(!isset($_SESSION['myusername'])){
-		header("location:login.php");
-	}else{	
-		$name = $_SESSION['myusername'];	
-	}
-?>
+
 	
 	Welcome
 	<?php

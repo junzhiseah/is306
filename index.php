@@ -214,7 +214,9 @@
 </style>
 
 
-
+<?php
+session_start();
+?>
 
 
 <!--==================================== Nav Bar Code ======================================================-->
@@ -268,22 +270,20 @@
  
 
 
+<?php 
 
-
-
-
-
-
-
-<?php
-session_start();
-	if(isset($_SESSION['myusername'])){
+if(isset($_SESSION['myusername'])){
 		$name = $_SESSION['myusername'];	
 
 		echo 'Welcome ';
 		echo $name;
 	}
 ?>
+
+
+
+
+
 	
 	<div class="searchengine">
 		<input type="text"/>
