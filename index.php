@@ -468,7 +468,7 @@ Suntec City Mall, S(038986) ',
 						<ul class="dropdown-menu">
 							 <li><a href="">Home</a></li>	
 		                 	 <li><a href="richardprofile.php">My Profile</a></li>
-		                  	<li><a href="#">Bookmarks</a></li>
+		                  	<li><a href="bookmark.php">Bookmarks</a></li>
 		                  	<li><a href="#">My Purchases</a></li>
 		                 	 <li><a href="#" >My Deals</a></li>
 		                  	<li><a href="#" >Logout</a></li>
