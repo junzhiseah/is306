@@ -1,9 +1,9 @@
 <?php
 session_start();
-$itemId = $_GET['itemid'];
+$itemid = $_GET['itemid'];
 $itemArr = $_SESSION['itemArr'];
 
-$item = $itemArr[intval($itemId)];
+$item = $itemArr[intval($itemid)];
 
 ?>
           <link href="css/bootstrap.min.css">
@@ -484,6 +484,54 @@ $item = $itemArr[intval($itemId)];
 		<tr>
 			<td width = "400px" align = "center">
 				<i><a href="">Terms and Conditions</a></i>
+			</td>
+		</tr>
+	</table>
+
+	<table border = "1">
+		<tr>
+			<td width = "400px" align = "center">
+				<strong>Reviews</strong> 
+					
+					<?php 
+						$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
+						$comments = array("I can totally relate to them! ","Army boys are so cool!");
+
+						if (isset($_GET['comment'])) {
+							$input = $_GET['comment'];
+							//echo $input;
+							$dateTime = new DateTime();
+							$strDateTime = $dateTime->format('d-m-Y H:i:s');
+							array_push($comments, $input);
+							array_push($time, $strDateTime);
+						}
+						
+						$clength=count($comments);
+						for($x=0;$x<$clength;$x++){
+						   echo $comments[$x];
+						   echo "<br>";
+						   echo $time[$x];
+						   echo "<br>";
+						   echo "<br>";
+
+						}
+						
+					?>
+			</td>
+		</tr>
+	</table>
+	<table border = "1">
+		<tr>
+			<td width = "400px" align = "center">
+				<strong>New Comment</strong>
+					<form method="get" action="dealinfo.php?itemid=<?php echo $itemid; ?>">
+						<input type = "hidden" name ="itemid" value = "<?php echo $itemid; ?>">
+						<input type="text" name="comment" id="comment"><br>
+						
+						<br>
+						<input type="submit" name="addcomment" value="Add Comment" />
+
+					</form>
 			</td>
 		</tr>
 	</table>

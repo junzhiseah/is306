@@ -138,6 +138,7 @@
 		}
 	$itemArr = array(
 		0 => array (
+			'id' => '0',
 			'image' => 'img/IceArt.jpg',
 			'title' => '2 Degree Ice Art',
 			'description' => '2 Degree Ice Art Tickets for Sale!',
@@ -161,6 +162,7 @@
 			'expiry' => '27 Mar 2014',
 		), 
 		1 => array (
+			'id' => '1',
 			'image' => 'img/LionKing.jpg',
 			'title' => 'Lion King Musical',
 			'description' => 'Lion King Musical Tickets for Sale!',
@@ -184,6 +186,7 @@
 			'expiry' => '28 Mar 2014',
 		), 
 		2 => array (
+			'id' => '2',
 			'image' => 'img/AhBoysToMen.jpg',
 			'title' => 'Ah Boys to Men the Musical',
 			'description' => 'Ah Boys to Men the Musical Tickets for Sale!',
@@ -207,6 +210,7 @@
 			'expiry' => '27 Mar 2014',
 		), 
 		3 => array (
+			'id' => '3',
 			'image' => 'img/CrystalJade.jpg',
 			'title' => 'Crystal Jade Char Siew Bun',
 			'description' => 'Delicious Char Siw Bun for Sale!',
@@ -230,6 +234,7 @@
 			'expiry' => '27 Mar 2014',
 		), 
 		4 => array (
+			'id' => '4',
 			'image' => 'img/SakaeSushi.jpg.jpg',
 			'title' => 'Sakae Sushi Takeaway',
 			'description' => 'Delicious Sakae Sushi Takeaway for Sale!',
@@ -253,6 +258,7 @@
 			'expiry' => '28 Mar 2014',
 		),
 		5 => array (
+			'id' => '5',
 			'image' => 'img/BreadTalk.jpg',
 			'title' => 'Bread Talk Chicken Floss Bread',
 			'description' => 'Delicious Chicken Floss Bread for Sale!',
@@ -277,6 +283,7 @@ Suntec City Mall, S(038986) ',
 			'expiry' => '27 Mar 2014',
 		),
 		6 => array (
+			'id' => '6',
 			'image' => 'img/Japan.jpg',
 			'title' => 'Two way Travel Tix to Japan',
 			'description' => 'Two ways Travel Tix to Japan for Sale! Flight depart on 29 Mar 2014 and return back to Singapore on 4th April 2014 at 1500hrs',
@@ -300,6 +307,7 @@ Suntec City Mall, S(038986) ',
 			'expiry' => '27 Mar 2014',
 		),
 		7 => array (
+			'id' => '7',
 			'image' => 'img/France.jpg',
 			'title' => 'Trip to France',
 			'description' => 'Flight Tickets to Paris, Hotel stay and breakfast accomdation included for 4 days 3 nights. Return back to Singapore on 2nd April 2014 at 1300hrs',
@@ -323,6 +331,7 @@ Suntec City Mall, S(038986) ',
 			'expiry' => '28 Mar 2014',
 		),
 		8 => array (
+			'id' => '8',
 			'image' => 'img/Korea.jpg',
 			'title' => 'One way Travel Tix to Korea',
 			'description' => 'One way Travel Tix to Korea for Sale! Flight depart on 30 Mar 2014',
