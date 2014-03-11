@@ -12,16 +12,15 @@
 				<tr>
 					<td>
 						
-						Name: lionking <br/>
-						Email: lionking@gmail.com <br/>
-						Likes: 160 <img src="img/like.PNG" height = "15px" width = "15px"> <img src="img/call.PNG" height = "15px" width = "15px"> <br/>
+						Name: ahboystomen <br/>
+						Email: ahboystomen@gmail.com <br/>
+						Likes: 134 <img src="img/like.PNG" height = "15px" width = "15px"> <img src="img/call.PNG" height = "15px" width = "15px"> <br/>
 					<td/>
 					<td>
-						<img src="img/LionKing.jpg" height = "100px" width = "100px">
+						<img src="img/AhBoysToMen.jpg" height = "100px" width = "100px">
 					</td>
 			 	
 			 	</tr>
-			 	
 			 	
 
 	 </table>
@@ -29,7 +28,7 @@
 	<strong><h1>Deals</h1></strong>
 	<?php
 		$images = array(
-			0 => 'LionKing.jpg',
+			0 => 'AhBoysToMen.jpg',
 			1 => 'BreadTalk.jpg',
 			2 => 'Food.jpg',
 		);
@@ -45,8 +44,8 @@
     		</tr>
     		<tr>
     			<td>
-	    			Price: <strike>$75</strike> <font color = "red"> $25 </font> / Tix <br/>
-					Expiry: 28 Mar 2014<br/>
+	    			Price: <strike>$95</strike><font color = "red"> $50 </font> / Tix <br/>
+					Expiry: 29 Mar 2014<br/>
 				</td>
 			</tr>
 		</table>
@@ -55,9 +54,9 @@
 
 	<strong><h1>Comments</h1></strong> 
 	</table>
-	<?php
+	<?php 
 		$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
-		$comments = array("I love the Fantastic show! ","It's Super awesome! It's a MUST to watch it!");
+		$comments = array("I can totally relate to them! ","Army boys are so cool!");
 
 		if (isset($_GET['comment'])) {
 			$input = $_GET['comment'];
@@ -66,7 +65,6 @@
 			$strDateTime = $dateTime->format('d-m-Y H:i:s');
 			array_push($comments, $input);
 			array_push($time, $strDateTime);
-			
 		}
 		
 		$clength=count($comments);
@@ -78,10 +76,11 @@
 		   echo "<br>";
 
 		}
+		
 	?>
 	
 	New Comment
-	<form method="get" action="merchantinfolionking.php">
+	<form method="get" action="merchantahboystomen.php">
 		<input type="text" name="comment" id="comment"><br>
 		
 		<br>

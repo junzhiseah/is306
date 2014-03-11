@@ -335,7 +335,7 @@ $item = $itemArr[intval($itemId)];
 				<b>Venue:</b>
 			</td>
 			<td width = "300px">
-				<b><?php echo $item['venue']; ?>/b>
+				<b><?php echo $item['venue']; ?></b>
 			</td>
 		</tr>
 	</table>
@@ -442,7 +442,7 @@ $item = $itemArr[intval($itemId)];
 				<b>Merchant:</b>
 			</td>
 			<td width = "280px" align = "center">
-				<b><a href=""><?php echo $item['merchant']; ?></a></b>
+				<b><a href="merchant<?php echo $item['merchant']; ?>.php"><?php echo $item['merchant']; ?></a></b>
 			</td>
 			<td width = "20px" align = "right">
 				<nav>
@@ -453,7 +453,7 @@ $item = $itemArr[intval($itemId)];
 
 
 						<ul class="dropdown-menu" style="right: 0; left: auto;">
-		                  <li><center>Call lionking?</center></li>
+		                  <li><center>Call<?php echo $item['merchant']; ?></center></li>
 
 		                  	<li><a><input type = "call" value = "<?php echo $item['merchantphone']; ?>" height = "20px" width = "60px" readonly></a></li>
 		                  	<li><a><input type = "cancel" value = "Cancel" height = "20px" width = "60px" readonly></a></li>

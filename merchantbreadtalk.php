@@ -78,7 +78,7 @@
 	?>
 	
 	New Comment
-	<form method="get" action="merchantinfobreadtalk.php">
+	<form method="get" action="merchantbreadtalk.php">
 		<input type="text" name="comment" id="comment"><br>
 		
 		<br>

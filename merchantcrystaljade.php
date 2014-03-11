@@ -78,7 +78,7 @@
 	?>
 	
 	New Comment
-	<form method="get" action="merchantinfocrystaljade.php">
+	<form method="get" action="merchantcrystaljade.php">
 		<input type="text" name="comment" id="comment"><br>
 		
 		<br>

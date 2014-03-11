@@ -10,16 +10,15 @@
 				<tr>
 					<td>
 						
-						Name:  Japan <br/>
-						Email: japan@gmail.com <br/>
-						Likes: 75 <img src="img/like.PNG" height = "15px" width = "15px"> <img src="img/call.PNG" height = "15px" width = "15px"> <br/>
+						Name: iceart <br/>
+						Email: iceart@gmail.com <br/>
+						Likes: 286 <img src="img/like.PNG" height = "15px" width = "15px"> <img src="img/call.PNG" height = "15px" width = "15px"> <br/>
 					<td/>
 					<td>
-						<img src="img/Japan.jpg" height = "100px" width = "100px">
+						<img src="img/IceArt.jpg" height = "100px" width = "100px">
 					</td>
 			 	
 			 	</tr>
-			 	
 			 	
 
 	 </table>
@@ -27,8 +26,8 @@
 	<strong><h1>Deals</h1></strong>
 	<?php
 		$images = array(
-			0 => 'Japan.jpg',
-			1 => 'SakaeSushi.jpg',
+			0 => 'IceArt.jpg',
+			1 => 'BreadTalk.jpg',
 			2 => 'Food.jpg',
 		);
 		$image = $images[ rand(0,(count($images)-1)) ];
@@ -43,7 +42,7 @@
     		</tr>
     		<tr>
     			<td>
-	    			Price: <strike>$128</strike><font color = "red"> $88 </font> / Tix <br/>
+	    			Price: <strike>$30</strike><font color = "red"> $15 </font> / Tix <br/>
 					Expiry: 27 Mar 2014<br/>
 				</td>
 			</tr>
@@ -55,7 +54,7 @@
 	</table>
 	<?php 
 		$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
-		$comments = array("TThe best deal I've bought so far! ","Can't wait for my trip!");
+		$comments = array("I love the ice sculptures! ","It's Super cold!");
 
 		if (isset($_GET['comment'])) {
 			$input = $_GET['comment'];
@@ -75,13 +74,16 @@
 		   echo "<br>";
 
 		}
+		
+
 	?>
 	
 	New Comment
-	<form method="get" action="merchantinfojapan.php">
+	<form method="get" action="merchanticeart.php">
 		<input type="text" name="comment" id="comment"><br>
 		
 		<br>
 		<input type="submit" name="addcomment" value="Add Comment" />
 
 	</form>
+	
