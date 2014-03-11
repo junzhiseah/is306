@@ -491,7 +491,7 @@ $item = $itemArr[intval($itemid)];
 	<table border = "1">
 		<tr>
 			<td width = "400px" align = "center">
-				<i><a href="">Terms and Conditions</a></i>
+				<i><a href="termsandconditionlionking.php">Terms and Conditions</a></i>
 			</td>
 		</tr>
 	</table>

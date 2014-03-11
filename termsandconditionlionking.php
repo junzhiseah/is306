@@ -6,84 +6,11 @@
 		margin-left: -0.1%;
 		margin-right: -0.1%;
 		margin-top: -0.1%;
-	}
-
-
-	div.searchengine{
-		text-align: center;
-		background-color: #D4D4D4;
-		padding:2%;
-		padding-top: 3.2%;
-		padding-bottom: 3.2%;
-	}
-
-	div.searchengine input[type=text]{
-		height:5.6%;
-	}
-
-
-	input[type=submit] {
-		-moz-box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		-webkit-box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
-		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
-		background-color:#00b5b5;
-		-webkit-border-top-left-radius:3px;
-		-moz-border-radius-topleft:3px;
-		border-top-left-radius:3px;
-		-webkit-border-top-right-radius:3px;
-		-moz-border-radius-topright:3px;
-		border-top-right-radius:3px;
-		-webkit-border-bottom-right-radius:3px;
-		-moz-border-radius-bottomright:3px;
-		border-bottom-right-radius:3px;
-		-webkit-border-bottom-left-radius:3px;
-		-moz-border-radius-bottomleft:3px;
-		border-bottom-left-radius:3px;
-		text-indent:0;
-		border:1px solid #00b5b5;
-		display:inline-block;
-		color:#ffffff;
-		font-family:Trebuchet MS;
-		font-size:14px;
-		font-weight:bold;
-		font-style:normal;
-		height:23px;
-		line-height:20px;
-		width:70px;
-		text-decoration:none;
-		text-align:center;
-		text-shadow:1px 1px 0px #00b5b5;
-	}
-	input[type=submit]:hover {
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
-		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
-		background-color:#00b5b5;
-	}input[type=submit]:active {
-		position:relative;
-		top:1px;
-	}
-
-	div.categories{
-		display: inline;
-	}
-
-	div.categories2{
-		display: inline;
-	}
-
-	img.category{
-		width:49.3%;
-		height:43%;
+		
 	}
 
 
 
-
-	
 
 
 /*==================================== Nav Bar Code ======================================================*/
@@ -199,10 +126,7 @@
 
 
 
-
 </style>
-
-
 
 
 
@@ -213,7 +137,7 @@
 
 <div class="navbar">
 		<nav>
-				<a href="index.php"><img src="img/Savings-02-48.png" class="homepageicon"/></a>
+				<a href=""><img src="img/Savings-02-48.png" class="homepageicon"/></a>
 				
 
 
@@ -255,25 +179,10 @@
 	</div>	
 
 
+ 
 
-
-
-
-
-<?php
-	session_start();
-	if(!isset($_SESSION['myusername'])){
-		header("location:login.php");
-	}else{	
-		$name = $_SESSION['myusername'];	
-	}
-?>
-	
-	Welcome
-	<?php
-		echo $name
-	?>
-
-	<form method="get" action="validatelogout.php">
-			<input type="submit" name="logout" value="Logout" />
-	</form>
+    Book by 25 March 2014
+    We will not be held responsible for any injuries, mishaps and incidents.
+    Event dates: 30 May to 1 June 2014, 9am - 8pm
+    Limit 1 deal per person, may buy multiple as gifts
+    Valid for bronze seating category only

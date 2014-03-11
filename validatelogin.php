@@ -12,5 +12,9 @@
 		$_SESSION['errormsg'] ="Please enter your email/password";
 		header("location:login.php");
 	}
+
+
+
+	?>test test
 	
 ?>
