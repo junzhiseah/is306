@@ -6,62 +6,72 @@
 		margin-left: -0.1%;
 		margin-right: -0.1%;
 		margin-top: -0.1%;
+		background-color: #FFFFFF;
 	}
 
 
 	div.searchengine{
 		text-align: center;
-		background-color: #D4D4D4;
+		/*background-color: #D4D4D4;*/
+		background-color:#FFFFFF;
 		padding:2%;
 		padding-top: 3.2%;
 		padding-bottom: 3.2%;
 	}
 
 	div.searchengine input[type=text]{
-		height:5.6%;
+		height:27px;
+		margin-right:-6px;
+		width:160px;
+		border:0px;
+	}
+
+	input[type=text]{
+		background-color: #3E4651;
+		color:white;
 	}
 
 
 	input[type=submit] {
-		-moz-box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		-webkit-box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
-		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
-		background-color:#00b5b5;
+		-moz-box-shadow:inset 0px 1px 0px 0px #F1654C;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #F1654C;
+		box-shadow:inset 0px 1px 0px 0px #F1654C;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1654C), color-stop(1, #F1654C) );
+		background:-moz-linear-gradient( center top, #F1654C 5%, #F1654C 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1654C', endColorstr='#F1654C');
+		background-color:#F1654C;
 		-webkit-border-top-left-radius:3px;
 		-moz-border-radius-topleft:3px;
-		border-top-left-radius:3px;
+		border-top-left-radius:1px;
 		-webkit-border-top-right-radius:3px;
 		-moz-border-radius-topright:3px;
-		border-top-right-radius:3px;
+		border-top-right-radius:1px;
 		-webkit-border-bottom-right-radius:3px;
 		-moz-border-radius-bottomright:3px;
-		border-bottom-right-radius:3px;
+		border-bottom-right-radius:1px;
 		-webkit-border-bottom-left-radius:3px;
 		-moz-border-radius-bottomleft:3px;
-		border-bottom-left-radius:3px;
+		border-bottom-left-radius:1px;
 		text-indent:0;
-		border:1px solid #00b5b5;
+		border:1px solid #F1654C;
 		display:inline-block;
 		color:#ffffff;
 		font-family:Trebuchet MS;
-		font-size:14px;
+		font-size:13px;
 		font-weight:bold;
 		font-style:normal;
-		height:23px;
-		line-height:20px;
-		width:70px;
+		height:27px;
+		line-height:22px;
+		width:58px;
 		text-decoration:none;
 		text-align:center;
-		text-shadow:1px 1px 0px #00b5b5;
+		text-shadow:1px 1px 0px #F1654C;
 	}
 	input[type=submit]:hover {
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
-		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
-		background-color:#00b5b5;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1654C), color-stop(1, #F1654C) );
+		background:-moz-linear-gradient( center top, #F1654C 5%, #F1654C 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1654C', endColorstr='#F1654C');
+		background-color:#F1654C;
 	}input[type=submit]:active {
 		position:relative;
 		top:1px;
@@ -115,7 +125,7 @@
 	}	
 
 	div.navbar img.menu{
-		margin-left:10px;
+		margin-left:45px;
 		width:40px;
 		height:40px;
 		margin-bottom:-2px; 
@@ -141,6 +151,7 @@
 	position: relative;
 	display: inline-table;
 	top:-23px;
+	right:6px;
 	}
 	
 	nav ul:after {
@@ -167,14 +178,19 @@
 		
 	nav ul li:hover a {
 		color: #fff;
+		background: #F1654C;
 	}
 	
 	nav ul li a {
 		display: block; /*padding: 13px 10px 0px 10px;*/
 		padding:0px;
+		padding-right:0px;
 		color: #757575; text-decoration: none;
 		border:0px solid black;
-		margin-top: 11px;
+		margin-top: 0px;
+		padding-top: 25px;
+		height:31px;
+		width:89px;
 
 		/*height:40px;*/
 
@@ -183,7 +199,7 @@
 
 
 	nav ul ul {
-	background: #5f6975; border-radius: 0px; padding: 0;
+	background: #F1654C; border-radius: 0px; padding: 0;
 	position: absolute; top: 100%;
 	right:auto;
 	left:100px;
@@ -191,15 +207,16 @@
 
 	nav ul ul li {
 		float: none; 
-		border-top: 1px solid #6b727c;
-		border-bottom: 1px solid #575f6a;
+		border-top: 0px solid #D4D4D4;
+		border-bottom: 1px solid #D4D4D4;
 		position: relative;
 	}
 
 	nav ul ul li a {
 		padding: 15px 20px 15px 20px;
-		width:70px;
+		width:95px;
 		color: #fff;
+		margin-top: 0px;
 	}	
 		
 	nav ul ul li a:hover {
@@ -458,7 +475,7 @@ Suntec City Mall, S(038986) ',
 
 					<?php if(!isset($_SESSION['myusername'])){ ?>
 							<ul class="dropdown-menu">
-								  <li><a href="">Home</a></li>	
+								  <li><a href="index.php">Home</a></li>	
 								   <li><a href="login.php">Login</a></li>	
 								   <li><a href="">Register</a></li>	
 								    <li><a href="">Help</a></li>	
@@ -494,14 +511,14 @@ Suntec City Mall, S(038986) ',
 
 <?php 
 
+
 if(isset($_SESSION['myusername'])){
 		$name = $_SESSION['myusername'];	
 
-		echo 'Welcome ';
-		echo $name;
+		echo 'Welcome, ';
+		echo '<b>'.$name.'</b>';
 	}
 ?>
-
 
 
 
