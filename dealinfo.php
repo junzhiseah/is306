@@ -182,6 +182,96 @@ $item = $itemArr[intval($itemid)];
 		top:1px;
 	}
 
+	input[type=buy] {
+		-moz-box-shadow:inset 0px 1px 0px 0px #00b5b5;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #00b5b5;
+		box-shadow:inset 0px 1px 0px 0px #00b5b5;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
+		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
+		background-color:#00b5b5;
+		-webkit-border-top-left-radius:3px;
+		-moz-border-radius-topleft:3px;
+		border-top-left-radius:3px;
+		-webkit-border-top-right-radius:3px;
+		-moz-border-radius-topright:3px;
+		border-top-right-radius:3px;
+		-webkit-border-bottom-right-radius:3px;
+		-moz-border-radius-bottomright:3px;
+		border-bottom-right-radius:3px;
+		-webkit-border-bottom-left-radius:3px;
+		-moz-border-radius-bottomleft:3px;
+		border-bottom-left-radius:3px;
+		text-indent:0;
+		border:1px solid #00b5b5;
+		display:inline-block;
+		color:#ffffff;
+		font-family:Trebuchet MS;
+		font-size:14px;
+		font-weight:bold;
+		font-style:normal;
+		height:23px;
+		line-height:20px;
+		width:35px;
+		text-decoration:none;
+		text-align:center;
+		text-shadow:1px 1px 0px #00b5b5;
+	}
+	input[type=buy]:hover {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
+		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
+		background-color:#00b5b5;
+	}input[type=buy]:active {
+		position:relative;
+		top:1px;
+	}
+
+	input[type=bookmark] {
+		-moz-box-shadow:inset 0px 1px 0px 0px #00b5b5;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #00b5b5;
+		box-shadow:inset 0px 1px 0px 0px #00b5b5;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
+		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
+		background-color:#00b5b5;
+		-webkit-border-top-left-radius:3px;
+		-moz-border-radius-topleft:3px;
+		border-top-left-radius:3px;
+		-webkit-border-top-right-radius:3px;
+		-moz-border-radius-topright:3px;
+		border-top-right-radius:3px;
+		-webkit-border-bottom-right-radius:3px;
+		-moz-border-radius-bottomright:3px;
+		border-bottom-right-radius:3px;
+		-webkit-border-bottom-left-radius:3px;
+		-moz-border-radius-bottomleft:3px;
+		border-bottom-left-radius:3px;
+		text-indent:0;
+		border:1px solid #00b5b5;
+		display:inline-block;
+		color:#ffffff;
+		font-family:Trebuchet MS;
+		font-size:14px;
+		font-weight:bold;
+		font-style:normal;
+		height:23px;
+		line-height:20px;
+		width:35px;
+		text-decoration:none;
+		text-align:center;
+		text-shadow:1px 1px 0px #00b5b5;
+	}
+	input[type=bookmark]:hover {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
+		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
+		background-color:#00b5b5;
+	}input[type=bookmark]:active {
+		position:relative;
+		top:1px;
+	}
+
 	div.categories{
 		display: inline;
 	}
@@ -540,6 +630,16 @@ $item = $itemArr[intval($itemid)];
 						<input type="submit" name="addcomment" value="Add Comment" />
 
 					</form>
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<td><a href = "payment.php?itemid=<?php echo $itemid; ?>"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>
+				<td>Likes:</td><td><?php echo $item['itemlikes']; ?><img src="img/like.PNG" height = "15px" width = "15px"></td>
+				<td><a href="dealinfo.php?bookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>"><input type = "bookmark" value = "Bookmark"></a></td>
+				<input type = "hidden" name ="itemid" value = "<?php echo $itemid; ?>">
+
 			</td>
 		</tr>
 	</table>

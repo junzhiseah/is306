@@ -215,6 +215,51 @@ if (isset($_GET['bookmark'])) {
 		top:1px;
 	}
 
+	input[type=bookmark] {
+		-moz-box-shadow:inset 0px 1px 0px 0px #00b5b5;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #00b5b5;
+		box-shadow:inset 0px 1px 0px 0px #00b5b5;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
+		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
+		background-color:#00b5b5;
+		-webkit-border-top-left-radius:3px;
+		-moz-border-radius-topleft:3px;
+		border-top-left-radius:3px;
+		-webkit-border-top-right-radius:3px;
+		-moz-border-radius-topright:3px;
+		border-top-right-radius:3px;
+		-webkit-border-bottom-right-radius:3px;
+		-moz-border-radius-bottomright:3px;
+		border-bottom-right-radius:3px;
+		-webkit-border-bottom-left-radius:3px;
+		-moz-border-radius-bottomleft:3px;
+		border-bottom-left-radius:3px;
+		text-indent:0;
+		border:0px solid #00b5b5;
+		display:inline-block;
+		color:#ffffff;
+		font-family:Trebuchet MS;
+		font-size:9px;
+		font-weight:bold;
+		font-style:normal;
+		height:23px;
+		line-height:10px;
+		width: 66px;
+		text-decoration:none;
+		text-align:center;
+		text-shadow:1px 1px 0px #00b5b5;
+	}
+	input[type=bookmark]:hover {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
+		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
+		background-color:#00b5b5;
+	}input[type=bookmark]:active {
+		position:relative;
+		top:1px;
+	}
+
 	div.categories{
 		display: inline;
 	}
@@ -446,8 +491,8 @@ if(isset($_SESSION['myusername'])){
 			<td align = "center"><b>Two way Travel Tix to Japan</b><br>
 				<strike>$128</strike> <a style="color:red">$88</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=6"><input type = "dealinfo" value = "Deal Info"></a>
-				<a href="travel.php?bookmark=6"><input type = "dealinfo" value = "Bookmark"></a>
+				<a href = "payment.php?itemid=6"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>   <a href = "dealinfo.php?itemid=6"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href="travel.php?bookmark=6"><input type = "bookmark" value = "Bookmark"></a>
 			</td>
 		</tr>
 		<tr>
@@ -455,8 +500,8 @@ if(isset($_SESSION['myusername'])){
 			<td align = "center"><b>Trip to France</b><br>
 				<strike>$300</strike> <a style="color:red">$150</a> / Trip<br>
 				<i>Expiry: 28 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=7"><input type = "dealinfo" value = "Deal Info"></a>
-				<a href="travel.php?bookmark=7"><input type = "dealinfo" value = "Bookmark"></a>
+				<a href = "payment.php?itemid=7"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>   <a href = "dealinfo.php?itemid=7"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href="travel.php?bookmark=7"><input type = "bookmark" value = "Bookmark"></a>
 			</td>
 		</tr>
 		<tr>
@@ -464,8 +509,8 @@ if(isset($_SESSION['myusername'])){
 			<td align = "center"><b>One way Travel Tix to Korea</b><br>
 				<strike>$478</strike> <a style="color:red">$128</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=8"><input type = "dealinfo" value = "Deal Info"></a>
-				<a href="travel.php?bookmark=8"><input type = "dealinfo" value = "Bookmark"></a>
+				<a href = "payment.php?itemid=8"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>   <a href = "dealinfo.php?itemid=8"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href="travel.php?bookmark=8"><input type = "bookmark" value = "Bookmark"></a>
 			</td>
 		</tr>
 
