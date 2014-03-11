@@ -1,3 +1,8 @@
+<?php
+session_start();
+$itemArr =$_SESSION['itemArr'];
+?>
+
 <style type="text/css">
 	
 	/*copy paste style type=text/css tag together with this body tag into the page you develop.
@@ -8,21 +13,7 @@
 		margin-top: -0.1%;
 	}
 
-
-	div.searchengine{
-		text-align: center;
-		background-color: #D4D4D4;
-		padding:2%;
-		padding-top: 3.2%;
-		padding-bottom: 3.2%;
-	}
-
-	div.searchengine input[type=text]{
-		height:5.6%;
-	}
-
-
-	input[type=submit] {
+		input[type=submit] {
 		-moz-box-shadow:inset 0px 1px 0px 0px #00b5b5;
 		-webkit-box-shadow:inset 0px 1px 0px 0px #00b5b5;
 		box-shadow:inset 0px 1px 0px 0px #00b5b5;
@@ -192,84 +183,51 @@
 		text-align:center;
 		text-shadow:1px 1px 0px #00b5b5;
 	}
-	input[type=category]:hover {
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
-		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
-		background-color:#00b5b5;
-	}input[type=category]:active {
-		position:relative;
-		top:1px;
-	}
-
-	div.categories{
-		display: inline;
-	}
-
-	div.categories2{
-		display: inline;
-	}
-
-	img.category{
-		width:49.3%;
-		height:43%;
-	}
-
-
 </style>
 
-<div class="searchengine">
-	<form action="search.php" method="POST">
-		<input type="text" name="search" />
-		<input type="submit" value="SEARCH"/>
-	</form>
-</div>
+<?php
+	$search = $_POST['search'];
+	$results = array();
 
-	
+	foreach ($itemArr as $key => $value) {
+		$title = $value['title'];
+		$description = $value['description'];
+		$merchant = $value['merchant'];
+		$venue = $value['venue'];
 
+		if (strpos($title, $search) !== FALSE || strpos($description, $search) !== FALSE
+				|| strpos($merchant, $search) !== FALSE || strpos($venue, $search) !== FALSE) {
+			array_push($results, $value);
+		}
+	}
 
+	if (sizeof($results) > 0) {
+		echo '<table border = "1">';
+		$dateTime = new DateTime();
+		for ($i=0; $i < sizeof($results); $i++) { 
+			$item = $results[$i];
 
+			$expiry = $item['expiry'];
+			// $expiryDate = DateTime::createFromFormat('d M Y', $expiry);
+			$quantitySold = $item['quantitysold'];
+			$quantityAvail = $item['quantityavail'];
 
-	
+			echo '<tr>';
+			echo '<td align = "center" ><img src="'.$item['image'].'" height = "150px" width = "150px"></td>';
+			echo '<td align = "center"><b>'.$item['title'].'</b><br>';
+			echo '<strike>$'.$item['usualprice'].'</strike> <a style="color:red"> $'.$item['currentprice'].'</a> /'.$item['quantifier'].'<br>';
+			echo '<i>'.$item['expiry'].'</i><br>';
+			echo '<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <input type = "dealinfo" value = "Deal Info">';
+			
+			// if ($dateTime > $expiryDate || $quantitySold == $quantityAvail) {
+			// 	echo '<br><a style="color:red"><b> EXPIRED </b><a>';
+			// }
 
-
-	<div class="navbar">
-
-	</div>	
-
-	<table border = "1">
-		<tr>
-			<td align = "center"><a href = "featured.php"><img src="img/Featured.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "food.php"><img src="img/Food1.jpg" height = "30px" width = "66px"></a></td>
-			<td align = "center"><a href = "travel.php"><img src="img/Travel1.jpg" height = "30px" width = "66px"></a></td>
-
-		</tr>
-	</table>
-	<table border = "1">
-		<tr>
-			<td align = "center" ><a href = "dealinfo.php?itemid=5"><img src="img/BreadTalk.jpg" height = "150px" width = "150px"></a></td>
-			<td align = "center"><b>Bread Talk Chicken Floss Bread</b><br>
-				<strike>$1.50</strike> <a style="color:red">$0.90</a> / Bread<br>
-				<i>Expiry: 27 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=5"><input type = "dealinfo" value = "Deal Info"></a>
-			</td>
-		</tr>
-		<tr>
-			<td align = "center" ><a href = "dealinfo.php?itemid=1"><img src="img/LionKing.jpg" height = "150px" width = "150px"></a></td>
-			<td align = "center"><b>Lion King Musical</b><br>
-				<strike>$75</strike> <a style="color:red">$25</a> / Tix<br>
-				<i>Expiry: 28 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=1"><input type = "dealinfo" value = "Deal Info"></a>
-			</td>
-		</tr>
-		<tr>
-			<td align = "center" ><a href = "dealinfo.php?itemid=8"><img src="img/Korea.jpg" height = "150px" width = "150px"></a></td>
-			<td align = "center"><b>One way Travel Tix to Korea</b><br>
-				<strike>$478</strike> <a style="color:red">$128</a> / Tix<br>
-				<i>Expiry: 27 Mar 2014</i><br>
-				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href =d "dealinfo.php?itemid=8"><input type = "dealinfo" value = "Deal Info"></a>
-			</td>
-		</tr>
-
-	</table>
+			echo '</td>';
+			echo '</tr>';
+		}
+		echo '</table>';
+	} else {
+		echo 'You have no deals in your folder at the moment.';
+	}
+?>
