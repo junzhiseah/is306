@@ -187,7 +187,7 @@ $itemArr = $_SESSION['itemArr'];
 
 <?php
 	$bookmarkArr = array();
-
+	var_dump($itemArr);
 	foreach ($itemArr as $key => $value) {
 		$bookmark = $value['userbookmarked'];
 

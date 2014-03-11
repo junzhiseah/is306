@@ -7,6 +7,15 @@ session_start();
 		echo 'Welcome ';
 		echo $name;
 	}
+
+if (isset($_GET['bookmark'])) {
+	$index = intval($_GET['bookmark']);
+	$itemArr = $_SESSION['itemArr'];
+	$itemArr[$index]['userbookmarked'] = "Yes";
+
+	unset($_SESSION['itemArr']);
+	$_SESSION['itemArr'] = $itemArr;
+}
 ?>
 
 <style type="text/css">
@@ -261,6 +270,7 @@ session_start();
 				<strike>$1.80</strike> <a style="color:red">$1.20</a> / Bun<br>
 				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=3"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href="food.php?bookmark=3"><input type = "dealinfo" value = "Bookmark"></a>
 			</td>
 		</tr>
 		<tr>
@@ -269,6 +279,7 @@ session_start();
 				<strike>$3.50</strike> <a style="color:red">$2.10</a> / Box<br>
 				<i>Expiry: 28 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=4"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href="food.php?bookmark=4"><input type = "dealinfo" value = "Bookmark"></a>
 			</td>
 		</tr>
 		<tr>
@@ -277,6 +288,7 @@ session_start();
 				<strike>$1.50</strike> <a style="color:red">$0.90</a> / Bread<br>
 				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=5"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href="food.php?bookmark=5"><input type = "dealinfo" value = "Bookmark"></a>
 			</td>
 		</tr>
 

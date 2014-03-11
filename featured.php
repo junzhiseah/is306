@@ -7,8 +7,17 @@ session_start();
 		echo 'Welcome ';
 		echo $name;
 	}
-?>
 
+
+if (isset($_GET['bookmark'])) {
+	$index = intval($_GET['bookmark']);
+	$itemArr = $_SESSION['itemArr'];
+	$itemArr[$index]['userbookmarked'] = "Yes";
+
+	unset($_SESSION['itemArr']);
+	$_SESSION['itemArr'] = $itemArr;
+}
+?>
 <style type="text/css">
 	
 	/*copy paste style type=text/css tag together with this body tag into the page you develop.
@@ -264,6 +273,7 @@ session_start();
 				<strike>$1.50</strike> <a style="color:red">$0.90</a> / Bread<br>
 				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=5"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href="featured.php?bookmark=5"><input type = "dealinfo" value = "Bookmark"></a>
 			</td>
 		</tr>
 		<tr>
@@ -272,6 +282,7 @@ session_start();
 				<strike>$75</strike> <a style="color:red">$25</a> / Tix<br>
 				<i>Expiry: 28 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=1"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href="featured.php?bookmark=1"><input type = "dealinfo" value = "Bookmark"></a>
 			</td>
 		</tr>
 		<tr>
@@ -280,7 +291,9 @@ session_start();
 				<strike>$478</strike> <a style="color:red">$128</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href =d "dealinfo.php?itemid=8"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href="featured.php?bookmark=8"><input type = "dealinfo" value = "Bookmark"></a>
 			</td>
 		</tr>
 
 	</table>
+<a href="bookmark.php">Bookmark</a>

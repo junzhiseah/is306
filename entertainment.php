@@ -1,12 +1,19 @@
 <?php
 session_start();
-
 	if(isset($_SESSION['myusername'])){
 		$name = $_SESSION['myusername'];	
 
 		echo 'Welcome ';
 		echo $name;
 	}
+if (isset($_GET['bookmark'])) {
+	$index = intval($_GET['bookmark']);
+	$itemArr = $_SESSION['itemArr'];
+	$itemArr[$index]['userbookmarked'] = "Yes";
+
+	unset($_SESSION['itemArr']);
+	$_SESSION['itemArr'] = $itemArr;
+}
 ?>
 
 <style type="text/css">
@@ -260,6 +267,7 @@ session_start();
 				<strike>$30</strike> <a style="color:red">$15</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=0"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href="entertainment.php?bookmark=0"><input type = "dealinfo" value = "Bookmark"></a>
 			</td>
 		</tr>
 		<tr>
@@ -268,6 +276,7 @@ session_start();
 				<strike>$75</strike> <a style="color:red">$25</a> / Tix<br>
 				<i>Expiry: 28 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=1"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href="entertainment.php?bookmark=1"><input type = "dealinfo" value = "Bookmark"></a>
 			</td>
 		</tr>
 		<tr>
@@ -276,6 +285,7 @@ session_start();
 				<strike>$95</strike> <a style="color:red">$50</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
 				<input type = "buy" value = "Buy!" height = "10px" width = "20px">   <a href = "dealinfo.php?itemid=2"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href="entertainment.php?bookmark=2"><input type = "dealinfo" value = "Bookmark"></a>
 
 			</td>
 		</tr>
