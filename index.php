@@ -453,8 +453,10 @@ Suntec City Mall, S(038986) ',
 			'expiry' => '27 Mar 2014',
 		)
 	);
-
+$userArr = array(
+	);
 	$_SESSION['itemArr'] = $itemArr;
+	$_SESSION['userArr'] = $userArr;
 ?>
 
 

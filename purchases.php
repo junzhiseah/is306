@@ -1,7 +1,8 @@
 <?php
 session_start();
-?>
 
+
+?>
 
 <style type="text/css">
 	
@@ -259,58 +260,44 @@ session_start();
 
 <?php 
 
-if(isset($_SESSION['myusername'])){
-		$name = $_SESSION['myusername'];	
+	if(isset($_SESSION['myusername'])){
+			$name = $_SESSION['myusername'];	
 
-		echo 'Welcome ';
-		echo $name;
-	}
-?>
-
-
-
-
-
-
-
-
-
-<?php
-	if(!isset($_SESSION['myusername'])){
-		header("location:login.php");
+			echo 'Welcome ';
+			echo $name;
 	}
 
-	$itemId = intval($_GET['itemid']);
-	$quantity = intval($_GET['quantity']);
-
+	$purchaseItems = $_SESSION['userArr'];
 	$itemArr = $_SESSION['itemArr'];
-	$itemArr[$itemId]['quantitysold'] += $quantity;
 
-	unset($_SESSION['itemArr']);
-	$_SESSION['itemArr'] = $itemArr;
-
-	$userArr = $_SESSION['userArr'];
-	$item = array(
-		'itemid' => $itemId,
-		'quantity' => $quantity
-		);
 	
-	array_push($userArr, $item);
+	if (sizeof($purchaseItems) > 0) {
+		echo '<table border = "1">';
+		$dateTime = new DateTime();
+		for ($i=0; $i < sizeof($purchaseItems); $i++) { 
+			$lineItem = $purchaseItems[$i];
+			$itemId = $lineItem['itemid'];
+			$quantity = $lineItem['quantity'];
 
-	unset($_SESSION['userArr']);
-	$_SESSION['userArr'] = $userArr;
+			$item = $itemArr[$itemId];
+
+			$expiry = $item['expiry'];
+			$expiryDate = DateTime::createFromFormat('d M Y', $expiry);
+			$quantitySold = $item['quantitysold'];
+			$quantityAvail = $item['quantityavail'];
+
+			echo '<tr>';
+			echo '<td align = "center" ><img src="'.$item['image'].'" height = "150px" width = "150px"></td>';
+			echo '<td align = "center"><b>'.$item['title'].'</b><br>';
+			echo '<strike>$'.$item['usualprice'].'</strike> <a style="color:red"> $'.$item['currentprice'].'</a> /'.$item['quantifier'].'<br>';
+			echo '<i>'.$item['expiry'].'</i><br>';
+			echo $quantity.' '.$item['quantifier'].'(s) purchased';
+
+			echo '</td>';
+			echo '</tr>';
+		}
+		echo '</table>';
+	} else {
+		echo 'You have no <b>PURCHASES</b> folder at the moment.';
+	}
 ?>
-	
-
-<body>
-	<form name="form1" method="GET" action="purchases.php">
-
-		<strong><h1>Payment Success!</h1></strong>
-		<table>
-			<tr><td>Please go to "My Purchases" & Redeem your purchase</td></tr>
-			<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
-			<tr><td><center><input type="submit" name="viewPurchase" value="View my Purchase"></center></td></td>			
-		</table>
-	</form>
-
-</body>

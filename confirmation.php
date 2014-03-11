@@ -1,14 +1,6 @@
 <?php
 session_start();
-	
-if (isset($_GET['bookmark'])) {
-	$index = intval($_GET['bookmark']);
-	$itemArr = $_SESSION['itemArr'];
-	$itemArr[$index]['userbookmarked'] = "Yes";
 
-	unset($_SESSION['itemArr']);
-	$_SESSION['itemArr'] = $itemArr;
-}
 ?>
 
 <style type="text/css">
@@ -341,6 +333,8 @@ if(isset($_SESSION['myusername'])){
 		</form>
 
 		<form method="GET" action="paymentstatus.php">
+			<input type="hidden" name="itemid" value="<?php echo $item['id'] ?>" />
+			<input type="hidden" name="quantity" value="<?php echo intval($_GET['quantity']); ?>" />
 			<td><center><input type="submit" name="confirmPurchase" value="Confirm Purchase"></center></td></tr>
 		</form>
 
