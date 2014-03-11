@@ -1,5 +1,13 @@
 <?php
 session_start();
+
+if(isset($_SESSION['myusername'])){
+		$name = $_SESSION['myusername'];	
+
+		echo 'Welcome ';
+		echo $name;
+	}
+
 $itemid = $_GET['itemid'];
 $itemArr = $_SESSION['itemArr'];
 

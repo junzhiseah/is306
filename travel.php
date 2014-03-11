@@ -1,3 +1,14 @@
+<?php
+session_start();
+;
+	if(isset($_SESSION['myusername'])){
+		$name = $_SESSION['myusername'];	
+
+		echo 'Welcome ';
+		echo $name;
+	}
+?>
+
 <style type="text/css">
 	
 	/*copy paste style type=text/css tag together with this body tag into the page you develop.
