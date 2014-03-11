@@ -504,7 +504,7 @@ if(isset($_SESSION['myusername'])){
 			<td align = "center"><b>One way Travel Tix to Korea</b><br>
 				<strike>$478</strike> <a style="color:red">$128</a> / Tix<br>
 				<i>Expiry: 27 Mar 2014</i><br>
-				<a href = "payment.php?itemid=8"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>   <a href =d "dealinfo.php?itemid=8"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href = "payment.php?itemid=8"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>   <a href = "dealinfo.php?itemid=8"><input type = "dealinfo" value = "Deal Info"></a>
 				<a href="featured.php?bookmark=8"><input type = "bookmark" value = "Bookmark"></a>
 			</td>
 		</tr>
