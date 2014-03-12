@@ -130,10 +130,10 @@ if (isset($_GET['bookmark'])) {
 		text-shadow:1px 1px 0px #00b5b5;
 	}
 	input[type=buy]:hover {
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
-		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
-		background-color:#00b5b5;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1654C), color-stop(1, #F1654C) );
+		background:-moz-linear-gradient( center top, #F1654C 5%, #F1654C 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1654C', endColorstr='#F1654C');
+		background-color:#F1654C;
 	}input[type=buy]:active {
 		position:relative;
 		top:1px;
@@ -177,10 +177,10 @@ if (isset($_GET['bookmark'])) {
 		text-shadow:1px 1px 0px #3E4651;
 	}
 	input[type=dealinfo]:hover {
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
-		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
-		background-color:#00b5b5;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1654C), color-stop(1, #F1654C) );
+		background:-moz-linear-gradient( center top, #F1654C 5%, #F1654C 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1654C', endColorstr='#F1654C');
+		background-color:#F1654C;
 	}input[type=dealinfo]:active {
 		position:relative;
 		top:1px;
@@ -302,6 +302,19 @@ if (isset($_GET['bookmark'])) {
 
 	table{
 		border-collapse: collapse;
+	}
+
+	table.categories{
+		margin:0px;
+		padding:0px;
+		border:2px solid #D4D4D4;
+	}
+
+	table.categories tr td{
+		border-left:6px solid #D4D4D4;
+		border-right:5px solid #D4D4D4;
+		margin:0px;
+		padding:0px;
 	}
 
 	table tr.space{
@@ -571,7 +584,7 @@ if(isset($_SESSION['myusername'])){
 
 
 
-	<table border = "0">
+	<table border = "0" class="categories">
 		<tr>
 			<td align = "center"><a href = "featured.php"><img src="img/Featured.jpg" height = "30px" width = "66px"></a></td>
 			<td align = "center"><a href = "entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
@@ -629,7 +642,7 @@ if(isset($_SESSION['myusername'])){
 				<a href = "payment.php?itemid=8"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>  
 			</td>	
 		</tr>
-		<tr><td class="price"><strike>$478</strike> <a style="color:red">$128</a> / Tix</td>
+		<tr><td class="price"><strike>$478</strike> <a style="color:#00B5B5">$128</a> / Tix</td>
 			<td class="expiry">	Exp: 27 Mar 2014</td></tr>
 					
 		<tr class="space"><td></td><td></td></tr>
