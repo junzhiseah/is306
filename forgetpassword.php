@@ -604,7 +604,7 @@
 
 
 <div class="title">
-	<img src="img/Employee-24.png"/>
+	<img src="img/Key-24.png"/>
 	<br/>
 	Password Retrieval
 </div>
