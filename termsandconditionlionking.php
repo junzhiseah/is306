@@ -9,6 +9,21 @@
 		
 	}
 
+	div.termsandconditions{
+		margin-bottom: 25px;
+		font-size:15px;
+		font-weight:bold;
+		color:#3E4651;
+		text-align: center;
+		padding-top:10px;
+		border-bottom:3px solid #D4D4D4;
+	}	
+
+	div.message{
+		text-align:center;
+		padding:10px;
+	}
+
 
 
 
@@ -23,6 +38,7 @@
 		margin-right: 43.4%;*/
 	/*	margin-top: 6.2%;*/
 		background-color:#3E4651;
+		/*position:fixed;*/
 
 	}
 
@@ -33,7 +49,7 @@
 	}	
 
 	div.navbar img.menu{
-		margin-left:10px;
+		margin-left:45px;
 		width:40px;
 		height:40px;
 		margin-bottom:-2px; 
@@ -59,6 +75,7 @@
 	position: relative;
 	display: inline-table;
 	top:-23px;
+	right:6px;
 	}
 	
 	nav ul:after {
@@ -85,14 +102,19 @@
 		
 	nav ul li:hover a {
 		color: #fff;
+		background: #F1654C;
 	}
 	
 	nav ul li a {
 		display: block; /*padding: 13px 10px 0px 10px;*/
 		padding:0px;
+		padding-right:0px;
 		color: #757575; text-decoration: none;
 		border:0px solid black;
-		margin-top: 11px;
+		margin-top: 0px;
+		padding-top: 25px;
+		height:31px;
+		width:89px;
 
 		/*height:40px;*/
 
@@ -101,7 +123,7 @@
 
 
 	nav ul ul {
-	background: #5f6975; border-radius: 0px; padding: 0;
+	background: #F1654C; border-radius: 0px; padding: 0;
 	position: absolute; top: 100%;
 	right:auto;
 	left:100px;
@@ -109,15 +131,16 @@
 
 	nav ul ul li {
 		float: none; 
-		border-top: 1px solid #6b727c;
-		border-bottom: 1px solid #575f6a;
+		border-top: 0px solid #D4D4D4;
+		border-bottom: 1px solid #D4D4D4;
 		position: relative;
 	}
 
 	nav ul ul li a {
 		padding: 15px 20px 15px 20px;
-		width:70px;
+		width:95px;
 		color: #fff;
+		margin-top: 0px;
 	}	
 		
 	nav ul ul li a:hover {
@@ -126,8 +149,10 @@
 
 
 
-</style>
 
+
+
+</style>
 
 
 
@@ -137,7 +162,7 @@
 
 <div class="navbar">
 		<nav>
-				<a href=""><img src="img/Savings-02-48.png" class="homepageicon"/></a>
+				<a href="index.php"><img src="img/Savings-02-48.png" class="homepageicon"/></a>
 				
 
 
@@ -148,7 +173,7 @@
 
 					<?php if(!isset($_SESSION['myusername'])){ ?>
 							<ul class="dropdown-menu">
-								  <li><a href="">Home</a></li>	
+								  <li><a href="index.php">Home</a></li>	
 								   <li><a href="login.php">Login</a></li>	
 								   <li><a href="">Register</a></li>	
 								    <li><a href="">Help</a></li>	
@@ -156,9 +181,9 @@
 
 					<?php } else{ ?>
 						<ul class="dropdown-menu">
-							 <li><a href="">Home</a></li>	
+							 <li><a href="index.php">Home</a></li>	
 		                 	 <li><a href="richardprofile.php">My Profile</a></li>
-		                  	<li><a href="#">Bookmarks</a></li>
+		                  	<li><a href="bookmark.php">Bookmarks</a></li>
 		                  	<li><a href="#">My Purchases</a></li>
 		                 	 <li><a href="#" >My Deals</a></li>
 		                  	<li><a href="validatelogout.php" >Logout</a></li>
@@ -179,10 +204,18 @@
 	</div>	
 
 
- 
 
-    Book by 25 March 2014
-    We will not be held responsible for any injuries, mishaps and incidents.
-    Event dates: 30 May to 1 June 2014, 9am - 8pm
-    Limit 1 deal per person, may buy multiple as gifts
-    Valid for bronze seating category only
+ 
+	<div class="termsandconditions">
+		<img src="img/Rules-24.png"><br/>
+		Terms and Conditions
+	</div>
+
+
+	<div class="message">
+	    Each listing has a validity of maximum 3 days. <br/>
+	    The management of Lei Long will not be held responsible for any refunds, returns, injuries, mishaps and incidents.<br/>
+	    Event dates and timings: 3 weeks from now till the day of sales itself, 9am - 8pm.<br/>
+	    Limited to 1 deal per person, may buy multiple as gifts.<br/>
+	    Valid for bronze seating category, only applicable to entertainment deals.
+	</div>
