@@ -16,7 +16,7 @@
 		background-color:#FFFFFF;
 		padding:2%;
 		padding-top: 3.2%;
-		padding-bottom: 3.2%;
+		padding-bottom:0%;
 	}
 
 	div.searchengine input[type=text]{
