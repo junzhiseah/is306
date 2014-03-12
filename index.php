@@ -527,8 +527,10 @@ if(isset($_SESSION['myusername'])){
 
 	
 	<div class="searchengine">
-		<input type="text"/>
-		<input type="submit" value="SEARCH"/>
+		<form action="search.php" method="POST">
+			<input type="text" name="search" />
+			<input type="submit" value="SEARCH"/>
+		</form>
 	</div>	
 
 

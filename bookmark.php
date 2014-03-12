@@ -186,6 +186,15 @@ $itemArr = $_SESSION['itemArr'];
 </style>
 
 <?php
+	if (isset($_GET['itemid'])) {
+		$itemId = $_GET['itemid'];
+
+		$itemArr[$itemId]['userbookmarked'] = "No";
+
+		unset($_SESSION['itemArr']);
+		$_SESSION['itemArr'] = $itemArr;
+	}
+
 	$bookmarkArr = array();
 	foreach ($itemArr as $key => $value) {
 		$bookmark = $value['userbookmarked'];
@@ -213,10 +222,14 @@ $itemArr = $_SESSION['itemArr'];
 			echo '<strike>$'.$item['usualprice'].'</strike> <a style="color:red"> $'.$item['currentprice'].'</a> /'.$item['quantifier'].'<br>';
 			echo '<i>'.$item['expiry'].'</i><br>';
 			echo '<a href = "payment.php?itemid='.$item['id'].'"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>   <a href = "dealinfo.php?itemid='.$item['id'].'"><input type = "dealinfo" value = "Deal Info"></a><br>';
-			echo '<input type = "buy" value = "UnBookmark" height = "10px" width = "20px">';
 			if ($dateTime > $expiryDate || $quantitySold == $quantityAvail) {
 				echo '<br><a style="color:red"><b> EXPIRED </b><a>';
 			}
+
+			echo '<form action="bookmark.php" metho="GET">';
+			echo '<input type="hidden" name="itemid" value="'.$item['id'].'" />';
+			echo '<input type="submit" value="Remove" />';
+			echo '</form>';
 
 			echo '</td>';
 			echo '</tr>';
