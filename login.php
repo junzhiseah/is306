@@ -245,7 +245,7 @@
 		                  	<li><a href="#">Bookmarks</a></li>
 		                  	<li><a href="#">My Purchases</a></li>
 		                 	 <li><a href="#" >My Deals</a></li>
-		                  	<li><a href="#" >Logout</a></li>
+		                  	<li><a href="validatelogout.php" >Logout</a></li>
 		                </ul>	
 					<?php } ?>
 
