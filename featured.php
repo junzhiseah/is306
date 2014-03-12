@@ -20,62 +20,73 @@ if (isset($_GET['bookmark'])) {
 		margin-left: -0.1%;
 		margin-right: -0.1%;
 		margin-top: -0.1%;
+		/*background-color: #F1654C;*/
+		/*background-color:#3E4651;*/
 	}
 
 
 	div.searchengine{
 		text-align: center;
-		background-color: #D4D4D4;
+		/*background-color: #D4D4D4;*/
+		background-color:#FFFFFF;
 		padding:2%;
 		padding-top: 3.2%;
-		padding-bottom: 3.2%;
+		padding-bottom: 0px;
 	}
 
 	div.searchengine input[type=text]{
-		height:5.6%;
+		height:27px;
+		margin-right:-6px;
+		width:160px;
+		border:0px;
 	}
 
 
+	input[type=text]{
+		background-color: #3E4651;
+		color:white;
+	}
+
 	input[type=submit] {
-		-moz-box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		-webkit-box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
-		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
-		background-color:#00b5b5;
+		-moz-box-shadow:inset 0px 1px 0px 0px #F1654C;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #F1654C;
+		box-shadow:inset 0px 1px 0px 0px #F1654C;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1654C), color-stop(1, #F1654C) );
+		background:-moz-linear-gradient( center top, #F1654C 5%, #F1654C 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1654C', endColorstr='#F1654C');
+		background-color:#F1654C;
 		-webkit-border-top-left-radius:3px;
 		-moz-border-radius-topleft:3px;
-		border-top-left-radius:3px;
+		border-top-left-radius:1px;
 		-webkit-border-top-right-radius:3px;
 		-moz-border-radius-topright:3px;
-		border-top-right-radius:3px;
+		border-top-right-radius:1px;
 		-webkit-border-bottom-right-radius:3px;
 		-moz-border-radius-bottomright:3px;
-		border-bottom-right-radius:3px;
+		border-bottom-right-radius:1px;
 		-webkit-border-bottom-left-radius:3px;
 		-moz-border-radius-bottomleft:3px;
-		border-bottom-left-radius:3px;
+		border-bottom-left-radius:1px;
 		text-indent:0;
-		border:1px solid #00b5b5;
+		border:1px solid #F1654C;
 		display:inline-block;
 		color:#ffffff;
 		font-family:Trebuchet MS;
-		font-size:14px;
+		font-size:13px;
 		font-weight:bold;
 		font-style:normal;
-		height:23px;
-		line-height:20px;
-		width:70px;
+		height:27px;
+		line-height:22px;
+		width:58px;
 		text-decoration:none;
 		text-align:center;
-		text-shadow:1px 1px 0px #00b5b5;
+		text-shadow:1px 1px 0px #F1654C;
 	}
 	input[type=submit]:hover {
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
-		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
-		background-color:#00b5b5;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1654C), color-stop(1, #F1654C) );
+		background:-moz-linear-gradient( center top, #F1654C 5%, #F1654C 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1654C', endColorstr='#F1654C');
+		background-color:#F1654C;
 	}input[type=submit]:active {
 		position:relative;
 		top:1px;
@@ -91,28 +102,30 @@ if (isset($_GET['bookmark'])) {
 		background-color:#00b5b5;
 		-webkit-border-top-left-radius:3px;
 		-moz-border-radius-topleft:3px;
-		border-top-left-radius:3px;
+		border-top-left-radius:0px;
 		-webkit-border-top-right-radius:3px;
 		-moz-border-radius-topright:3px;
-		border-top-right-radius:3px;
+		border-top-right-radius:0px;
 		-webkit-border-bottom-right-radius:3px;
 		-moz-border-radius-bottomright:3px;
-		border-bottom-right-radius:3px;
+		border-bottom-right-radius:0px;
 		-webkit-border-bottom-left-radius:3px;
 		-moz-border-radius-bottomleft:3px;
-		border-bottom-left-radius:3px;
+		border-bottom-left-radius:0px;
 		text-indent:0;
 		border:1px solid #00b5b5;
 		display:inline-block;
 		color:#ffffff;
 		font-family:Trebuchet MS;
-		font-size:14px;
+		font-size:10px;
 		font-weight:bold;
 		font-style:normal;
 		height:23px;
 		line-height:20px;
-		width:35px;
+		width:55px;
 		text-decoration:none;
+		margin-right: -4px;
+		margin-left:2px;
 		text-align:center;
 		text-shadow:1px 1px 0px #00b5b5;
 	}
@@ -127,39 +140,41 @@ if (isset($_GET['bookmark'])) {
 	}
 
 	input[type=dealinfo] {
-		-moz-box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		-webkit-box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
-		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
-		background-color:#00b5b5;
+		-moz-box-shadow:inset 0px 1px 0px 0px #3E4651;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #3E4651;
+		box-shadow:inset 0px 1px 0px 0px #3E4651;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3E4651), color-stop(1, #3E4651) );
+		background:-moz-linear-gradient( center top, #3E4651 5%, #3E4651 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3E4651', endColorstr='#3E4651');
+		background-color:#3E4651;
 		-webkit-border-top-left-radius:3px;
 		-moz-border-radius-topleft:3px;
-		border-top-left-radius:3px;
+		border-top-left-radius:0px;
 		-webkit-border-top-right-radius:3px;
 		-moz-border-radius-topright:3px;
-		border-top-right-radius:3px;
+		border-top-right-radius:0px;
 		-webkit-border-bottom-right-radius:3px;
 		-moz-border-radius-bottomright:3px;
-		border-bottom-right-radius:3px;
+		border-bottom-right-radius:0px;
 		-webkit-border-bottom-left-radius:3px;
 		-moz-border-radius-bottomleft:3px;
-		border-bottom-left-radius:3px;
+		border-bottom-left-radius:0px;
 		text-indent:0;
-		border:1px solid #00b5b5;
+		border:1px solid #3E4651;
 		display:inline-block;
 		color:#ffffff;
 		font-family:Trebuchet MS;
-		font-size:14px;
+		font-size:10px;
 		font-weight:bold;
 		font-style:normal;
 		height:23px;
 		line-height:20px;
-		width:70px;
+		margin-right: 0px;
+		margin-left: 0px;
+		width:60px;
 		text-decoration:none;
 		text-align:center;
-		text-shadow:1px 1px 0px #00b5b5;
+		text-shadow:1px 1px 0px #3E4651;
 	}
 	input[type=dealinfo]:hover {
 		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
@@ -226,16 +241,16 @@ if (isset($_GET['bookmark'])) {
 		background-color:#00b5b5;
 		-webkit-border-top-left-radius:3px;
 		-moz-border-radius-topleft:3px;
-		border-top-left-radius:3px;
+		border-top-left-radius:0px;
 		-webkit-border-top-right-radius:3px;
 		-moz-border-radius-topright:3px;
-		border-top-right-radius:3px;
+		border-top-right-radius:0px;
 		-webkit-border-bottom-right-radius:3px;
 		-moz-border-radius-bottomright:3px;
-		border-bottom-right-radius:3px;
+		border-bottom-right-radius:0px;
 		-webkit-border-bottom-left-radius:3px;
 		-moz-border-radius-bottomleft:3px;
-		border-bottom-left-radius:3px;
+		border-bottom-left-radius:0px;
 		text-indent:0;
 		border:0px solid #00b5b5;
 		display:inline-block;
@@ -247,6 +262,8 @@ if (isset($_GET['bookmark'])) {
 		height:23px;
 		line-height:10px;
 		width: 66px;
+		margin-right: -59px;
+		margin-top: -13px;
 		text-decoration:none;
 		text-align:center;
 		text-shadow:1px 1px 0px #00b5b5;
@@ -278,6 +295,78 @@ if (isset($_GET['bookmark'])) {
 
 
 
+
+/*==================================== Table Results Thumbnail Code ======================================================*/
+
+
+
+	table{
+		border-collapse: collapse;
+	}
+
+	table tr.space{
+		height:7px;
+	}
+
+	table tr.space td{
+		/*background-color: #F1654C;*/
+		border-bottom:11px solid #D4D4D4;
+		/*background-color: #FFFFFF;*/
+	}
+
+	table tr td{
+		padding:3px;
+	}
+
+	table tr td.icon img{
+		border-radius: 40px;
+		width:158px;
+		height:135px;
+	}
+
+	table tr td.icon{
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+		padding-top:10px;
+	}
+
+	table tr td.title{
+		color:#3E4651;
+		font-size:15px;
+	}
+
+	table tr td.price{
+		color:#949494;
+		font-size:12px;
+		padding-left: 10px;
+	}
+
+
+	table tr td.price a{
+		font-size:24px;
+		text-align: right;
+		color:#00B5B5;
+		font-weight: bold;
+	/*	font-family: Arial;*/
+	}
+
+
+
+
+	table tr td.expiry{
+		font-size:12px;
+		text-align: right;
+		color:#949494;
+		padding-right: 10px;
+	/*	font-family: Arial;*/
+	}
+
+
+
+
+
+
 /*==================================== Nav Bar Code ======================================================*/
 
 
@@ -288,6 +377,7 @@ if (isset($_GET['bookmark'])) {
 		margin-right: 43.4%;*/
 	/*	margin-top: 6.2%;*/
 		background-color:#3E4651;
+		/*position:fixed;*/
 
 	}
 
@@ -298,7 +388,7 @@ if (isset($_GET['bookmark'])) {
 	}	
 
 	div.navbar img.menu{
-		margin-left:10px;
+		margin-left:45px;
 		width:40px;
 		height:40px;
 		margin-bottom:-2px; 
@@ -324,6 +414,7 @@ if (isset($_GET['bookmark'])) {
 	position: relative;
 	display: inline-table;
 	top:-23px;
+	right:6px;
 	}
 	
 	nav ul:after {
@@ -350,14 +441,19 @@ if (isset($_GET['bookmark'])) {
 		
 	nav ul li:hover a {
 		color: #fff;
+		background: #F1654C;
 	}
 	
 	nav ul li a {
 		display: block; /*padding: 13px 10px 0px 10px;*/
 		padding:0px;
+		padding-right:0px;
 		color: #757575; text-decoration: none;
 		border:0px solid black;
-		margin-top: 11px;
+		margin-top: 0px;
+		padding-top: 25px;
+		height:31px;
+		width:89px;
 
 		/*height:40px;*/
 
@@ -366,7 +462,7 @@ if (isset($_GET['bookmark'])) {
 
 
 	nav ul ul {
-	background: #5f6975; border-radius: 0px; padding: 0;
+	background: #F1654C; border-radius: 0px; padding: 0;
 	position: absolute; top: 100%;
 	right:auto;
 	left:100px;
@@ -374,20 +470,24 @@ if (isset($_GET['bookmark'])) {
 
 	nav ul ul li {
 		float: none; 
-		border-top: 1px solid #6b727c;
-		border-bottom: 1px solid #575f6a;
+		border-top: 0px solid #D4D4D4;
+		border-bottom: 1px solid #D4D4D4;
 		position: relative;
 	}
 
 	nav ul ul li a {
 		padding: 15px 20px 15px 20px;
-		width:70px;
+		width:95px;
 		color: #fff;
+		margin-top: 0px;
 	}	
 		
 	nav ul ul li a:hover {
 		background: #4b545f;
 	}
+
+
+
 
 
 
@@ -451,8 +551,8 @@ if (isset($_GET['bookmark'])) {
 if(isset($_SESSION['myusername'])){
 		$name = $_SESSION['myusername'];	
 
-		echo 'Welcome ';
-		echo $name;
+		echo 'Welcome, ';
+		echo '<b>'.$name.'</b>';
 	}
 ?>
 
@@ -471,7 +571,7 @@ if(isset($_SESSION['myusername'])){
 
 
 
-	<table border = "1">
+	<table border = "0">
 		<tr>
 			<td align = "center"><a href = "featured.php"><img src="img/Featured.jpg" height = "30px" width = "66px"></a></td>
 			<td align = "center"><a href = "entertainment.php"><img src="img/Entertainment1.jpg" height = "30px" width = "66px"></a></td>
@@ -480,34 +580,63 @@ if(isset($_SESSION['myusername'])){
 
 		</tr>
 	</table>
-	<table border = "1">
+	<table border = "0">
+		<tr class="space"><td></td><td></td></tr>
 		<tr>
-			<td align = "center" ><a href = "dealinfo.php?itemid=5"><img src="img/BreadTalk.jpg" height = "150px" width = "150px"></a></td>
-			<td align = "center"><b>Bread Talk Chicken Floss Bread</b><br>
-				<strike>$1.50</strike> <a style="color:red">$0.90</a> / Bread<br>
-				<i>Expiry: 27 Mar 2014</i><br>
-				<a href = "payment.php?itemid=5"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>   <a href = "dealinfo.php?itemid=5"><input type = "dealinfo" value = "Deal Info"></a>
-				<a href="featured.php?bookmark=5"><input type = "bookmark" value = "Bookmark"></a>
+			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=5"><img src="img/BreadTalk.jpg"></a></td>
+			<td class="title" align = "center">
+				<a href="featured.php?bookmark=5"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<b>Bread Talk Chicken Floss Bread</b><br><br/>
+				
+			 <a href = "dealinfo.php?itemid=5"><input type = "dealinfo" value = "Deal Info"></a>
+			 	<a href = "payment.php?itemid=5"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a> 
+				
 			</td>
 		</tr>
+		<tr><td class="price"><strike>$1.50</strike> <a style="color:#00B5B5">$0.90</a> / Bread </td>
+				<td class="expiry">Exp: 27 Mar 2014</td></tr>
+
+
+
+
+
+
+		<tr class="space"><td></td><td></td></tr>
 		<tr>
-			<td align = "center" ><a href = "dealinfo.php?itemid=1"><img src="img/LionKing.jpg" height = "150px" width = "150px"></a></td>
-			<td align = "center"><b>Lion King Musical</b><br>
-				<strike>$75</strike> <a style="color:red">$25</a> / Tix<br>
-				<i>Expiry: 28 Mar 2014</i><br>
-				<a href = "payment.php?itemid=1"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>   <a href = "dealinfo.php?itemid=1"><input type = "dealinfo" value = "Deal Info"></a>
-				<a href="featured.php?bookmark=1"><input type = "bookmark" value = "Bookmark"></a>
+			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=1"><img src="img/LionKing.jpg"></a></td>
+			<td class="title" align = "center">
+				<a href="featured.php?bookmark=1"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<b>Lion King Musical</b><br><br/>
+
+				<a href = "dealinfo.php?itemid=1"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href = "payment.php?itemid=1"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>   
 			</td>
-		</tr>
+		</tr>		
+		<tr><td class="price"><strike>$75</strike> <a style="color:#00B5B5">$25</a> / Tix</td>
+			<td class="expiry">	Exp: 28 Mar 2014</td></tr>
+			
+
+
+
+		<tr class="space"><td></td><td></td></tr>
 		<tr>
-			<td align = "center" ><a href = "dealinfo.php?itemid=8"><img src="img/Korea.jpg" height = "150px" width = "150px"></a></td>
-			<td align = "center"><b>One way Travel Tix to Korea</b><br>
-				<strike>$478</strike> <a style="color:red">$128</a> / Tix<br>
-				<i>Expiry: 27 Mar 2014</i><br>
-				<a href = "payment.php?itemid=8"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>   <a href = "dealinfo.php?itemid=8"><input type = "dealinfo" value = "Deal Info"></a>
-				<a href="featured.php?bookmark=8"><input type = "bookmark" value = "Bookmark"></a>
-			</td>
+			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=8"><img src="img/Korea.jpg"></a></td>
+			<td class="title" align = "center">
+				<a href="featured.php?bookmark=8"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<b>One way Travel Tix to Korea</b><br><br/>
+
+				<a href = "dealinfo.php?itemid=8"><input type = "dealinfo" value = "Deal Info"></a>
+				<a href = "payment.php?itemid=8"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>  
+			</td>	
 		</tr>
+		<tr><td class="price"><strike>$478</strike> <a style="color:red">$128</a> / Tix</td>
+			<td class="expiry">	Exp: 27 Mar 2014</td></tr>
+					
+		<tr class="space"><td></td><td></td></tr>
+
+
+
+
 
 	</table>
-<a href="bookmark.php">Bookmark</a>
+
