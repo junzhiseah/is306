@@ -1264,7 +1264,7 @@ if(isset($_SESSION['myusername'])){
 					
 					<?php 
 						$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
-						$comments = array("I can totally relate to them! ","Army boys are so cool!");
+						$comments = array("I love the discount! ","Thank you for the promotion!");
 
 						if (isset($_GET['comment'])) {
 							$input = $_GET['comment'];
