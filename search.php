@@ -622,14 +622,14 @@ if (isset($_GET['bookmark'])) {
 
 			echo '<tr>';
 			echo '<td class="icon" align = "center" > <a href = "dealinfo.php?itemid='.$item['id'].'"><img src="'.$item['image'].'"></a></td>';
-			echo '<td class="title" align = "center">
-			<b>'.$item['title'].'</b><br><br/>';
+			echo '<td class="title" align = "center">';
+			echo '<a href="search.php?bookmark='.$item['id'].'&search='.$search.'"><input type = "bookmark" value = "Bookmark"></a><br/><br/>';
+			echo '<b>'.$item['title'].'</b><br><br/>';
 			
 			echo '  <a href = "dealinfo.php?itemid='.$item['id'].'"><input type = "dealinfo" value = "Deal Info"></a>';
 			
 			
 			echo '<a href = "payment.php?itemid='.$item['id'].'"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a></td>';
-			echo '<a href="search.php?bookmark='.$item['id'].'&search='.$search.'"><input type = "bookmark" value = "Bookmark"></a></tr>';
 			echo '<tr><td class="price"><strike>$'.$item['usualprice'].'</strike> <a style="color:#00B5B5"> $'.$item['currentprice'].'</a> /'.$item['quantifier'].'</td>';
 
 			echo '<td class="expiry">'.$item['expiry'].'</td></tr>';
