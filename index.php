@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <style type="text/css">
 	
 	/*copy paste style type=text/css tag together with this body tag into the page you develop.
@@ -232,7 +235,7 @@
 
 
 <?php
-session_start();
+
 
 if (!isset($_SESSION['itemArr'])) {
 	$itemArr = array(
