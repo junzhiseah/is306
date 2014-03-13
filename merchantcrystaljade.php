@@ -295,9 +295,10 @@
 				?>
 		<table border = "1">
 			<tr>
-    			<td height = "20px" width = "20px">
+    			<td height = "20px" width = "20px"><a href = "dealinfo.php?itemid=3">
     				<?php 
     				print ($output); ?>
+    			</a>
     			</td>
     		</tr>
     		<tr>

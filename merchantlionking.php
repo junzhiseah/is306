@@ -1081,9 +1081,10 @@ if (isset($_GET['bookmark'])) {
 				?>
 		<table>
 			<tr>
-    			<td height = "20px" width = "20px">
+    			<td height = "20px" width = "20px"><a href = "dealinfo.php?itemid=1">
     				<?php 
     				print ($output); ?>
+    			</a>
     			</td>
     		</tr>
     		<tr>
