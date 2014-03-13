@@ -649,8 +649,8 @@ session_start();
 			<td><input name="quantity" type="text" id="quantity" value=""></td>
 			</tr>
 
-			<tr><td>Price</td> 
-			<td><input name="price" type="text" id="price" value="<?php echo '$'.$item['currentprice']; ?>"></td>
+			<tr><td>Price ($)</td> 
+			<td><input name="price" type="text" id="price" value="<?php echo $item['currentprice']; ?>"></td>
 			</tr>
 
 			<tr><td>Card No</td> 

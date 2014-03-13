@@ -530,8 +530,8 @@ session_start();
 
 
 	div.maincontainer{
-		margin-left: 30px;
-		margin-right: 30px;
+		margin-left: 15px;
+		margin-right: 15px;
 		margin-bottom: 20px;
 /*		margin-top: 20px;*/
 		padding:10px;
@@ -669,16 +669,13 @@ if(isset($_SESSION['myusername'])){
 				$quantity = (integer)htmlentities($_GET["quantity"]);
 				$price = (integer)htmlentities($_GET["price"]);
 				$totalamount = $quantity * $price;
-
-				echo $quantity;
-				echo $price;
 			?>
-			<tr><td>Price</td> 
-			<td><input name="price" type="" id="price" readonly="readonly" value="<?php echo '$'.htmlentities($_GET["price"]); ?>" /></td>
+			<tr><td>Price ($)</td> 
+			<td><input name="price" type="" id="price" readonly="readonly" value="<?php echo htmlentities($_GET["price"]); ?>" /></td>
 			</tr>
 
-			<tr><td>Total Amount</td> 
-			<td><input name="totalamount" type="" id="totalamount" readonly="readonly" value="<?php echo '$'.$totalamount ?>" /></td>
+			<tr><td>Total Amount ($)</td> 
+			<td><input name="totalamount" type="" id="totalamount" readonly="readonly" value="<?php echo $totalamount ?>" /></td>
 			</tr>
 
 			<tr><td>Card No</td> 
