@@ -34,6 +34,13 @@
 		width:130px;
 	}
 
+
+	input[type=password]{
+		background-color: #3E4651;
+		color:white;
+		width:130px;
+	}
+
 	input[type=submit] {
 		-moz-box-shadow:inset 0px 1px 0px 0px #F1654C;
 		-webkit-box-shadow:inset 0px 1px 0px 0px #F1654C;
@@ -624,7 +631,7 @@
 			<td><input name="myusername" type="text" id="myusername"></td>
 		</tr></br>
 		<tr><td>Password</td> 
-			<td><input name="mypassword" type="text" id="mypassword"></td>
+			<td><input name="mypassword" type="password" id="mypassword"></td>
 			</br>
 		</tr></table>	
 			
