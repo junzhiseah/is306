@@ -223,11 +223,17 @@
 									<html>
 										<body>
 										
-										<script> 
-										var clicks = 0;
+										<script>
+										window.onload = function(){
+											var clicks = 125;
+											var doc = document.getElementById("test").innerHTML=clicks;
+										}
+										</script>
 
+										<script> 
+										
 										function showClicks(){
-											clicks++;
+											clicks = 126;
 											var doc = document.getElementById("test").innerHTML=clicks;
 										}
 										</script>

@@ -963,12 +963,17 @@ if (isset($_GET['bookmark'])) {
 							
 									<html>
 										<body>
-										
-										<script> 
-										var clicks = 0;
+										<script>
+										window.onload = function(){
+											var clicks = 287;
+											var doc = document.getElementById("test").innerHTML=clicks;
+										}
+										</script>
 
+										<script> 
+										
 										function showClicks(){
-											clicks++;
+											clicks = 288;
 											var doc = document.getElementById("test").innerHTML=clicks;
 										}
 										</script>

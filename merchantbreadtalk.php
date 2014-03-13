@@ -222,12 +222,17 @@
 								<td>
 									<html>
 										<body>
-										
-										<script> 
-										var clicks = 0;
+										<script>
+										window.onload = function(){
+											var clicks = 99;
+											var doc = document.getElementById("test").innerHTML=clicks;
+										}
+										</script>
 
+										<script> 
+									
 										function showClicks(){
-											clicks++;
+											clicks = 100;
 											var doc = document.getElementById("test").innerHTML=clicks;
 										}
 										</script>
