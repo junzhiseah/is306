@@ -1326,8 +1326,23 @@ if(isset($_SESSION['myusername'])){
 
 
 	<table>
+
+		<script>
+			window.onload = function(){
+				var clicks = 5;
+				var doc = document.getElementById("test").innerHTML=clicks;
+			}
+		</script>
+
+		<script> 
+										
+			function showClicks(){
+				clicks = 6;
+				var doc = document.getElementById("test").innerHTML=clicks;
+			}
+		</script>
 		<tr>
-			<td><h2>Likes: <?php echo $item['itemlikes']; ?><img src="img/like.PNG" height = "15px" width = "15px"></h2></td>
+			<td><h2>Likes: <span id="test"></span><img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();"></h2></td>
 		</tr>
 		<tr></tr>
 		<tr>	
