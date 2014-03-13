@@ -593,7 +593,7 @@ if (isset($_GET['bookmark'])) {
 
 
 <?php
-	$search = $_POST['search'];
+	$search = $_GET['search'];
 	$results = array();
 
 	foreach ($itemArr as $key => $value) {
@@ -628,9 +628,9 @@ if (isset($_GET['bookmark'])) {
 			echo '  <a href = "dealinfo.php?itemid='.$item['id'].'"><input type = "dealinfo" value = "Deal Info"></a>';
 			
 			
-			echo '<a href = "payment.php?itemid='.$item['id'].'"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a></td></tr> ';
+			echo '<a href = "payment.php?itemid='.$item['id'].'"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a></td>';
+			echo '<a href="search.php?bookmark='.$item['id'].'&search='.$search.'"><input type = "bookmark" value = "Bookmark"></a></tr>';
 			echo '<tr><td class="price"><strike>$'.$item['usualprice'].'</strike> <a style="color:#00B5B5"> $'.$item['currentprice'].'</a> /'.$item['quantifier'].'</td>';
-			
 
 			echo '<td class="expiry">'.$item['expiry'].'</td></tr>';
 			// if ($dateTime > $expiryDate || $quantitySold == $quantityAvail) {
@@ -651,7 +651,7 @@ if (isset($_GET['bookmark'])) {
 
 
 			<div class="searchengine">
-				<form action="search.php" method="POST">
+				<form action="search.php" method="GET">
 					<input type="text" name="search" />
 					<input type="submit" value="SEARCH"/>
 				</form>
@@ -676,7 +676,7 @@ if (isset($_GET['bookmark'])) {
 
 
 			<div class="searchengine">
-				<form action="search.php" method="POST">
+				<form action="search.php" method="GET">
 					<input type="text" name="search" />
 					<input type="submit" value="SEARCH"/>
 				</form>

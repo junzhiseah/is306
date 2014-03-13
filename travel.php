@@ -573,7 +573,7 @@ if(isset($_SESSION['myusername'])){
 
 
 <div class="searchengine">
-	<form action="search.php" method="POST">
+	<form action="search.php" method="GET">
 		<input type="text" name="search" />
 		<input type="submit" value="SEARCH"/>
 	</form>
