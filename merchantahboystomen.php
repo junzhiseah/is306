@@ -223,9 +223,15 @@
 									<html>
 										<body>
 										
-										<script> 
-										var clicks = 87;
+										<script>
+										window.onload = function(){
+											var clicks = 87;
+											var doc = document.getElementById("test").innerHTML=clicks;
+										}
+										</script>
 
+										<script> 
+										
 										function showClicks(){
 											clicks = 88;
 											var doc = document.getElementById("test").innerHTML=clicks;
