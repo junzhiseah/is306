@@ -576,7 +576,8 @@ if (isset($_GET['bookmark'])) {
 		                 	 <li><a href="richardprofile.php">My Profile</a></li>
 		                  	<li><a href="bookmark.php">Bookmarks</a></li>
 		                  	<li><a href="purchases.php">My Purchases</a></li>
-		                 	 <li><a href="#" >My Deals</a></li>
+		                 	 <li><a href="#" >My Listings</a></li>
+		                 	 <li><a href="#" >Help</a></li>
 		                  	<li><a href="validatelogout.php" >Logout</a></li>
 		                </ul>	
 					<?php } ?>
