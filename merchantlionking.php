@@ -905,18 +905,18 @@ if (isset($_GET['bookmark'])) {
 
 					<?php if(!isset($_SESSION['myusername'])){ ?>
 							<ul class="dropdown-menu">
-								  <li><a href="">Home</a></li>	
+								  <li><a href="index.php">Home</a></li>	
 								   <li><a href="login.php">Login</a></li>	
-								   <li><a href="">Register</a></li>	
-								    <li><a href="">Help</a></li>	
+								   <li><a href="register.php">Register</a></li>	
+								    <li><a href="#">Help</a></li>	
 		                	</ul>
 
 					<?php } else{ ?>
 						<ul class="dropdown-menu">
-							 <li><a href="">Home</a></li>	
+							 <li><a href="index.php">Home</a></li>	
 		                 	 <li><a href="richardprofile.php">My Profile</a></li>
 		                  	<li><a href="bookmark.php">Bookmarks</a></li>
-		                  	<li><a href="#">My Purchases</a></li>
+		                  	<li><a href="purchases.php">My Purchases</a></li>
 		                 	 <li><a href="#" >My Deals</a></li>
 		                  	<li><a href="validatelogout.php" >Logout</a></li>
 		                </ul>	
