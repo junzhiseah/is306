@@ -804,6 +804,22 @@ input[type=call] {
 	/*	font-family: Arial;*/
 	}
 
+	div.merchantlink{
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	h2.merchant{
+		text-align: center;
+		display: inline;
+		font-size: 13px;
+		color:#3E4651;
+	}
+
+	h2.merchant a{
+		font-size: 16px;
+	}
+
 
 
 
@@ -1190,14 +1206,9 @@ if(isset($_SESSION['myusername'])){
 	</div>
 
 
-		<table>
-		<tr>
-			
-			<td>
-				<b>Merchant:  </b><b><a href="merchant<?php echo $item['merchant']; ?>.php"><?php echo $item['merchant']; ?></a></b>
-			</td>
-		</tr>
-		</table>	
+			<div class="merchantlink">
+				<h2 class="merchant">Merchant:  </h2><h2 class="merchant"><a href="merchant<?php echo $item['merchant']; ?>.php"><?php echo $item['merchant']; ?></a></h2>
+			</div>
 
 		
 		

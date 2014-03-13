@@ -469,13 +469,13 @@ if (isset($_GET['bookmark'])) {
 
 
 	button.goback {
-		-moz-box-shadow:inset 0px 1px 0px 0px #F1654C;
-		-webkit-box-shadow:inset 0px 1px 0px 0px #F1654C;
-		box-shadow:inset 0px 1px 0px 0px #F1654C;
-		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1654C), color-stop(1, #F1654C) );
-		background:-moz-linear-gradient( center top, #F1654C 5%, #F1654C 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1654C', endColorstr='#F1654C');
-		background-color:#F1654C;
+		-moz-box-shadow:inset 0px 1px 0px 0px #00B5B5;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #00B5B5;
+		box-shadow:inset 0px 1px 0px 0px #00B5B5;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00B5B5), color-stop(1, #00B5B5) );
+		background:-moz-linear-gradient( center top, #00B5B5 5%, #00B5B5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00B5B5', endColorstr='#00B5B5');
+		background-color:#00B5B5;
 		-webkit-border-top-left-radius:3px;
 		-moz-border-radius-topleft:3px;
 		border-top-left-radius:1px;
@@ -489,7 +489,7 @@ if (isset($_GET['bookmark'])) {
 		-moz-border-radius-bottomleft:3px;
 		border-bottom-left-radius:1px;
 		text-indent:0;
-		border:1px solid #F1654C;
+		border:1px solid #00B5B5;
 		display:inline-block;
 		color:#ffffff;
 		font-family:Trebuchet MS;
@@ -498,10 +498,11 @@ if (isset($_GET['bookmark'])) {
 		font-style:normal;
 		height:47px;
 		line-height:22px;
+		margin-top: 30px;
 		width:200px;
 		text-decoration:none;
 		text-align:center;
-		text-shadow:1px 1px 0px #F1654C;
+		text-shadow:1px 1px 0px #00B5B5;
 	}
 	button.goback:hover {
 		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1654C), color-stop(1, #F1654C) );
@@ -818,6 +819,7 @@ if (isset($_GET['bookmark'])) {
 	div.maincontainer img.dealicon{
 		width:150px;
 		height:140px;
+		margin-left: 60px;
 	}
 
 
@@ -827,6 +829,7 @@ if (isset($_GET['bookmark'])) {
 		background-color: #D4D4D4;
 		text-align: center;
 		margin-top: -6px;
+		margin-left: 60px;
 	}
 
 
@@ -873,7 +876,7 @@ if (isset($_GET['bookmark'])) {
 
 
 	div.reviews table tr td input[type=text]{
-		height:33px;
+		height:40px;
 		width:280px;
 	}
 
