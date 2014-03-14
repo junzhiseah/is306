@@ -619,7 +619,16 @@ input[type=call] {
 		font-style: italic;
 		margin-bottom: 0px;
 		margin-top: 0px;
+		display:inline;
 	}	
+
+	div.reviews table tr td h3{
+		font-size: 14px;
+		color:black;
+		font-style: italic;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}		
 
 
 	div.reviews table tr td h5{
@@ -627,6 +636,7 @@ input[type=call] {
 		color:#3E4651;
 		margin-bottom: 0px;
 		margin-top: 0px;
+		display:inline;
 	}	
 
 	div.reviews table tr td h2.newcomment{
@@ -635,6 +645,16 @@ input[type=call] {
 		margin-top: 0px;
 		margin-bottom: 0px;
 	}
+
+
+	img.commentpic{
+		border-radius: 50px;
+		margin-left: 232px;
+		margin-bottom: 9px;
+		margin-top:-36px;
+	}
+
+
 
 
 	div.reviews table tr td input[type=text]{
@@ -708,8 +728,6 @@ input[type=call] {
 		margin-top: 0px;
 		margin-bottom: 0px;
 	}
-
-
 
 
 
@@ -823,13 +841,13 @@ input[type=call] {
 	}
 
 	h2.likes{
-		margin-left: 204px;
-		margin-top: -30px;
+		margin-left: 191px;
+		margin-top: -67px;
 		color:#3E4651;
 		font-size: 13px;
 	}
 
-
+	
 
 
 
@@ -1092,7 +1110,7 @@ if(isset($_SESSION['myusername'])){
 			}
 			</script>
 		<tr>
-			<td><h2>Likes: <img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();"><span id="test"></span></h2></td>
+			<td><h2 class="likes">Likes: <img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();"><span id="test"></span></h2></td>
 		</tr>
 
 	</table>
@@ -1316,7 +1334,7 @@ if(isset($_SESSION['myusername'])){
 					<?php 
 						$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
 						$comments = array("This dealer is very reliable! ","Thanks for this awesome deal!");
-						$userpic = array('<img src="img/JapanMerchant.jpg" height = "40px" width = "30px" />', '<img src="img/JapanMerchant.jpg" height = "40px" width = "30px" />');
+						$userpic = array('<img class="commentpic" src="img/JapanMerchant.jpg" height = "40px" width = "30px" />', '<img class="commentpic" src="img/JapanMerchant.jpg" height = "40px" width = "30px" />');
 						$namelist = array("Rain Lee", "Rain Lee");
 
 						if (isset($_GET['comment'])) {
@@ -1324,7 +1342,7 @@ if(isset($_SESSION['myusername'])){
 							//echo $input;
 							$dateTime = new DateTime();
 							$strDateTime = $dateTime->format('d-m-Y H:i:s');
-							$newUserPic = '<img src="img/richard.jpg" height = "40px" width = "30px" />';
+							$newUserPic = '<img class="commentpic" src="img/richard.jpg" height = "40px" width = "30px" />';
 							$newName = "";	
 							if(isset($_SESSION['myusername'])){
 									$newName = $_SESSION['myusername'];	
@@ -1339,10 +1357,11 @@ if(isset($_SESSION['myusername'])){
 						
 						$clength=count($comments);
 						for($x=0;$x<$clength;$x++){
-						   echo $userpic[$x];
-						   echo $namelist[$x];
+						   
 						   echo '<h4>"'.$comments[$x].'"</h4>';
+						   echo '<h3>'.$namelist[$x].'</h3>';
 						   echo '<h5>'.$time[$x].'</h5>';
+						   echo $userpic[$x];
 						   echo "<br>";
 						   echo "<br>";
 
@@ -1391,16 +1410,10 @@ if(isset($_SESSION['myusername'])){
 
 	<table>
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 		
 		<tr></tr>
-=======
-	
->>>>>>> Stashed changes
-=======
-	
->>>>>>> Stashed changes
+
 		<tr>	
 			<td><a href = "payment.php?itemid=<?php echo $itemid; ?>"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>
 				
