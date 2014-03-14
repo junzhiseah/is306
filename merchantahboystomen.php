@@ -224,17 +224,28 @@
 										<body>
 										
 										<script>
-										window.onload = function(){
-											var clicks = 87;
+											var counter = 0;
+											var clicks = 87
+											window.onload = function(){
+											clicks = 87;
 											var doc = document.getElementById("test").innerHTML=clicks;
-										}
+
+											}
 										</script>
 
 										<script> 
 										
 										function showClicks(){
-											clicks = 88;
-											var doc = document.getElementById("test").innerHTML=clicks;
+											if(clicks == 87){
+												clicks = 88;
+												counter = 1;
+												var doc = document.getElementById("test").innerHTML=clicks;
+											}
+											else{
+												clicks = 87;
+												counter = 0;
+												var doc = document.getElementById("test").innerHTML=clicks;
+											}
 										}
 										</script>
 										<img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();">
@@ -319,27 +330,39 @@
 	</table>
 	<?php 
 		$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
-		$comments = array("I can totally relate to them! ","Army boys are so cool!");
+		$comments = array("This dealer is very reliable! ","Thanks for this awesome deal!");
+		$userpic = array('<img src="img/JapanMerchant.jpg" height = "40px" width = "30px" />', '<img src="img/JapanMerchant.jpg" height = "40px" width = "30px" />');
+		$namelist = array("Rain Lee", "Rain Lee");
 
 		if (isset($_GET['comment'])) {
 			$input = $_GET['comment'];
 			//echo $input;
 			$dateTime = new DateTime();
 			$strDateTime = $dateTime->format('d-m-Y H:i:s');
+			$newUserPic = '<img src="img/richard.jpg" height = "40px" width = "30px" />';
+			$newName = "";	
+			if(isset($_SESSION['myusername'])){
+					$newName = $_SESSION['myusername'];	
+				}
+			
+			
 			array_push($comments, $input);
 			array_push($time, $strDateTime);
+			array_push($userpic, $newUserPic);
+			array_push($namelist, $newName);
 		}
 		
 		$clength=count($comments);
 		for($x=0;$x<$clength;$x++){
-		   echo $comments[$x];
-		   echo "<br>";
-		   echo $time[$x];
+		   echo $userpic[$x];
+		   echo $namelist[$x];
+		   echo '<h4>"'.$comments[$x].'"</h4>';
+		   echo '<h5>'.$time[$x].'</h5>';
 		   echo "<br>";
 		   echo "<br>";
 
 		}
-		
+
 	?>
 	
 	New Comment

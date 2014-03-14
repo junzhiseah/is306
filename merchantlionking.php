@@ -1024,26 +1024,37 @@ if (isset($_GET['bookmark'])) {
 							
 						<h4 class="likes">		Likes:
 							
-									<html>
-										<body>
-										<script>
-										window.onload = function(){
-											var clicks = 287;
-											var doc = document.getElementById("test").innerHTML=clicks;
-										}
-										</script>
+							<html>
+								<body>
+								<script>
+								var counter = 0;
+								var clicks = 287;
+								window.onload = function(){
+									clicks = 287;
+									var doc = document.getElementById("test").innerHTML=clicks;
 
-										<script> 
-										
-										function showClicks(){
-											clicks = 288;
-											var doc = document.getElementById("test").innerHTML=clicks;
-										}
-										</script>
-										<img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();">
-										<span id="test"></span>
-										</body>
-										</html>
+								}
+								</script>
+
+								<script> 
+								
+								function showClicks(){
+									if(clicks == 287){
+										clicks = 288;
+										counter = 1;
+										var doc = document.getElementById("test").innerHTML=clicks;
+									}
+									else{
+										clicks = 287;
+										counter = 0;
+										var doc = document.getElementById("test").innerHTML=clicks;
+									}
+								}
+								</script>
+								<img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();">
+								<span id="test"></span>
+								</body>
+								</html>
 						</h4>
 
 						<br/>
@@ -1135,19 +1146,32 @@ if (isset($_GET['bookmark'])) {
 					
 					<?php 
 						$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
-						$comments = array("I love the Fantastic show! ","It's Super awesome! It's a MUST to watch it!");
+						$comments = array("This dealer is very reliable! ","Thanks for this awesome deal!");
+						$userpic = array('<img src="img/JapanMerchant.jpg" height = "40px" width = "30px" />', '<img src="img/JapanMerchant.jpg" height = "40px" width = "30px" />');
+						$namelist = array("Rain Lee", "Rain Lee");
 
 						if (isset($_GET['comment'])) {
 							$input = $_GET['comment'];
 							//echo $input;
 							$dateTime = new DateTime();
 							$strDateTime = $dateTime->format('d-m-Y H:i:s');
+							$newUserPic = '<img src="img/richard.jpg" height = "40px" width = "30px" />';
+							$newName = "";	
+							if(isset($_SESSION['myusername'])){
+									$newName = $_SESSION['myusername'];	
+								}
+							
+							
 							array_push($comments, $input);
 							array_push($time, $strDateTime);
+							array_push($userpic, $newUserPic);
+							array_push($namelist, $newName);
 						}
 						
 						$clength=count($comments);
 						for($x=0;$x<$clength;$x++){
+						   echo $userpic[$x];
+						   echo $namelist[$x];
 						   echo '<h4>"'.$comments[$x].'"</h4>';
 						   echo '<h5>'.$time[$x].'</h5>';
 						   echo "<br>";

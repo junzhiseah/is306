@@ -1065,6 +1065,8 @@ if(isset($_SESSION['myusername'])){
 			</td>
 		</tr>
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 
 		<script>
@@ -1088,6 +1090,41 @@ if(isset($_SESSION['myusername'])){
 
 
 
+=======
+=======
+>>>>>>> Stashed changes
+		<script>
+			var counter = 0;
+			var clicks = 126;
+			window.onload = function(){
+				clicks = 126;
+				var doc = document.getElementById("test").innerHTML=clicks;
+
+			}
+			</script>
+
+			<script> 
+			
+			function showClicks(){
+				if(clicks == 126){
+					clicks = 127;
+					counter = 1;
+					var doc = document.getElementById("test").innerHTML=clicks;
+				}
+				else{
+					clicks = 126;
+					counter = 0;
+					var doc = document.getElementById("test").innerHTML=clicks;
+				}
+			}
+			</script>
+		<tr>
+			<td><h2>Likes: <img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();"><span id="test"></span></h2></td>
+		</tr>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 	</table>
 </div>
 
@@ -1308,19 +1345,32 @@ if(isset($_SESSION['myusername'])){
 					
 					<?php 
 						$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
-						$comments = array("I love the discount! ","Thank you for the promotion!");
+						$comments = array("This dealer is very reliable! ","Thanks for this awesome deal!");
+						$userpic = array('<img src="img/JapanMerchant.jpg" height = "40px" width = "30px" />', '<img src="img/JapanMerchant.jpg" height = "40px" width = "30px" />');
+						$namelist = array("Rain Lee", "Rain Lee");
 
 						if (isset($_GET['comment'])) {
 							$input = $_GET['comment'];
 							//echo $input;
 							$dateTime = new DateTime();
 							$strDateTime = $dateTime->format('d-m-Y H:i:s');
+							$newUserPic = '<img src="img/richard.jpg" height = "40px" width = "30px" />';
+							$newName = "";	
+							if(isset($_SESSION['myusername'])){
+									$newName = $_SESSION['myusername'];	
+								}
+							
+							
 							array_push($comments, $input);
 							array_push($time, $strDateTime);
+							array_push($userpic, $newUserPic);
+							array_push($namelist, $newName);
 						}
 						
 						$clength=count($comments);
 						for($x=0;$x<$clength;$x++){
+						   echo $userpic[$x];
+						   echo $namelist[$x];
 						   echo '<h4>"'.$comments[$x].'"</h4>';
 						   echo '<h5>'.$time[$x].'</h5>';
 						   echo "<br>";
@@ -1371,8 +1421,16 @@ if(isset($_SESSION['myusername'])){
 
 	<table>
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		
 		<tr></tr>
+=======
+	
+>>>>>>> Stashed changes
+=======
+	
+>>>>>>> Stashed changes
 		<tr>	
 			<td><a href = "payment.php?itemid=<?php echo $itemid; ?>"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>
 				

@@ -319,22 +319,34 @@
 	</table>
 	<?php 
 		$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
-		$comments = array("Cheap sushi alert! ","Fresh sushi for all!");
+		$comments = array("This dealer is very reliable! ","Thanks for this awesome deal!");
+		$userpic = array('<img src="img/JapanMerchant.jpg" height = "40px" width = "30px" />', '<img src="img/JapanMerchant.jpg" height = "40px" width = "30px" />');
+		$namelist = array("Rain Lee", "Rain Lee");
 
 		if (isset($_GET['comment'])) {
 			$input = $_GET['comment'];
 			//echo $input;
 			$dateTime = new DateTime();
 			$strDateTime = $dateTime->format('d-m-Y H:i:s');
+			$newUserPic = '<img src="img/richard.jpg" height = "40px" width = "30px" />';
+			$newName = "";	
+			if(isset($_SESSION['myusername'])){
+					$newName = $_SESSION['myusername'];	
+				}
+			
+			
 			array_push($comments, $input);
 			array_push($time, $strDateTime);
+			array_push($userpic, $newUserPic);
+			array_push($namelist, $newName);
 		}
 		
 		$clength=count($comments);
 		for($x=0;$x<$clength;$x++){
-		   echo $comments[$x];
-		   echo "<br>";
-		   echo $time[$x];
+		   echo $userpic[$x];
+		   echo $namelist[$x];
+		   echo '<h4>"'.$comments[$x].'"</h4>';
+		   echo '<h5>'.$time[$x].'</h5>';
 		   echo "<br>";
 		   echo "<br>";
 
@@ -343,7 +355,7 @@
 	?>
 	
 	New Comment
-	<form method="get" action="merchantahboystomen.php">
+	<form method="get" action="merchantsakaesushi.php">
 		<input type="text" name="comment" id="comment"><br>
 		
 		<br>
