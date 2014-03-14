@@ -1065,34 +1065,7 @@ if(isset($_SESSION['myusername'])){
 			</td>
 		</tr>
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
-
-		<script>
-			window.onload = function(){
-				var clicks = 5;
-				var doc = document.getElementById("test").innerHTML=clicks;
-			}
-		</script>
-
-		<script> 
-										
-			function showClicks(){
-				clicks = 6;
-				var doc = document.getElementById("test").innerHTML=clicks;
-			}
-		</script>
-		<tr>
-			<td><h2 class="likes">Likes: <span id="test"></span><img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();"></h2></td>
-		</tr>
-
-
-
-
-=======
-=======
->>>>>>> Stashed changes
 		<script>
 			var counter = 0;
 			var clicks = 126;
@@ -1121,10 +1094,7 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td><h2>Likes: <img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();"><span id="test"></span></h2></td>
 		</tr>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 	</table>
 </div>
 
