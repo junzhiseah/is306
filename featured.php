@@ -617,7 +617,7 @@ if(isset($_SESSION['myusername'])){
 
 		<tr class="space"><td></td><td></td></tr>
 		<tr>
-			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=1"><img src="img/LionKing.jpg"></a></td>
+			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=1"><img src="img/LionKing2.jpg"></a></td>
 			<td class="title" align = "center">
 				<a href="featured.php?bookmark=1"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
 				<b>Lion King Musical</b><br><br/>

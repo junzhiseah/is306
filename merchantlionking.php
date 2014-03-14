@@ -405,6 +405,7 @@ if (isset($_GET['bookmark'])) {
 		font-size:14px;
 		font-weight:bold;
 		font-style:normal;
+		margin-left: 19px;
 		height:30px;
 		line-height:20px;
 		width:210px;
@@ -448,6 +449,7 @@ if (isset($_GET['bookmark'])) {
 		color:#ffffff;
 		font-family:Trebuchet MS;
 		font-size:14px;
+		margin-left: 19px;
 		font-weight:bold;
 		font-style:normal;
 		height:30px;
@@ -666,10 +668,19 @@ if (isset($_GET['bookmark'])) {
 	}
 
 	div.maincontainer h5.nameemail{
-		font-size: 13px;
-		color:#black;
+		font-size: 17px;
+		color:#00B5B5;
 		margin-bottom: 0px;
 		margin-top: 0px;
+		display:inline;
+	}
+
+	div.maincontainer h2.label{
+		font-size: 13px;
+		color:#3E4651;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		display:inline;
 	}	
 
 	div.maincontainer h4.likes{
@@ -718,7 +729,7 @@ if (isset($_GET['bookmark'])) {
 		display: block;
 		/*margin-bottom: 20px;*/
 		margin-left: -99px;
-		width:128%;
+		width:209%;
 	}
 
 
@@ -769,7 +780,7 @@ if (isset($_GET['bookmark'])) {
 		padding-top: 32px;
 		height:0px;
 		width:0px;
-		margin-left: 0px;
+		margin-left: -85px;
 		padding-left: 18px;
 		padding-right: 43px;
 
@@ -802,6 +813,7 @@ if (isset($_GET['bookmark'])) {
 		
 	nav.call ul.call ul.dropdown-menu2 li a:hover {
 		background: #4b545f;
+		width:252px;
 	}
 
 
@@ -1003,12 +1015,12 @@ if (isset($_GET['bookmark'])) {
 				<div class="maincontainer">
 		
 
-						<img class="profilepic" src="img/LionKingMerchant.jpg">
+						<img class="profilepic" src="img/LionKing.jpg">
 				
 				<p/>
-						<h5 class="nameemail">lionking <br/>
+						<h2 class="label">Merchant: </h2><h5 class="nameemail">lionking <br/></h5>
 							
-							lionking@gmail.com <br/><br/></h5>
+						<h2 class="label">Email: lionking@gmail.com <br/><br/></h2>
 							
 						<h4 class="likes">		Likes:
 							
@@ -1043,7 +1055,7 @@ if (isset($_GET['bookmark'])) {
 										<ul class="call">
 										<li class="call">
 
-											<a href="#" class="call" data-toggle="dropdown"><img class="call" src="img/originalcall.PNG" height = "20px" width = "20px"/></a>	
+											<a href="#" class="call" data-toggle="dropdown"><img class="call" src="img/originalcall.PNG" height = "25px" width = "25px"/></a>	
 
 
 											<ul class="dropdown-menu2">
@@ -1076,7 +1088,7 @@ if (isset($_GET['bookmark'])) {
 
 			<?php
 				$images = array(
-					0 => 'LionKing.jpg',
+					0 => 'LionKing2.jpg',
 					1 => 'BreadTalk.jpg',
 					2 => 'Food.jpg',
 				);

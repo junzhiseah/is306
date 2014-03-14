@@ -333,6 +333,7 @@ input[type=call] {
 		font-style:normal;
 		height:30px;
 		line-height:20px;
+		margin-left: 31px;
 		width:177px;
 		text-decoration:none;
 		text-align:center;
@@ -376,6 +377,7 @@ input[type=call] {
 		font-size:14px;
 		font-weight:bold;
 		font-style:normal;
+		margin-left: 31px;
 		height:30px;
 		line-height:20px;
 		width:177px;
@@ -484,7 +486,7 @@ input[type=call] {
 		display: block;
 		/*margin-bottom: 20px;*/
 		margin-left: -99px;
-		width:128%;
+		width:171%;
 	}
 
 
@@ -561,7 +563,7 @@ input[type=call] {
 
 	nav.call ul.call ul.dropdown-menu2 li a {
 		padding: 15px 20px 15px 20px;
-		width:95px;
+		width:252px;
 		color: #fff;
 		margin-top: 0px;
 	}	
@@ -817,7 +819,14 @@ input[type=call] {
 	}
 
 	h2.merchant a{
-		font-size: 16px;
+		font-size: 18px;
+	}
+
+	h2.likes{
+		margin-left: 204px;
+		margin-top: -30px;
+		color:#3E4651;
+		font-size: 13px;
 	}
 
 
@@ -948,7 +957,6 @@ input[type=call] {
 
 
 
-
 </style>
 
 
@@ -1056,6 +1064,30 @@ if(isset($_SESSION['myusername'])){
 				<strike>$<?php echo $item['usualprice']; ?></strike> <a style="color:#00B5B5">$<?php echo $item['currentprice']; ?></a> / <?php echo $item['quantifier']; ?>
 			</td>
 		</tr>
+
+
+
+		<script>
+			window.onload = function(){
+				var clicks = 5;
+				var doc = document.getElementById("test").innerHTML=clicks;
+			}
+		</script>
+
+		<script> 
+										
+			function showClicks(){
+				clicks = 6;
+				var doc = document.getElementById("test").innerHTML=clicks;
+			}
+		</script>
+		<tr>
+			<td><h2 class="likes">Likes: <span id="test"></span><img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();"></h2></td>
+		</tr>
+
+
+
+
 	</table>
 </div>
 
@@ -1220,7 +1252,7 @@ if(isset($_SESSION['myusername'])){
 
 
 						<ul class="dropdown-menu2">
-		                  <li>Call<?php echo $item['merchant']; ?></li>
+		                  <li><b>Call merchant <?php echo $item['merchant']; ?></b></li>
 
 		                  	<li><a><input type = "call" value = "<?php echo $item['merchantphone']; ?>" height = "20px" width = "60px" readonly></a></li>
 		                  	<li><a><input type = "cancel" value = "Cancel" height = "20px" width = "60px" readonly></a></li>
@@ -1339,23 +1371,7 @@ if(isset($_SESSION['myusername'])){
 
 	<table>
 
-		<script>
-			window.onload = function(){
-				var clicks = 5;
-				var doc = document.getElementById("test").innerHTML=clicks;
-			}
-		</script>
-
-		<script> 
-										
-			function showClicks(){
-				clicks = 6;
-				var doc = document.getElementById("test").innerHTML=clicks;
-			}
-		</script>
-		<tr>
-			<td><h2>Likes: <span id="test"></span><img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();"></h2></td>
-		</tr>
+		
 		<tr></tr>
 		<tr>	
 			<td><a href = "payment.php?itemid=<?php echo $itemid; ?>"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>

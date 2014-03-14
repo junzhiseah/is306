@@ -265,7 +265,7 @@ if (!isset($_SESSION['itemArr'])) {
 			), 
 			1 => array (
 				'id' => '1',
-				'image' => 'img/LionKing.jpg',
+				'image' => 'img/LionKing2.jpg',
 				'title' => 'Lion King Musical',
 				'description' => 'Lion King Musical Tickets for Sale!',
 				'date' => '30 Mar 2014',
