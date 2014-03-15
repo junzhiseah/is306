@@ -353,6 +353,13 @@ if (isset($_GET['unbookmark'])) {
 		padding-top:10px;
 	}
 
+	h2.loginbookmark{
+		font-size:10px;
+		color:#3E4651;
+		font-weight: normal;
+		font-style: oblique;
+	}
+
 	table tr td.title{
 		color:#3E4651;
 		font-size:15px;
@@ -616,7 +623,7 @@ if(isset($_SESSION['myusername'])){
 				<?php 
 					}
 				} else { ?>
-					Please login to bookmark the deal!
+					<h2 class="loginbookmark">Please login to bookmark!</h2>
 				<?php	
 				}
 				?>
@@ -648,7 +655,7 @@ if(isset($_SESSION['myusername'])){
 				<?php 
 					}
 				} else { ?>
-					Please login to bookmark the deal!
+					<h2 class="loginbookmark">Please login to bookmark!</h2>
 				<?php	
 				}
 				?>
@@ -677,7 +684,7 @@ if(isset($_SESSION['myusername'])){
 				<?php 
 					}
 				} else { ?>
-					Please login to bookmark the deal!
+					<h2 class="loginbookmark">Please login to bookmark!</h2>
 				<?php	
 				}
 				?>

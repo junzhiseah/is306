@@ -1089,7 +1089,7 @@ if (isset($_GET['bookmark'])) {
 
 
 											<ul class="dropdown-menu2">
-							                  <li>Call lionking?</li>
+							                  <li>Call merchant lionking</li>
 
 							                  	<li><a><input type = "call" value = "99827122" height = "20px" width = "60px" readonly></a></li>
 							                  	<li><a><input type = "cancel" value = "Cancel" height = "20px" width = "60px" readonly></a></li>
