@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <style type="text/css">
 	
 	/*copy paste style type=text/css tag together with this body tag into the page you develop.
@@ -649,7 +650,6 @@
 </div>
 
 	<?php
-		session_start();
 		if(isset($_SESSION['errormsg'])){
 
 			echo $_SESSION['errormsg'];

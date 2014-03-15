@@ -1,6 +1,10 @@
 <?php
-session_start();
-
+	session_start();
+	
+	if(!isset($_SESSION['myusername'])){
+		header("location:login.php");
+	}
+	
 ?>
 
 <style type="text/css">
@@ -624,16 +628,6 @@ session_start();
 
 	$item = $itemArr[intval($itemid)];
 ?>
-
-
-
-
-<?php
-	
-	if(!isset($_SESSION['myusername'])){
-		header("location:login.php");
-	}
-	?>
 
 <body>
 <?php

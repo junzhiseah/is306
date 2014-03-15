@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <style type="text/css">
 	
 	/*copy paste style type=text/css tag together with this body tag into the page you develop.
@@ -617,9 +619,9 @@
 <div class="maincontainer">
 
 
+<body>
 
-
-	<form name="form1" method="post" action="passwordretrieve.php">
+	<form name="form1" method="post" action="processforgetpassword.php">
 
 		<h1>Forgotten your password?<br><br/>
 
@@ -635,7 +637,15 @@
 	<form method="get" action="index.php">
 			<input type="submit" name="back" value="Back to Main Page" />
 	</form>
+<?php
+		if(isset($_SESSION['forgetpassworderrormsg'])){
 
-
+			echo $_SESSION['forgetpassworderrormsg'];
+			unset($_SESSION['forgetpassworderrormsg']);
+		}
+	
+?>
+</body>
 </div>
 </div>
+

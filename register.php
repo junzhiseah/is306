@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <style type="text/css">
 	
 	/*copy paste style type=text/css tag together with this body tag into the page you develop.
@@ -643,7 +644,6 @@
 			<input type="submit" name="back" value="Back to Main Page" />
 	</form>
 	<?php
-		session_start();
 		if(isset($_SESSION['errormsg'])) {
 			
 			echo $_SESSION['errormsg'];
