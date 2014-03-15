@@ -608,7 +608,13 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=6"><img src="img/Japan.jpg"></a></td>
 			<td class="title" align = "center">
-				<a href="travel.php?bookmark=6"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php if(isset($_SESSION['myusername'])){ ?>
+					<a href="travel.php?bookmark=6"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php } else { ?>
+					Please login to bookmark the deal!
+				<?php	
+				}
+				?>
 				<b>Two way Travel Tix to Japan</b><br><br/>
 				
 			 <a href = "dealinfo.php?itemid=6"><input type = "dealinfo" value = "Deal Info"></a>
@@ -625,7 +631,13 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=7"><img src="img/France.jpg"></a></td>
 			<td class="title" align = "center">
-				<a href="travel.php?bookmark=7"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php if(isset($_SESSION['myusername'])){ ?>
+					<a href="travel.php?bookmark=7"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php } else { ?>
+					Please login to bookmark the deal!
+				<?php	
+				}
+				?>
 				<b>Trip to France</b><br><br/>
 				
 			 <a href = "dealinfo.php?itemid=7"><input type = "dealinfo" value = "Deal Info"></a>
@@ -644,7 +656,13 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=8"><img src="img/Korea.jpg"></a></td>
 			<td class="title" align = "center">
-				<a href="travel.php?bookmark=8"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php if(isset($_SESSION['myusername'])){ ?>
+					<a href="travel.php?bookmark=8"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php } else { ?>
+					Please login to bookmark the deal!
+				<?php	
+				}
+				?>
 				<b>One way Travel Tix to Korea</b><br><br/>
 				
 			 <a href = "dealinfo.php?itemid=8"><input type = "dealinfo" value = "Deal Info"></a>

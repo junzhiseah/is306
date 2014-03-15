@@ -607,7 +607,13 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=3"><img src="img/CrystalJade.jpg"></a></td>
 			<td class="title" align = "center">
-				<a href="food.php?bookmark=3"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php if(isset($_SESSION['myusername'])){ ?>
+					<a href="food.php?bookmark=3"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php } else { ?>
+					Please login to bookmark the deal!
+				<?php	
+				}
+				?>
 				<b>Crystal Jade Char Siew Bun</b><br><br/>
 				
 			 <a href = "dealinfo.php?itemid=3"><input type = "dealinfo" value = "Deal Info"></a>
@@ -624,7 +630,13 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=4"><img src="img/SakaeSushi.jpg"></a></td>
 			<td class="title" align = "center">
-				<a href="food.php?bookmark=4"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php if(isset($_SESSION['myusername'])){ ?>
+					<a href="food.php?bookmark=4"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php } else { ?>
+					Please login to bookmark the deal!
+				<?php	
+				}
+				?>
 				<b>Sakae Sushi Takeaway</b><br><br/>
 				
 			 <a href = "dealinfo.php?itemid=4"><input type = "dealinfo" value = "Deal Info"></a>
@@ -641,7 +653,13 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=5"><img src="img/BreadTalk.jpg"></a></td>
 			<td class="title" align = "center">
-				<a href="food.php?bookmark=5"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php if(isset($_SESSION['myusername'])){ ?>
+					<a href="food.php?bookmark=5"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php } else { ?>
+					Please login to bookmark the deal!
+				<?php	
+				}
+				?>
 				<b>Bread Talk Chicken Floss Bread</b><br><br/>
 				
 			 <a href = "dealinfo.php?itemid=5"><input type = "dealinfo" value = "Deal Info"></a>

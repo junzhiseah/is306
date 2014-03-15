@@ -602,7 +602,13 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=0"><img src="img/IceArt.jpg"></a></td>
 			<td class="title" align = "center">
-				<a href="entertainment.php?bookmark=0"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php if(isset($_SESSION['myusername'])){ ?>
+					<a href="entertainment.php?bookmark=0"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php } else { ?>
+					Please login to bookmark the deal!
+				<?php	
+				}
+				?>
 				<b>2 Degree Ice Art</b><br><br/>
 				
 			 <a href = "dealinfo.php?itemid=0"><input type = "dealinfo" value = "Deal Info"></a>
@@ -624,7 +630,13 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=1"><img src="img/LionKing2.jpg"></a></td>
 			<td class="title" align = "center">
-				<a href="entertainment.php?bookmark=1"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php if(isset($_SESSION['myusername'])){ ?>
+					<a href="entertainment.php?bookmark=2"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php } else { ?>
+					Please login to bookmark the deal!
+				<?php	
+				}
+				?>
 				<b>Lion King Musical</b><br><br/>
 				
 			 <a href = "dealinfo.php?itemid=1"><input type = "dealinfo" value = "Deal Info"></a>
@@ -647,7 +659,13 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=2"><img src="img/AhBoysToMen.jpg"></a></td>
 			<td class="title" align = "center">
-				<a href="entertainment.php?bookmark=2"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php if(isset($_SESSION['myusername'])){ ?>
+					<a href="entertainment.php?bookmark=2"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php } else { ?>
+					Please login to bookmark the deal!
+				<?php	
+				}
+				?>
 				<b>Ah Boys to Men the Musical</b><br><br/>
 				
 			 <a href = "dealinfo.php?itemid=2"><input type = "dealinfo" value = "Deal Info"></a>
