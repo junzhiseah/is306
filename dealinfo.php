@@ -640,7 +640,7 @@ input[type=call] {
 	}	
 
 	div.reviews table tr td h2.newcomment{
-		font-size: 15px;
+		font-size: 13px;
 		color:#3E4651;
 		margin-top: 0px;
 		margin-bottom: 0px;
@@ -652,6 +652,14 @@ input[type=call] {
 		margin-left: 232px;
 		margin-bottom: 9px;
 		margin-top:-36px;
+	}
+
+	h2.loginbookmark{
+		font-size: 11px;
+		margin-left: 15px;
+		color:#3E4651;
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 
 
@@ -723,7 +731,7 @@ input[type=call] {
 	}
 
 	div.buynow table tr td h2{
-		font-size: 15px;
+		font-size: 12px;
 		color:#3E4651;
 		margin-top: 0px;
 		margin-bottom: 0px;
@@ -1398,7 +1406,7 @@ if(isset($_SESSION['myusername'])){
 	<table>
 		<tr>
 			<td>
-				<h2 class="newcomment">Please login to leave a comment</h3><br/>
+				<h2 class="newcomment">Please login to leave a comment</h2><br/>
 					<form method="get" action="login.php">
 						<input type="submit" class="newcomment"value="Login" />
 					</form>
@@ -1437,7 +1445,7 @@ if(isset($_SESSION['myusername'])){
 					<td><a href="dealinfo.php?bookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>"><input type = "bookmark" value = "Bookmark"></a></td>
 				<?php } else { ?>
 					<td>
-						Please login to bookmark this deal
+						<h2 class="loginbookmark">Please login to bookmark this deal</h2>
 					</td>
 				<?php } ?>
 
