@@ -1165,30 +1165,33 @@ if (isset($_GET['bookmark'])) {
 					
 					<?php 
 						$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
-						$comments = array("This dealer is very reliable! ","Thanks for this awesome deal!");
-						$userpic = array('<img class="commentpic" src="img/JapanMerchant.jpg" height = "40px" width = "30px" />', '<img class="commentpic" src="img/JapanMerchant.jpg" height = "40px" width = "30px" />');
-						$namelist = array("Rain Lee", "Rain Lee");
+						$comments = array("The dealer is very reliable! ","He post many fantastic deals!");
+						$userpic = array('<img class="commentpic" src="img/JapanMerchant.jpg" height = "40px" width = "30px" />', '<img class="commentpic" src="img/DavidBeckham.jpg" height = "40px" width = "30px" />');
+						$namelist = array("Rain Lee", "David Beckham");
 
-						if (isset($_GET['comment'])) {
-							$input = $_GET['comment'];
-							//echo $input;
-							$dateTime = new DateTime();
-							$strDateTime = $dateTime->format('d-m-Y H:i:s');
-							$newUserPic = '<img class="commentpic" src="img/richard.jpg" height = "40px" width = "30px" />';
-							$newName = "";	
-							if(isset($_SESSION['myusername'])){
-									$newName = $_SESSION['myusername'];	
-								}
-							
-							
-							array_push($comments, $input);
-							array_push($time, $strDateTime);
-							array_push($userpic, $newUserPic);
-							array_push($namelist, $newName);
+						if(isset($_SESSION['myusername'])){
+							if (isset($_GET['comment'])) {
+								$input = $_GET['comment'];
+								//echo $input;
+								$dateTime = new DateTime();
+								$strDateTime = $dateTime->format('d-m-Y H:i:s');
+								$newUserPic = '<img class="commentpic" src="img/richard.jpg" height = "40px" width = "30px" />';
+								$newName = "";	
+								
+								$newName = $_SESSION['myusername'];	
+									
+								
+								
+								array_push($comments, $input);
+								array_push($time, $strDateTime);
+								array_push($userpic, $newUserPic);
+								array_push($namelist, $newName);
+							}
 						}
 						
 						$clength=count($comments);
 						for($x=0;$x<$clength;$x++){
+						   
 						   echo '<h4>"'.$comments[$x].'"</h4>';
 						   echo '<h3>'.$namelist[$x].'</h3>';
 						   echo '<h5>'.$time[$x].'</h5>';
@@ -1197,7 +1200,6 @@ if (isset($_GET['bookmark'])) {
 						   echo "<br>";
 
 						}
-						
 					?>
 					
 			</td>
@@ -1207,7 +1209,7 @@ if (isset($_GET['bookmark'])) {
 
 
 
-
+<?php if(isset($_SESSION['myusername'])){ ?>
 	<table>
 		<tr>
 			<td>
@@ -1225,6 +1227,21 @@ if (isset($_GET['bookmark'])) {
 			</td>
 		</tr>
 	</table>
+<?php } else { ?>
+	<table>
+		<tr>
+			<td>
+				<h2 class="newcomment">Please login to leave a comment</h3>
+					<form method="get" action="login.php">
+						<br>
+						<input type="submit" class="newcomment" name="addcomment" value="Login" />
+					</form>
+			</td>
+		</tr>
+	</table>
+<?php } ?>
+
+
 </div>
 
 	

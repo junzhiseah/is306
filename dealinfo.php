@@ -1333,9 +1333,9 @@ if(isset($_SESSION['myusername'])){
 					
 					<?php 
 						$time = array("26-03-2014 09:05:20", "27-03-2014 11:05:39"); 
-						$comments = array("This dealer is very reliable! ","Thanks for this awesome deal!");
-						$userpic = array('<img class="commentpic" src="img/JapanMerchant.jpg" height = "40px" width = "30px" />', '<img class="commentpic" src="img/JapanMerchant.jpg" height = "40px" width = "30px" />');
-						$namelist = array("Rain Lee", "Rain Lee");
+						$comments = array("This deal is very cheap! ","Awesome deal!");
+						$userpic = array('<img class="commentpic" src="img/JapanMerchant.jpg" height = "40px" width = "30px" />', '<img class="commentpic" src="img/DavidBeckham.jpg" height = "40px" width = "30px" />');
+						$namelist = array("Rain Lee", "David Beckham");
 
 						if(isset($_SESSION['myusername'])){
 							if (isset($_GET['comment'])) {
@@ -1401,7 +1401,6 @@ if(isset($_SESSION['myusername'])){
 				<h2 class="newcomment">Please login to leave a comment</h3><br/>
 					<form method="get" action="login.php">
 						<input type="submit" class="newcomment"value="Login" />
-
 					</form>
 			</td>
 		</tr>
