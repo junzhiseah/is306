@@ -1337,22 +1337,24 @@ if(isset($_SESSION['myusername'])){
 						$userpic = array('<img class="commentpic" src="img/JapanMerchant.jpg" height = "40px" width = "30px" />', '<img class="commentpic" src="img/JapanMerchant.jpg" height = "40px" width = "30px" />');
 						$namelist = array("Rain Lee", "Rain Lee");
 
-						if (isset($_GET['comment'])) {
-							$input = $_GET['comment'];
-							//echo $input;
-							$dateTime = new DateTime();
-							$strDateTime = $dateTime->format('d-m-Y H:i:s');
-							$newUserPic = '<img class="commentpic" src="img/richard.jpg" height = "40px" width = "30px" />';
-							$newName = "";	
-							if(isset($_SESSION['myusername'])){
-									$newName = $_SESSION['myusername'];	
-								}
-							
-							
-							array_push($comments, $input);
-							array_push($time, $strDateTime);
-							array_push($userpic, $newUserPic);
-							array_push($namelist, $newName);
+						if(isset($_SESSION['myusername'])){
+							if (isset($_GET['comment'])) {
+								$input = $_GET['comment'];
+								//echo $input;
+								$dateTime = new DateTime();
+								$strDateTime = $dateTime->format('d-m-Y H:i:s');
+								$newUserPic = '<img class="commentpic" src="img/richard.jpg" height = "40px" width = "30px" />';
+								$newName = "";	
+								
+								$newName = $_SESSION['myusername'];	
+									
+								
+								
+								array_push($comments, $input);
+								array_push($time, $strDateTime);
+								array_push($userpic, $newUserPic);
+								array_push($namelist, $newName);
+							}
 						}
 						
 						$clength=count($comments);
@@ -1366,7 +1368,6 @@ if(isset($_SESSION['myusername'])){
 						   echo "<br>";
 
 						}
-						
 					?>
 					
 			</td>
@@ -1376,7 +1377,7 @@ if(isset($_SESSION['myusername'])){
 
 
 
-
+<?php if(isset($_SESSION['myusername'])){ ?>
 	<table>
 		<tr>
 			<td>
@@ -1392,6 +1393,23 @@ if(isset($_SESSION['myusername'])){
 			</td>
 		</tr>
 	</table>
+<?php } else { ?>
+
+	<table>
+		<tr>
+			<td>
+				<h2 class="newcomment">Please login to leave a comment</h3><br/>
+					<form method="get" action="login.php">
+						<input type="submit" class="newcomment"value="Login" />
+
+					</form>
+			</td>
+		</tr>
+	</table>
+
+
+
+<?php } ?>
 </div>
 
 
