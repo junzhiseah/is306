@@ -1,12 +1,21 @@
 <?php
 session_start();
 	
-
+if (isset($_SESSION['myusername'])) {
+	$itemArr = $_SESSION['itemArr'];
+}
 
 if (isset($_GET['bookmark'])) {
 	$index = intval($_GET['bookmark']);
-	$itemArr = $_SESSION['itemArr'];
 	$itemArr[$index]['userbookmarked'] = "Yes";
+
+	unset($_SESSION['itemArr']);
+	$_SESSION['itemArr'] = $itemArr;
+}
+
+if (isset($_GET['unbookmark'])) {
+	$index = intval($_GET['unbookmark']);
+	$itemArr[$index]['userbookmarked'] = "No";
 
 	unset($_SESSION['itemArr']);
 	$_SESSION['itemArr'] = $itemArr;
@@ -607,9 +616,15 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=3"><img src="img/CrystalJade.jpg"></a></td>
 			<td class="title" align = "center">
-				<?php if(isset($_SESSION['myusername'])){ ?>
+				<?php if(isset($_SESSION['myusername'])){ 
+					if ($itemArr[3]['userbookmarked'] == "Yes") { ?>
+						<a href="food.php?unbookmark=3"><input type = "bookmark" value = "Unbookmark"></a><br/><br/>	
+					<?php } else {
+					?>
 					<a href="food.php?bookmark=3"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
-				<?php } else { ?>
+				<?php 
+					}
+				} else { ?>
 					Please login to bookmark the deal!
 				<?php	
 				}
@@ -630,9 +645,15 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=4"><img src="img/SakaeSushi.jpg"></a></td>
 			<td class="title" align = "center">
-				<?php if(isset($_SESSION['myusername'])){ ?>
+				<?php if(isset($_SESSION['myusername'])){ 
+					if ($itemArr[4]['userbookmarked'] == "Yes") { ?>
+						<a href="food.php?unbookmark=4"><input type = "bookmark" value = "Unbookmark"></a><br/><br/>	
+					<?php } else {
+					?>
 					<a href="food.php?bookmark=4"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
-				<?php } else { ?>
+				<?php 
+					}
+				} else { ?>
 					Please login to bookmark the deal!
 				<?php	
 				}
@@ -653,9 +674,15 @@ if(isset($_SESSION['myusername'])){
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=5"><img src="img/BreadTalk.jpg"></a></td>
 			<td class="title" align = "center">
-				<?php if(isset($_SESSION['myusername'])){ ?>
+				<?php if(isset($_SESSION['myusername'])){ 
+					if ($itemArr[5]['userbookmarked'] == "Yes") { ?>
+						<a href="food.php?unbookmark=5"><input type = "bookmark" value = "Unbookmark"></a><br/><br/>	
+					<?php } else {
+					?>
 					<a href="food.php?bookmark=5"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
-				<?php } else { ?>
+				<?php 
+					}
+				} else { ?>
 					Please login to bookmark the deal!
 				<?php	
 				}

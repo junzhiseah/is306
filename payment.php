@@ -636,6 +636,11 @@ session_start();
 	?>
 
 <body>
+<?php
+	if (isset($_GET['error'])) {
+		echo '<font color="white">There are only '.$_GET['error'].' '.$item['quantifier'].' available.</font>';
+	}
+?>
 	<form name="form1" method="GET" action="confirmation.php">
 		<input type="hidden" name="itemid" value="<?php echo $item['id'] ?>">
 
@@ -647,7 +652,7 @@ session_start();
 			<input type = "hidden" name = "itemid" value = "<?php echo $item['id']; ?>">
 
 			<tr><td>Quantity</td> 
-			<td><input name="quantity" type="text" id="quantity" value=""></td>
+			<td><input name="quantity" type="text" id="quantity" value="<?php if (isset($_GET['quantity'])) { echo $_GET['quantity']; } ?>"></td>
 			</tr>
 
 			<tr><td>Price ($)</td> 
@@ -655,11 +660,11 @@ session_start();
 			</tr>
 
 			<tr><td>Card No</td> 
-			<td><input name="cardno" type="text" id="cardno" value=""></td>
+			<td><input name="cardno" type="text" id="cardno" value="<?php if (isset($_GET['cardno'])) { echo $_GET['cardno']; } ?>"></td>
 			</tr>
 
 			<tr><td>CVV</td> 
-			<td><input name="cvv" type="text" id="cvv" value=""></td>
+			<td><input name="cvv" type="text" id="cvv" value="<?php if (isset($_GET['cvv'])) { echo $_GET['cvv']; } ?>"></td>
 			</tr>
 
 			<tr><td><center><input type="submit" name="buy" value="Buy"></center></td></tr>

@@ -655,8 +655,8 @@ if(isset($_SESSION['myusername'])){
 
 <body>
 
-	<form name="form1" method="GET" action="payment.php?itemid='<?php echo $item['id']; ?>'">
-
+	<form name="form1" id="form1" method="GET" action="payment.php">
+		<input type="hidden" name="itemid" value="<?php echo htmlentities($_GET["id"]); ?>" >
 		<table class="details">
 			<tr><td>Product Name</td>
 			<td><input name="productname" type="" id="productname" readonly="readonly" value= "<?php echo htmlentities($_GET["productname"]); ?>" /></td>
@@ -690,6 +690,16 @@ if(isset($_SESSION['myusername'])){
 			<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
 
 			<tr><td><input type="submit" name="editPurchase" value="Edit Purchase"></td></tr>
+			<?php
+				if (isset($_GET['quantity']) && $_GET['quantity'] > $item['quantityavail']) {
+			?>	
+					<input type="hidden" name="error" value="<?php echo $item['quantityavail']; ?>" />
+					<script type="text/javascript">
+						document.form1.submit()
+					</script>
+			<?php
+				}
+			?>
 			<input type = "hidden" name = "itemid" value = "<?php echo $item['id']; ?>">
 		</form>
 
