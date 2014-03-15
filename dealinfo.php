@@ -1433,8 +1433,14 @@ if(isset($_SESSION['myusername'])){
 
 		<tr>	
 			<td><a href = "payment.php?itemid=<?php echo $itemid; ?>"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>
-				
-				<td><a href="dealinfo.php?bookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>"><input type = "bookmark" value = "Bookmark"></a></td>
+				<?php if(isset($_SESSION['myusername'])){ ?>
+					<td><a href="dealinfo.php?bookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>"><input type = "bookmark" value = "Bookmark"></a></td>
+				<?php } else { ?>
+					<td>
+						Please login to bookmark this deal
+					</td>
+				<?php } ?>
+
 				<input type = "hidden" name ="itemid" value = "<?php echo $itemid; ?>">
 
 			</td>
