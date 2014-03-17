@@ -629,6 +629,7 @@ session_start();
 
 	$itemArr = $_SESSION['itemArr'];
 	$itemArr[$itemId]['quantitysold'] += $quantity;
+	$itemArr[$itemId]['quantityavail'] -= $quantity;
 
 	unset($_SESSION['itemArr']);
 	$_SESSION['itemArr'] = $itemArr;
