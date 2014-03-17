@@ -655,7 +655,7 @@ $itemArr = $_SESSION['itemArr'];
 			// }
 			
 
-			if ($dateTime > $expiryDate || $quantitySold == $quantityAvail) {
+			if ($dateTime > $expiryDate || $quantityAvail == 0) {
 				echo '<br><a style="color:red"><b> EXPIRED </b><a>';
 			}
 			
