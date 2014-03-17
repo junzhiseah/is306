@@ -656,7 +656,7 @@ if(isset($_SESSION['myusername'])){
 <body>
 
 	<form name="form1" id="form1" method="GET" action="payment.php">
-		<input type="hidden" name="itemid" value="<?php echo htmlentities($_GET["id"]); ?>" >
+		<input type="hidden" name="itemid" value="<?php echo htmlentities($_GET["itemid"]); ?>" >
 		<table class="details">
 			<tr><td>Product Name</td>
 			<td><input name="productname" type="" id="productname" readonly="readonly" value= "<?php echo htmlentities($_GET["productname"]); ?>" /></td>
