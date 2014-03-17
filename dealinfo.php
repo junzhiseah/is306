@@ -18,6 +18,13 @@ if (isset($_GET['bookmark'])) {
 	$_SESSION['itemArr'] = $itemArr;
 }
 
+if (isset($_GET['unbookmark'])) {
+	$index = intval($_GET['unbookmark']);
+	$itemArr[$index]['userbookmarked'] = "No";
+
+	unset($_SESSION['itemArr']);
+	$_SESSION['itemArr'] = $itemArr;
+}
 
 ?>
 
@@ -1441,13 +1448,20 @@ if(isset($_SESSION['myusername'])){
 
 		<tr>	
 			<td><a href = "payment.php?itemid=<?php echo $itemid; ?>"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>
-				<?php if(isset($_SESSION['myusername'])){ ?>
-					<td><a href="dealinfo.php?bookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>"><input type = "bookmark" value = "Bookmark"></a></td>
-				<?php } else { ?>
-					<td>
-						<h2 class="loginbookmark">Please login to bookmark this deal</h2>
-					</td>
-				<?php } ?>
+
+				<?php if(isset($_SESSION['myusername'])){ 
+					if ($itemArr[$itemid]['userbookmarked'] == "Yes") { ?>
+						<a href="dealinfo.php?unbookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>"><input type = "bookmark" value = "Unbookmark"></a><br/><br/>	
+					<?php } else {
+					?>
+					<a href="dealinfo.php?bookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+				<?php 
+					}
+				} else { ?>
+					<h2 class="loginbookmark">Please login to bookmark!</h2>
+				<?php	
+				}
+				?>
 
 				<input type = "hidden" name ="itemid" value = "<?php echo $itemid; ?>">
 
