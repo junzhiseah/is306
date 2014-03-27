@@ -1,3 +1,15 @@
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content",
+      collapsible: true
+    });
+  });
+  </script>
 <?php
 session_start();
 
@@ -1042,16 +1054,7 @@ input[type=call] {
 		</nav>		
 	</div>	
 
-<!-- 
-<?php 
-if(isset($_SESSION['myusername'])){
-		$name = $_SESSION['myusername'];	
 
-		echo 'Welcome, ';
-		echo '<b>'.$name.'</b>';
-	}
-?>
- -->
 
 
 
@@ -1065,7 +1068,9 @@ if(isset($_SESSION['myusername'])){
 
 
 
+
 <!--==================================== Image Title Price and Description ======================================================-->
+
 
 
 <div class="imagetitledesc">
@@ -1137,6 +1142,8 @@ if(isset($_SESSION['myusername'])){
 <!--==================================== Details ======================================================-->
 
 
+
+
 	<div class="details">	
 
 		
@@ -1162,12 +1169,13 @@ if(isset($_SESSION['myusername'])){
 		</tr>
 	</table>
 
-	</div>
 
+	
+</div>
 
 <!--==================================== Map ======================================================-->
-
-
+<div id="accordion">
+<h3> Map</h3>
 
 	<div class="map">
 
@@ -1175,7 +1183,7 @@ if(isset($_SESSION['myusername'])){
 
 		<tr><td class="maptitle"><img src="img/Map-24.png"><br/>
 		Location
-		<td></tr>
+		</td></tr>
 
 		<tr>
 			<td width = "300px">
@@ -1260,14 +1268,14 @@ if(isset($_SESSION['myusername'])){
 	</table>
 
 
-</div>
 
-<p/>
+
+</div>
 
 
 <!--==================================== Merchant ======================================================-->
 
-
+<h3>Merchant</h3>
 <div class="merchant">
 	
 
@@ -1310,6 +1318,7 @@ if(isset($_SESSION['myusername'])){
 
 
 <!--==================================== Expiry Date, T&C ======================================================-->
+<h3>Terms and Conditions</h3>
 <div class="termsandconditions">
 
 		<img src="img/Rules-24.png"/><br/>
@@ -1332,6 +1341,7 @@ if(isset($_SESSION['myusername'])){
 
 			
 <!--==================================== Reviews ======================================================-->
+<h3>Reviews</h3>
 <div class="reviews">	
 	
 	<div class="reviewstitle">
@@ -1426,7 +1436,7 @@ if(isset($_SESSION['myusername'])){
 <?php } ?>
 </div>
 
-
+</div>
 		
 <!--==================================== Buy Now, Like ======================================================-->
 
@@ -1471,4 +1481,5 @@ if(isset($_SESSION['myusername'])){
 
 
 
+</div>
 </div>
