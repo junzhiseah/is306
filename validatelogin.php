@@ -7,7 +7,18 @@
 
 	if ($myusername != "" && $mypassword != "") {
 		$_SESSION['myusername'] = $myusername;
-		header("location:homepage.php");	
+
+		if(isset($_SESSION['url'])) {
+			$url = $_SESSION['url']; // holds url for last page visited.
+			
+		}
+   			
+		else {
+			$url = "homepage.php";
+			
+		}
+		header("location:$url");
+			
 	} else {	
 		$_SESSION['errormsg'] ="Please enter your email/password";
 		header("location:login.php");
@@ -15,6 +26,6 @@
 
 
 
-	?>test test
+
 	
 ?>

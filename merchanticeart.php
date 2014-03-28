@@ -11,6 +11,7 @@ if (isset($_GET['bookmark'])) {
 	unset($_SESSION['itemArr']);
 	$_SESSION['itemArr'] = $itemArr;
 }
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
 ?>
 <style type="text/css">
 	

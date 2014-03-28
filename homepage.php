@@ -5,6 +5,7 @@
 	}else{	
 		$name = $_SESSION['myusername'];	
 	}
+	$_SESSION['url'] = $_SERVER['REQUEST_URI'];
 ?>
 
 <style type="text/css">

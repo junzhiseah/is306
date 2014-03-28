@@ -1,6 +1,7 @@
 <?php
 session_start();
 $itemArr = $_SESSION['itemArr'];
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
 ?>
 <style type="text/css">
 	
