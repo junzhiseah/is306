@@ -478,7 +478,7 @@ input[type=call] {
 	}
 
 	div.merchant div.merchanttitle{
-		margin-top: 25px;
+		margin-top: 0px;
 		font-size:15px;
 		font-weight:bold;
 		color:#3E4651;
@@ -642,7 +642,7 @@ input[type=call] {
 	}
 
 	div.reviews table tr td h4{
-		font-size: 20px;
+		font-size: 18px;
 		color:#00B5B5;
 		font-style: italic;
 		margin-bottom: 0px;
@@ -651,7 +651,7 @@ input[type=call] {
 	}	
 
 	div.reviews table tr td h3{
-		font-size: 14px;
+		font-size: 12px;
 		color:black;
 		font-style: italic;
 		margin-bottom: 0px;
@@ -660,7 +660,7 @@ input[type=call] {
 
 
 	div.reviews table tr td h5{
-		font-size: 11px;
+		font-size: 10px;
 		color:#3E4651;
 		margin-bottom: 0px;
 		margin-top: 0px;
@@ -677,9 +677,9 @@ input[type=call] {
 
 	img.commentpic{
 		border-radius: 50px;
-		margin-left: 232px;
+		margin-left: 225px;
 		margin-bottom: 9px;
-		margin-top:-36px;
+		margin-top:-40px;
 	}
 
 	h2.loginbookmark{
@@ -695,7 +695,7 @@ input[type=call] {
 
 	div.reviews table tr td input[type=text]{
 		height:33px;
-		width:280px;
+		width:260px;
 	}
 
 
@@ -765,6 +765,11 @@ input[type=call] {
 		margin-bottom: 0px;
 	}
 
+
+	.ui-accordion .ui-accordion-content{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
 
 
@@ -1212,15 +1217,17 @@ input[type=call] {
 				<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 				<style>
 					#map-canvas {
-						height: 280px;
-						width: 280px;
+						height: 200px;
+						width: 255px;
+						
 					}
 
 					#pano {
-						height: 280px;
-						width: 280px;
+						height: 200px;
+						width: 255px;
 							       
 					}
+
 
 					.gmnoprint img {
 						max-width: none; 
@@ -1345,7 +1352,7 @@ input[type=call] {
 		<img src="img/Rules-24.png"/><br/>
 		Terms and Conditions
 
-		<br/>
+		<br/><br/>
 
 
 	
