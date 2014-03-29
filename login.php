@@ -1,4 +1,9 @@
-<?php session_start(); ?>
+<?php session_start(); 
+
+
+
+
+?>
 <style type="text/css">
 	
 	/*copy paste style type=text/css tag together with this body tag into the page you develop.

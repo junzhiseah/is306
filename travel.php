@@ -621,11 +621,12 @@ if(isset($_SESSION['myusername'])){
 
 
 	<table border = "0">
+		<a name="Japan"></a>
 		<tr class="space"><td></td><td></td></tr>
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=6"><img src="img/Japan.jpg"></a></td>
 			<td class="title" align = "center">
-				<a name="Japan"></a>
+				
 				<?php if(isset($_SESSION['myusername'])){ 
 					if ($itemArr[6]['userbookmarked'] == "Yes") { ?>
 						

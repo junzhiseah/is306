@@ -5,6 +5,7 @@
   <script>
   $(function() {
     $( "#accordion" ).accordion({
+      active: $(".accordion li[defaultactive=true]").index(),
       heightStyle: "content",
       collapsible: true
     });
@@ -1341,9 +1342,9 @@ input[type=call] {
 
 			
 <!--==================================== Reviews ======================================================-->
-<h3>Reviews</h3>
+
+<h3>Reviews <a name = "Review"></a></h3>
 <div class="reviews">	
-	
 	<div class="reviewstitle">
 		<img src="img/Positive-24.png"><br/>
 		Reviews
@@ -1407,7 +1408,7 @@ input[type=call] {
 			<td>
 				<h2 class="newcomment">New Comment</h3>
 					
-					<form method="get" action="dealinfo.php?itemid=<?php echo $itemid; ?>">
+					<form method="get" action="dealinfo.php?itemid=<?php echo $itemid; ?>#Review">
 						<input type = "hidden" name ="itemid" value = "<?php echo $itemid; ?>">
 						<input type="text" class="newcomment" name="comment" id="comment"><br>
 						

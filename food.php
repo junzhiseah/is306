@@ -620,11 +620,12 @@ if(isset($_SESSION['myusername'])){
 
 
 	<table border = "0">
+		<a name="CrystalJade"></a>
 		<tr class="space"><td></td><td></td></tr>
 		<tr>
 			<td align = "center" class="icon"><a href = "dealinfo.php?itemid=3"><img src="img/CrystalJade.jpg"></a></td>
 			<td class="title" align = "center">
-				<a name="CrystalJade"></a>
+				
 				<?php if(isset($_SESSION['myusername'])){ 
 					if ($itemArr[3]['userbookmarked'] == "Yes") { ?>
 						
