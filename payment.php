@@ -545,6 +545,14 @@
 		color:#D4D4D4;
 	}
 
+	h3.error{
+		font-size:16px;
+		color:#F1654C;
+		font-style: normal;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
 
 
 </style>
@@ -632,7 +640,7 @@
 <body>
 <?php
 	if (isset($_GET['error'])) {
-		echo '<font color="white">There are only '.$_GET['error'].' '.$item['quantifier'].' available.</font>';
+		echo '<h3 class="error">* There are only '.$_GET['error'].' '.$item['quantifier'].' available.</h3>';
 	}
 ?>
 	<form name="form1" method="GET" action="confirmation.php">
