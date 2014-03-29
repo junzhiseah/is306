@@ -1148,6 +1148,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
 
 <!--==================================== Reviews ======================================================-->
+<a name = "Review"></a>
 <div class="reviews">	
 	
 	<div class="reviewstitle">
@@ -1213,7 +1214,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		<tr>
 			<td>
 				<h2 class="newcomment">New Comment</h3>
-					<form method="get" action="merchantcrystaljade.php">
+					<form method="get" action="merchantcrystaljade.php#Review">
 						
 						<input type="text" class="newcomment" name="comment" id="comment"><br>
 		
