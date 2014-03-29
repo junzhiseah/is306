@@ -531,7 +531,14 @@
 	div.outercontainer{
 		background-image:url('img/Beach.jpg');
 		height:366px;
-		padding-top: 30px;
+		padding-top: 1px;
+	}
+
+	h4.title{
+		text-align: center;
+		font-size: 19px;
+		font-weight: bolder;
+		color:#3E4651;
 	}
 
 
@@ -541,6 +548,7 @@
 		margin-bottom: 20px;
 /*		margin-top: 20px;*/
 		padding:10px;
+		padding-top: 0px;
 		background-color: rgba(42,40,41,0.6);
 	}
 
@@ -615,6 +623,13 @@
 <div class="outercontainer">
 
 
+	<h4 class="title">
+		
+		Lei Long - Last Minute Deals
+
+	</h4>	
+
+
 <div class="maincontainer">
 
 
@@ -623,7 +638,7 @@
 
 	
 		<table>
-			<tr><td>Email</td>
+			<tr><td>Username</td>
 			<td><input name="myusername" type="text" id="myusername"></td>
 			</tr></br>
 

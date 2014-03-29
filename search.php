@@ -25,6 +25,11 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		/*background-color:#3E4651;*/
 	}
 
+	div.searchmessage{
+			border-bottom:3px solid #D4D4D4;
+			padding-bottom: 10px;
+	}
+
 
 	div.searchengine{
 		text-align: center;
@@ -304,7 +309,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
 	div.title{
 		text-align: center;
-		margin-top: 5px;
+		margin-top: 0px;
 		margin-bottom:5px;
 		font-weight: bold;
 		color:#3E4651;
@@ -389,7 +394,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 	}
 
 	div.searchmessage{
-		margin-top: 25px;
+		margin-top: 5px;
 		font-size:11px;
 		color:#949494;
 		text-align: center;
@@ -400,6 +405,13 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		color:#3E4651;
 		font-weight: bold;
 		text-decoration: none;
+	}
+
+	h5.message{
+		text-align: center;
+		font-size:11px;
+		color:#949494;
+		font-weight: normal;
 	}
 
 
@@ -583,7 +595,23 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 	</div>	
 
 
- 
+
+		<div class="searchmessage">
+
+
+
+			<div class="searchengine">
+				<form action="search.php" method="GET">
+					<input type="text" name="search" />
+					<input type="submit" value="SEARCH"/>
+				</form>
+			</div>
+
+			Click <a href="index.php">here</a> to search from 1 of the 4 Categories
+	
+		</div> 
+
+	<br/>
 
 
 <div class="title">
@@ -647,21 +675,6 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
 		?>
 
-		<div class="searchmessage">
-			Cannot find what you are looking for? <br/>
-
-
-
-			<div class="searchengine">
-				<form action="search.php" method="GET">
-					<input type="text" name="search" />
-					<input type="submit" value="SEARCH"/>
-				</form>
-			</div>
-
-			Or, click <a href="index.php">here</a> to search from 1 of the 4 Categories
-	
-		</div>
 
 
 
@@ -670,23 +683,10 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		
 
 
-		<div class="searchmessage">
-
-			There are no deals matching your search inputs. <br/><br/><br/>
-			Cannot find what you are looking for? <br/>
-
-
-
-			<div class="searchengine">
-				<form action="search.php" method="GET">
-					<input type="text" name="search" />
-					<input type="submit" value="SEARCH"/>
-				</form>
-			</div>
-
-			Or, click <a href="index.php">here</a> to search from 1 of the 4 Categories
 	
-		</div>
+
+			<h5 class="message">There are no deals matching your search inputs. <br/><br/><br/>
+			</h5>
 
 
 	<?php

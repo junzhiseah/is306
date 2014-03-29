@@ -456,6 +456,13 @@ input[type=call] {
 		border-top:3px solid #D4D4D4;
 	}	
 
+	div.details h5{
+		font-size: 11px;
+		color:black;
+		font-weight: bold;
+		font-style: italic;
+	}
+
 	div.map tr td.maptitle{
 		margin-top: 25px;
 		font-size:15px;
@@ -463,7 +470,7 @@ input[type=call] {
 		color:#3E4651;
 		text-align: center;
 		padding-top:10px;
-		border-top:3px solid #D4D4D4;
+		border-top:0px solid #D4D4D4;
 	}	
 
 	div.merchant table tr{
@@ -477,14 +484,15 @@ input[type=call] {
 		color:#3E4651;
 		text-align: center;
 		padding-top:10px;
-		border-top:3px solid #D4D4D4;
+		border-top:0px solid #D4D4D4;
 	}	
 
 	div.merchant a{
 		font-size:13px;
 		color:#00B5B5;
 		font-weight: bold;
-		text-decoration: none;
+		text-decoration: underline;
+		font-style:italic;
 	}
 
 
@@ -600,15 +608,15 @@ input[type=call] {
 		color:#3E4651;
 		text-align: center;
 		padding-top:10px;
-		border-top:3px solid #D4D4D4;
+		border-top:0px solid #D4D4D4;
 	}	
 
 
 	div.termsandconditions h5{
 		font-size:10px;
-		color:black;
+		color:#949494;
 		font-weight: bold;
-		text-decoration: none;
+	
 	}
 
 	div.termsandconditions h5 a{
@@ -626,7 +634,7 @@ input[type=call] {
 		color:#3E4651;
 		text-align: center;
 		padding-top:10px;
-		border-top:3px solid #D4D4D4;
+		border-top:0px solid #D4D4D4;
 	}
 
 	div.reviews table tr{
@@ -747,7 +755,7 @@ input[type=call] {
 		color:#3E4651;
 		text-align: center;
 		padding-top:10px;
-		border-top:3px solid #D4D4D4;
+		border-top:0px solid #D4D4D4;
 	}
 
 	div.buynow table tr td h2{
@@ -1168,6 +1176,18 @@ input[type=call] {
 				<b><?php echo $item['venue']; ?></b>
 			</td>
 		</tr>
+
+
+		<tr>
+			<td>
+			<h5>Valid till 
+			
+				<b><?php echo $item['expiry']; ?></b>
+
+			</h5>
+		</td></tr>
+
+
 	</table>
 
 
@@ -1327,12 +1347,10 @@ input[type=call] {
 
 		<br/>
 
-			<h5>Valid till 
-			
-				<?php echo $item['expiry']; ?>
-		
-			<br/><br/>
 
+	
+
+			<h5>
 
 				Click <a href="termsandcondition.php">here</a> to view the Terms and Conditions
 
