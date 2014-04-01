@@ -1147,6 +1147,7 @@ if (isset($_GET['bookmark'])) {
 
 
 <!--==================================== Reviews ======================================================-->
+<a name = "Review"></a>
 <div class="reviews">	
 	
 	<div class="reviewstitle">
@@ -1212,7 +1213,7 @@ if (isset($_GET['bookmark'])) {
 		<tr>
 			<td>
 				<h2 class="newcomment">New Comment</h3>
-					<form method="get" action="merchantahboystomen.php">
+					<form method="get" action="richardprofile.php#Review">
 						
 						<input type="text" class="newcomment" name="comment" id="comment"><br>
 		
