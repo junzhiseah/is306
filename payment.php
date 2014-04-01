@@ -551,6 +551,7 @@
 		font-style: normal;
 		font-weight: bold;
 		margin-bottom: 10px;
+		text-align: center;
 	}
 
 
