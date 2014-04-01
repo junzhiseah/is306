@@ -636,7 +636,7 @@ if(isset($_SESSION['myusername'])){
 				<?php 
 					}
 				} else { ?>
-					<a href="login.php"><input type = "bookmark" value = "Bookmark"></a>
+					<a href="login.php"><input type = "bookmark" value = "Bookmark"><br><br/></a>
 				<?php	
 				}
 				?>
@@ -668,7 +668,7 @@ if(isset($_SESSION['myusername'])){
 				<?php 
 					}
 				} else { ?>
-					<a href="login.php"><input type = "bookmark" value = "Bookmark"></a>
+					<a href="login.php"><input type = "bookmark" value = "Bookmark"><br><br/></a>
 				<?php	
 				}
 				?>
@@ -699,7 +699,7 @@ if(isset($_SESSION['myusername'])){
 				<?php 
 					}
 				} else { ?>
-					<a href="login.php"><input type = "bookmark" value = "Bookmark"></a>
+					<a href="login.php"><input type = "bookmark" value = "Bookmark"><br><br/></a>
 				<?php	
 				}
 				?>
