@@ -68,7 +68,7 @@
 		line-height:25px;
 		margin-right: 0px;
 		margin-left: 0px;
-		width:185px;
+		width:260px;
 		text-decoration:none;
 		text-align:center;
 		text-shadow:1px 1px 0px #3E4651;
@@ -101,8 +101,7 @@
 
 <h1 class="title">Web Experiment Consent</h1>
 
-</p>
-April 02, 2014
+
 
 </p>
 
@@ -134,7 +133,7 @@ If you have any questions or concerns in the midst of the web experiment, you ma
 
 
 	<br/><br/>
-	<input type="submit" value="Proceed to Web Experiment" />
+	<input type="submit" value="Accept and proceed to Web Experiment" />
 
 </div>
 
