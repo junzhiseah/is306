@@ -10,7 +10,7 @@
 		padding-top: 1%;
 		padding-bottom: 2%;
 		color: #3E4651;
-		font-size:16px;
+		font-size:17px;
 		font-weight: normal;
 		 background-color: rgba(222,213,204,0.7);
 
