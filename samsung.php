@@ -24,6 +24,7 @@
 		border:0px solid black;
 		height:77.7%;
 		background-color: white;
+		/*add in a code to increase height for iframe*/
 	}
 
 
