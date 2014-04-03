@@ -563,7 +563,7 @@ input[type=call] {
 		display: block;
 		/*margin-bottom: 20px;*/
 		margin-left: -99px;
-		width:171%;
+		width:153%;
 	}
 
 
@@ -640,7 +640,7 @@ input[type=call] {
 
 	nav.call ul.call ul.dropdown-menu2 li a {
 		padding: 15px 20px 15px 20px;
-		width:252px;
+		width:222px;
 		color: #fff;
 		margin-top: 0px;
 	}	
