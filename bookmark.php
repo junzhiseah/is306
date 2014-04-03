@@ -312,7 +312,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 	table.categories{
 		margin:0px;
 		padding:0px;
-		border:2px solid #D4D4D4;
+		border:0px solid #D4D4D4;
 	}
 
 	table.categories tr td{
@@ -657,7 +657,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 			
 
 			if ($dateTime > $expiryDate || $quantityAvail == 0) {
-				echo '<br><a style="color:red"><b> EXPIRED </b><a>';
+				echo '<tr><td><a style="color:red"><b> EXPIRED </b><a></td>';
 			}
 			
 			echo '<form action="bookmark.php" method="GET">';
