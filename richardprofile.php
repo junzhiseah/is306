@@ -377,6 +377,12 @@ if (isset($_GET['bookmark'])) {
 
 
 
+	img#changer{
+		margin-left: 27px;
+		margin-top: -4px;
+	}
+
+
 	input[type=call] {
 		-moz-box-shadow:inset 0px 1px 0px 0px #00b5b5;
 		-webkit-box-shadow:inset 0px 1px 0px 0px #00b5b5;
@@ -1060,16 +1066,19 @@ if (isset($_GET['bookmark'])) {
 										clicks = 288;
 										counter = 1;
 										var doc = document.getElementById("test").innerHTML=clicks;
+										document.getElementById("changer").src = "img/liked.jpeg";
 									}
 									else{
 										clicks = 287;
 										counter = 0;
 										var doc = document.getElementById("test").innerHTML=clicks;
+										document.getElementById("changer").src = "img/like.jpeg";
 									}
 								}
 								</script>
-								<img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();">
-								<span id="test"></span>
+								<img src="img/like.PNG" height = "15px" width = "15px"><span id="test"></span>
+								<img src="img/like.jpeg" id="changer" height = "30px" width = "50px" onclick="javascript:showClicks(this);">
+								
 								</body>
 								</html>
 						</h4>

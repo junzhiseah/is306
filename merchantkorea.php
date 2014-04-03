@@ -25,6 +25,12 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		/*background-color:#3E4651;*/
 	}
 
+	
+	img#changer{
+		margin-left: 27px;
+		margin-top: -4px;
+	}
+
 
 	div.searchengine{
 		text-align: center;

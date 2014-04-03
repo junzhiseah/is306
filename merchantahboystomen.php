@@ -35,6 +35,12 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		padding-bottom: 0px;
 	}
 
+
+	img#changer{
+		margin-left: 27px;
+		margin-top: -4px;
+	}
+
 	div.searchengine input[type=text]{
 		height:27px;
 		margin-right:-6px;

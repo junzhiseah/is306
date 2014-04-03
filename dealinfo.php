@@ -311,6 +311,55 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		top:1px;
 	}
 
+
+	input[type=unbookmark] {
+		-moz-box-shadow:inset 0px 1px 0px 0px #F1654C;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #F1654C;
+		box-shadow:inset 0px 1px 0px 0px #F1654C;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1654C), color-stop(1, #F1654C) );
+		background:-moz-linear-gradient( center top, #F1654C 5%, #F1654C 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1654C', endColorstr='#F1654C');
+		background-color:#F1654C;
+		-webkit-border-top-left-radius:3px;
+		-moz-border-radius-topleft:3px;
+		border-top-left-radius:0px;
+		-webkit-border-top-right-radius:3px;
+		-moz-border-radius-topright:3px;
+		border-top-right-radius:0px;
+		-webkit-border-bottom-right-radius:3px;
+		-moz-border-radius-bottomright:3px;
+		border-bottom-right-radius:0px;
+		-webkit-border-bottom-left-radius:3px;
+		-moz-border-radius-bottomleft:3px;
+		border-bottom-left-radius:0px;
+		text-indent:0;
+		border:0px solid #F1654C;
+		display:inline-block;
+		color:white;
+		font-family:Trebuchet MS;
+		font-size:13px;
+		font-weight:bold;
+		font-style:normal;
+		height:43px;
+		line-height:10px;
+		width: 88px;
+		margin-right: 0px;
+		margin-left: 35px;
+		margin-top: 0px;
+		text-decoration:none;
+		text-align:center;
+		text-shadow:1px 1px 0px #F1654C;
+	}
+	input[type=unbookmark]:hover {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1654C), color-stop(1, #F1654C) );
+		background:-moz-linear-gradient( center top, #F1654C 5%, #F1654C 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1654C', endColorstr='#F1654C');
+		background-color:#F1654C;
+	}input[type=unbookmark]:active {
+		position:relative;
+		top:1px;
+	}
+
 	div.categories{
 		display: inline;
 	}
@@ -888,6 +937,12 @@ input[type=call] {
 		font-size: 13px;
 	}
 
+
+	img#changer{
+		margin-left: 218px;
+		margin-top: -14px;
+	}
+
 	
 
 
@@ -1150,7 +1205,7 @@ input[type=call] {
 			</script>
 		<tr>
 			<td><h2 class="likes">Likes: <img src="img/like.PNG" height = "15px" width = "15px"><span id="test"></span></h2>
-				<img src="img/like.jpeg" id="changer" height = "30px" width = "50px" onclick="javascript:showClicks(this);">
+				<img src="img/like.jpeg" id="changer" height = "25px" width = "50px" onclick="javascript:showClicks(this);">
 
 			</td>
 		</tr>
@@ -1495,7 +1550,7 @@ input[type=call] {
 				<a name="Bookmark"></a>
 				<?php if(isset($_SESSION['myusername'])){ 
 					if ($itemArr[$itemid]['userbookmarked'] == "Yes") { ?>
-						<a href="dealinfo.php?unbookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>#Bookmark"><input type = "bookmark" value = "Unbookmark"></a><br/><br/>	
+						<a href="dealinfo.php?unbookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>#Bookmark"><input type = "unbookmark" value = "Unbookmark"></a><br/><br/>	
 					<?php } else {
 					?>
 					<a href="dealinfo.php?bookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>#Bookmark"><input type = "bookmark" value = "Bookmark"></a><br/><br/>

@@ -69,7 +69,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		height:30px;
 		margin-left: 5px;
 		line-height:22px;
-		width:158px;
+		width:150px;
 		text-decoration:none;
 		text-align:center;
 		text-shadow:1px 1px 0px #F1654C;
@@ -337,7 +337,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 	}
 
 	table tr td.icon img{
-		border-radius: 40px;
+		border-radius: 20px;
 		width:158px;
 		height:135px;
 	}
@@ -650,7 +650,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 			echo '<tr><td class="price"><strike>$'.$item['usualprice'].'</strike> <a style="color:#00B5B5"> $'.$item['currentprice'].'</a> /'.$item['quantifier'].'</td>';
 			
 
-			echo '<td class="expiry">'.$item['expiry'].'</td></tr>';
+			echo '<td class="expiry">Exp: '.$item['expiry'].'</td></tr>';
 			// if ($dateTime > $expiryDate || $quantitySold == $quantityAvail) {
 			// 	echo '<br><a style="color:red"><b> EXPIRED </b><a>';
 			// }
@@ -662,7 +662,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 			
 			echo '<form action="bookmark.php" method="GET">';
 			echo '<input type="hidden" name="itemid" value="'.$item['id'].'" />';
-			echo '<td><input type="submit" value="Remove from Bookmarks" /></td></tr>';
+			echo '<td><input type="submit" value="Unbookmark" /></td></tr>';
 			echo '</form>';
 			echo '<tr class="space"><td></td><td></td></tr>';
 		}

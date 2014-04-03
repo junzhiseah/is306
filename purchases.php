@@ -345,7 +345,7 @@ if (isset($_GET['bookmark'])) {
 	}
 
 	table tr td.icon img{
-		border-radius: 40px;
+		border-radius: 20px;
 		width:158px;
 		height:135px;
 	}
