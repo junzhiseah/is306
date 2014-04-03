@@ -1,3 +1,16 @@
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      active: $(".accordion li[defaultactive=true]").index(),
+      heightStyle: "content",
+      collapsible: true
+    });
+  });
+  </script>
 <?php
 session_start();
 
@@ -25,7 +38,7 @@ if (isset($_GET['unbookmark'])) {
 	unset($_SESSION['itemArr']);
 	$_SESSION['itemArr'] = $itemArr;
 }
-
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
 ?>
 
 
@@ -443,6 +456,13 @@ input[type=call] {
 		border-top:3px solid #D4D4D4;
 	}	
 
+	div.details h5{
+		font-size: 11px;
+		color:black;
+		font-weight: bold;
+		font-style: italic;
+	}
+
 	div.map tr td.maptitle{
 		margin-top: 25px;
 		font-size:15px;
@@ -450,7 +470,7 @@ input[type=call] {
 		color:#3E4651;
 		text-align: center;
 		padding-top:10px;
-		border-top:3px solid #D4D4D4;
+		border-top:0px solid #D4D4D4;
 	}	
 
 	div.merchant table tr{
@@ -458,20 +478,21 @@ input[type=call] {
 	}
 
 	div.merchant div.merchanttitle{
-		margin-top: 25px;
+		margin-top: 0px;
 		font-size:15px;
 		font-weight:bold;
 		color:#3E4651;
 		text-align: center;
 		padding-top:10px;
-		border-top:3px solid #D4D4D4;
+		border-top:0px solid #D4D4D4;
 	}	
 
 	div.merchant a{
 		font-size:13px;
 		color:#00B5B5;
 		font-weight: bold;
-		text-decoration: none;
+		text-decoration: underline;
+		font-style:italic;
 	}
 
 
@@ -587,15 +608,15 @@ input[type=call] {
 		color:#3E4651;
 		text-align: center;
 		padding-top:10px;
-		border-top:3px solid #D4D4D4;
+		border-top:0px solid #D4D4D4;
 	}	
 
 
 	div.termsandconditions h5{
 		font-size:10px;
-		color:black;
+		color:#949494;
 		font-weight: bold;
-		text-decoration: none;
+	
 	}
 
 	div.termsandconditions h5 a{
@@ -613,7 +634,7 @@ input[type=call] {
 		color:#3E4651;
 		text-align: center;
 		padding-top:10px;
-		border-top:3px solid #D4D4D4;
+		border-top:0px solid #D4D4D4;
 	}
 
 	div.reviews table tr{
@@ -621,7 +642,7 @@ input[type=call] {
 	}
 
 	div.reviews table tr td h4{
-		font-size: 20px;
+		font-size: 18px;
 		color:#00B5B5;
 		font-style: italic;
 		margin-bottom: 0px;
@@ -630,7 +651,7 @@ input[type=call] {
 	}	
 
 	div.reviews table tr td h3{
-		font-size: 14px;
+		font-size: 12px;
 		color:black;
 		font-style: italic;
 		margin-bottom: 0px;
@@ -639,7 +660,7 @@ input[type=call] {
 
 
 	div.reviews table tr td h5{
-		font-size: 11px;
+		font-size: 10px;
 		color:#3E4651;
 		margin-bottom: 0px;
 		margin-top: 0px;
@@ -656,9 +677,9 @@ input[type=call] {
 
 	img.commentpic{
 		border-radius: 50px;
-		margin-left: 232px;
+		margin-left: 225px;
 		margin-bottom: 9px;
-		margin-top:-36px;
+		margin-top:-40px;
 	}
 
 	h2.loginbookmark{
@@ -674,7 +695,7 @@ input[type=call] {
 
 	div.reviews table tr td input[type=text]{
 		height:33px;
-		width:280px;
+		width:260px;
 	}
 
 
@@ -734,7 +755,7 @@ input[type=call] {
 		color:#3E4651;
 		text-align: center;
 		padding-top:10px;
-		border-top:3px solid #D4D4D4;
+		border-top:0px solid #D4D4D4;
 	}
 
 	div.buynow table tr td h2{
@@ -744,6 +765,11 @@ input[type=call] {
 		margin-bottom: 0px;
 	}
 
+
+	.ui-accordion .ui-accordion-content{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
 
 
@@ -1042,16 +1068,7 @@ input[type=call] {
 		</nav>		
 	</div>	
 
-<!-- 
-<?php 
-if(isset($_SESSION['myusername'])){
-		$name = $_SESSION['myusername'];	
 
-		echo 'Welcome, ';
-		echo '<b>'.$name.'</b>';
-	}
-?>
- -->
 
 
 
@@ -1065,7 +1082,9 @@ if(isset($_SESSION['myusername'])){
 
 
 
+
 <!--==================================== Image Title Price and Description ======================================================-->
+
 
 
 <div class="imagetitledesc">
@@ -1135,9 +1154,6 @@ if(isset($_SESSION['myusername'])){
 
 			</td>
 		</tr>
-		
-			
-		
 
 	</table>
 </div>
@@ -1146,6 +1162,8 @@ if(isset($_SESSION['myusername'])){
 
 
 <!--==================================== Details ======================================================-->
+
+
 
 
 	<div class="details">	
@@ -1171,14 +1189,27 @@ if(isset($_SESSION['myusername'])){
 				<b><?php echo $item['venue']; ?></b>
 			</td>
 		</tr>
+
+
+		<tr>
+			<td>
+			<h5>Valid till 
+			
+				<b><?php echo $item['expiry']; ?></b>
+
+			</h5>
+		</td></tr>
+
+
 	</table>
 
-	</div>
 
+	
+</div>
 
 <!--==================================== Map ======================================================-->
-
-
+<div id="accordion">
+<h3> Map</h3>
 
 	<div class="map">
 
@@ -1186,7 +1217,7 @@ if(isset($_SESSION['myusername'])){
 
 		<tr><td class="maptitle"><img src="img/Map-24.png"><br/>
 		Location
-		<td></tr>
+		</td></tr>
 
 		<tr>
 			<td width = "300px">
@@ -1194,15 +1225,17 @@ if(isset($_SESSION['myusername'])){
 				<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 				<style>
 					#map-canvas {
-						height: 280px;
-						width: 280px;
+						height: 200px;
+						width: 255px;
+						
 					}
 
 					#pano {
-						height: 280px;
-						width: 280px;
+						height: 200px;
+						width: 255px;
 							       
 					}
+
 
 					.gmnoprint img {
 						max-width: none; 
@@ -1271,14 +1304,14 @@ if(isset($_SESSION['myusername'])){
 	</table>
 
 
-</div>
 
-<p/>
+
+</div>
 
 
 <!--==================================== Merchant ======================================================-->
 
-
+<h3>Merchant</h3>
 <div class="merchant">
 	
 
@@ -1321,19 +1354,18 @@ if(isset($_SESSION['myusername'])){
 
 
 <!--==================================== Expiry Date, T&C ======================================================-->
+<h3>Terms and Conditions</h3>
 <div class="termsandconditions">
 
 		<img src="img/Rules-24.png"/><br/>
 		Terms and Conditions
 
-		<br/>
+		<br/><br/>
 
-			<h5>Valid till 
-			
-				<?php echo $item['expiry']; ?>
-		
-			<br/><br/>
 
+	
+
+			<h5>
 
 				Click <a href="termsandcondition.php">here</a> to view the Terms and Conditions
 
@@ -1343,8 +1375,9 @@ if(isset($_SESSION['myusername'])){
 
 			
 <!--==================================== Reviews ======================================================-->
+
+<h3>Reviews <a name = "Review"></a></h3>
 <div class="reviews">	
-	
 	<div class="reviewstitle">
 		<img src="img/Positive-24.png"><br/>
 		Reviews
@@ -1402,13 +1435,13 @@ if(isset($_SESSION['myusername'])){
 
 
 
-
 <?php if(isset($_SESSION['myusername'])){ ?>
 	<table>
 		<tr>
 			<td>
 				<h2 class="newcomment">New Comment</h3>
-					<form method="get" action="dealinfo.php?itemid=<?php echo $itemid; ?>">
+					
+					<form method="get" action="dealinfo.php?itemid=<?php echo $itemid; ?>#Review">
 						<input type = "hidden" name ="itemid" value = "<?php echo $itemid; ?>">
 						<input type="text" class="newcomment" name="comment" id="comment"><br>
 						
@@ -1437,7 +1470,7 @@ if(isset($_SESSION['myusername'])){
 <?php } ?>
 </div>
 
-
+</div>
 		
 <!--==================================== Buy Now, Like ======================================================-->
 
@@ -1459,17 +1492,17 @@ if(isset($_SESSION['myusername'])){
 
 		<tr>	
 			<td><a href = "payment.php?itemid=<?php echo $itemid; ?>"><input type = "buy" value = "Buy!" height = "10px" width = "20px"></a>
-
+				<a name="Bookmark"></a>
 				<?php if(isset($_SESSION['myusername'])){ 
 					if ($itemArr[$itemid]['userbookmarked'] == "Yes") { ?>
-						<a href="dealinfo.php?unbookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>"><input type = "bookmark" value = "Unbookmark"></a><br/><br/>	
+						<a href="dealinfo.php?unbookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>#Bookmark"><input type = "bookmark" value = "Unbookmark"></a><br/><br/>	
 					<?php } else {
 					?>
-					<a href="dealinfo.php?bookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
+					<a href="dealinfo.php?bookmark=<?php echo $itemid; ?>&itemid=<?php echo $itemid; ?>#Bookmark"><input type = "bookmark" value = "Bookmark"></a><br/><br/>
 				<?php 
 					}
 				} else { ?>
-					<h2 class="loginbookmark">Please login to bookmark!</h2>
+					<a href="login.php"><input type = "bookmark" value = "Bookmark"></a>
 				<?php	
 				}
 				?>
@@ -1482,4 +1515,5 @@ if(isset($_SESSION['myusername'])){
 
 
 
+</div>
 </div>
