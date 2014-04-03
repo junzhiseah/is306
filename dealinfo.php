@@ -1116,17 +1116,28 @@ if(isset($_SESSION['myusername'])){
 					clicks = 127;
 					counter = 1;
 					var doc = document.getElementById("test").innerHTML=clicks;
+				    document.getElementById("changer").src = "img/liked.jpeg";
 				}
 				else{
 					clicks = 126;
 					counter = 0;
 					var doc = document.getElementById("test").innerHTML=clicks;
+
+				    document.getElementById("changer").src = "img/like.jpeg";
+				 
 				}
+				
 			}
 			</script>
 		<tr>
-			<td><h2 class="likes">Likes: <img src="img/like.PNG" height = "15px" width = "15px" onclick="javascript:showClicks();"><span id="test"></span></h2></td>
+			<td><h2 class="likes">Likes: <img src="img/like.PNG" height = "15px" width = "15px"><span id="test"></span></h2>
+				<img src="img/like.jpeg" id="changer" height = "30px" width = "50px" onclick="javascript:showClicks(this);">
+
+			</td>
 		</tr>
+		
+			
+		
 
 	</table>
 </div>
