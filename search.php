@@ -351,7 +351,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 	}
 
 	table tr td.icon img{
-		border-radius: 40px;
+		border-radius: 20px;
 		width:158px;
 		height:135px;
 	}
