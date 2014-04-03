@@ -480,7 +480,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 	button.goback {
 		-moz-box-shadow:inset 0px 1px 0px 0px #00B5B5;
 		-webkit-box-shadow:inset 0px 1px 0px 0px #00B5B5;
-		box-shadow:inset 0px 1px 0px 0px #00B5B5;
+		box-shadow:inset 0px 0px 0px 0px #00B5B5;
 		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00B5B5), color-stop(1, #00B5B5) );
 		background:-moz-linear-gradient( center top, #00B5B5 5%, #00B5B5 100% );
 		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00B5B5', endColorstr='#00B5B5');
@@ -498,7 +498,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		-moz-border-radius-bottomleft:3px;
 		border-bottom-left-radius:1px;
 		text-indent:0;
-		border:1px solid #00B5B5;
+		border:0px solid #00B5B5;
 		display:inline-block;
 		color:#ffffff;
 		font-family:Trebuchet MS;

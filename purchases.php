@@ -95,7 +95,7 @@ if (isset($_GET['bookmark'])) {
 	input[type=buy] {
 		-moz-box-shadow:inset 0px 1px 0px 0px #00b5b5;
 		-webkit-box-shadow:inset 0px 1px 0px 0px #00b5b5;
-		box-shadow:inset 0px 1px 0px 0px #00b5b5;
+		box-shadow:inset 0px 0px 0px 0px #00b5b5;
 		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00b5b5), color-stop(1, #00b5b5) );
 		background:-moz-linear-gradient( center top, #00b5b5 5%, #00b5b5 100% );
 		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b5b5', endColorstr='#00b5b5');
@@ -113,7 +113,7 @@ if (isset($_GET['bookmark'])) {
 		-moz-border-radius-bottomleft:3px;
 		border-bottom-left-radius:0px;
 		text-indent:0;
-		border:1px solid #00b5b5;
+		border:0px solid #00b5b5;
 		display:inline-block;
 		color:#ffffff;
 		font-family:Trebuchet MS;
@@ -142,7 +142,7 @@ if (isset($_GET['bookmark'])) {
 	input[type=dealinfo] {
 		-moz-box-shadow:inset 0px 1px 0px 0px #3E4651;
 		-webkit-box-shadow:inset 0px 1px 0px 0px #3E4651;
-		box-shadow:inset 0px 1px 0px 0px #3E4651;
+		box-shadow:inset 0px 0px 0px 0px #3E4651;
 		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3E4651), color-stop(1, #3E4651) );
 		background:-moz-linear-gradient( center top, #3E4651 5%, #3E4651 100% );
 		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3E4651', endColorstr='#3E4651');
@@ -160,7 +160,7 @@ if (isset($_GET['bookmark'])) {
 		-moz-border-radius-bottomleft:3px;
 		border-bottom-left-radius:0px;
 		text-indent:0;
-		border:1px solid #3E4651;
+		border:0px solid #3E4651;
 		display:inline-block;
 		color:#ffffff;
 		font-family:Trebuchet MS;
