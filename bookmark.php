@@ -658,10 +658,11 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 			if ($dateTime > $expiryDate || $quantityAvail == 0) {
 				echo '<tr><td><a style="color:red"><b> EXPIRED </b><a></td>';
 			}
+			echo '<tr><td class="quantity"></td>';	
 			
 			echo '<form action="bookmark.php" method="GET">';
 			echo '<input type="hidden" name="itemid" value="'.$item['id'].'" />';
-			echo '<td align = "center"><input type="submit" value="Unbookmark" /></td></tr>';
+			echo '<td><input type="submit" value="Unbookmark" /></td></tr>';
 			echo '</form>';
 			echo '<tr class="space"><td></td><td></td></tr>';
 		}
