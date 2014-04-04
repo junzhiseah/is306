@@ -700,7 +700,7 @@ if(isset($_SESSION['myusername'])){
 			</td>
 		</tr>
 		<tr><td class="price"><strike>$128</strike> <a style="color:#00B5B5">$88</a> / Tix </td>
-				<td class="expiry">Exp: 27 Mar 2014</td></tr>
+				<td class="expiry">Exp: 27 Apr 2014</td></tr>
 
 
 		
@@ -731,7 +731,7 @@ if(isset($_SESSION['myusername'])){
 			</td>
 		</tr>
 		<tr><td class="price"><strike>$300</strike> <a style="color:#00B5B5">$150</a> / Trip </td>
-				<td class="expiry">Exp: 28 Mar 2014</td></tr>
+				<td class="expiry">Exp: 28 Apr 2014</td></tr>
 		
 
 
@@ -764,7 +764,7 @@ if(isset($_SESSION['myusername'])){
 			</td>
 		</tr>
 		<tr><td class="price"><strike>$478</strike> <a style="color:#00B5B5">$128</a> / Tix </td>
-				<td class="expiry">Exp: 27 Mar 2014</td></tr>
+				<td class="expiry">Exp: 27 Apr 2014</td></tr>
 
 		<tr class="space"><td></td><td></td></tr>		
 
