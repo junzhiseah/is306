@@ -650,7 +650,7 @@ if (isset($_GET['bookmark'])) {
 
 			echo '<td class="expiry">Exp: '.$item['expiry'].'</td></tr>';
 			if ($dateTime > $expiryDate || $quantityAvail==0) {
-				echo '<br><a style="color:red"><b> EXPIRED </b><a>';
+				echo '<tr><td><a style="color:red"><b> EXPIRED </b><a></td>';
 			}
 			echo '<tr><td class="quantity">'.$quantity.' '.$item['quantifier'].'(s) purchased'.'</td>';			
 

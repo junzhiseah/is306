@@ -67,9 +67,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		font-weight:bold;
 		font-style:normal;
 		height:30px;
-		margin-left: 5px;
 		line-height:22px;
-		width:150px;
+		width:118px;
 		text-decoration:none;
 		text-align:center;
 		text-shadow:1px 1px 0px #F1654C;
@@ -662,7 +661,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 			
 			echo '<form action="bookmark.php" method="GET">';
 			echo '<input type="hidden" name="itemid" value="'.$item['id'].'" />';
-			echo '<td><input type="submit" value="Unbookmark" /></td></tr>';
+			echo '<td align = "center"><input type="submit" value="Unbookmark" /></td></tr>';
 			echo '</form>';
 			echo '<tr class="space"><td></td><td></td></tr>';
 		}
