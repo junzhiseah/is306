@@ -24,6 +24,7 @@
 
 	body{
 		background-image:url('img/mainpagebanner18.jpg');
+		background-size: 120%;
 	}
 
 	input[type=submit] {

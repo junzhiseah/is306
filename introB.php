@@ -14,6 +14,7 @@
 		font-weight: normal;
 		 background-color: rgba(222,213,204,0.7);
 
+
 	}
 
 	h1.title{
@@ -24,6 +25,7 @@
 
 	body{
 		background-image:url('img/mainpagebanner18.jpg');
+		background-size: 120%;
 	}
 
 	input[type=submit] {
