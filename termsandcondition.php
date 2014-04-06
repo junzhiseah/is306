@@ -267,7 +267,8 @@
 	    The management of Lei Long will not be held responsible for any refunds, returns, injuries, mishaps and incidents.<br/>
 	    Event dates and timings: 3 weeks from now till the day of sales itself, 9am - 8pm.<br/>
 	    Limited to 1 deal per person, may buy multiple as gifts.<br/>
-	    Valid for bronze seating category, only applicable to entertainment deals.
+	    Valid for bronze seating category, only applicable to entertainment deals.<br />
+	    Deal is subject to availability.
 	</div>
 
 	<button type="button" class="goback" id = "gobackbutton" onclick="history.go(-1);">Go Back to Deal</button>
