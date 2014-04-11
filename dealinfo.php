@@ -1190,14 +1190,14 @@ input[type=call] {
 					clicks = 127;
 					counter = 1;
 					var doc = document.getElementById("test").innerHTML=clicks;
-				    document.getElementById("changer").src = "img/liked.jpeg";
+				    document.getElementById("changer").src = "img/liked.JPEG";
 				}
 				else{
 					clicks = 126;
 					counter = 0;
 					var doc = document.getElementById("test").innerHTML=clicks;
 
-				    document.getElementById("changer").src = "img/like.jpeg";
+				    document.getElementById("changer").src = "img/like.JPEG";
 				 
 				}
 				
@@ -1205,7 +1205,7 @@ input[type=call] {
 			</script>
 		<tr>
 			<td><h2 class="likes">Likes: <img src="img/like.PNG" height = "15px" width = "15px"><span id="test"></span></h2>
-				<img src="img/like.jpeg" id="changer" height = "25px" width = "50px" onclick="javascript:showClicks(this);">
+				<img src="img/like.JPEG" id="changer" height = "25px" width = "50px" onclick="javascript:showClicks(this);">
 
 			</td>
 		</tr>
