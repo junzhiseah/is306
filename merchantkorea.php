@@ -1067,18 +1067,18 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 										clicks = 288;
 										counter = 1;
 										var doc = document.getElementById("test").innerHTML=clicks;
-										document.getElementById("changer").src = "img/liked.JPEG";
+										document.getElementById("changer").src = "img/liked.jpeg";
 									}
 									else{
 										clicks = 287;
 										counter = 0;
 										var doc = document.getElementById("test").innerHTML=clicks;
-										document.getElementById("changer").src = "img/like.JPEG";
+										document.getElementById("changer").src = "img/like.jpeg";
 									}
 								}
 								</script>
 								<img src="img/like.PNG" height = "15px" width = "15px"><span id="test"></span>
-								<img src="img/like.JPEG" id="changer" height = "30px" width = "50px" onclick="javascript:showClicks(this);">
+								<img src="img/like.jpeg" id="changer" height = "30px" width = "50px" onclick="javascript:showClicks(this);">
 								
 								</body>
 								</html>
